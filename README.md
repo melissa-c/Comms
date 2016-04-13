@@ -75,6 +75,7 @@ XXX
 
 Stretches
 -----------
+* The picture gallery contains more abstract concepts.
 * There is an "about me" section with details and photos of emergency contacts.
 * There is a "schedule" section showing the daily schedule with pictures and words.
 * The "schedule" section has admin properties with password protection and ability to add custom items.
