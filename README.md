@@ -60,7 +60,6 @@ to be added.
 * As a user I want to be able to easily select a picture from the gallery with quick jump buttons.
 * As a user I want to scroll through the picture gallery.
 * As a user I want to see a visual representation of how long I have to wait for my request to be completed.
-
 * As a user I want to have quick access to the timer.
 * As a user I want to be able to set the countdown timer to a specified time.
 * As a user I want to have a simple password to limit access to the timer.
