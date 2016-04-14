@@ -12,7 +12,9 @@
     "deploy": "npm run build && npm run dist && npm run push"
   },
   "browserify": {
-    "transform": ["babelify"]
+    "transform": [
+      "babelify"
+    ]
   },
   "repository": {
     "type": "git",
@@ -32,7 +34,8 @@
     "browserify": "^13.0.0",
     "budo": "^8.2.1",
     "gh-pages": "^0.11.0",
-    "react": "^15.0.1", 
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1",
     "smokestack": "^3.3.0",
     "tap-spec": "^4.0.2",
     "tape": "^4.0.0",
