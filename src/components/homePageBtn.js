@@ -1,8 +1,8 @@
-console.log("welcome to CommsCompanion")
 'use strict'
- 
+
 import React from 'react'
 import ReactDOM from 'react-dom'
+import One from './src/components/app'
 
 class Test extends React.Component {
 	render (){
@@ -12,7 +12,8 @@ class Test extends React.Component {
 			</div>
 	}
 }
- ReactDOM.render(<Test txt ="hey there"/>, document.getElementById('content'))
+
+// ReactDOM.render(<Test txt ="hey there"/>, document.getElementById('content'))
 
 
 
