@@ -7,6 +7,8 @@ Schematics, learning objectives, technology, roles, schedules.
 ##Project Description
 A communication tool to assist children with alternative abilities in speech and language to communicate on a day to day basis.
 
+This app works best on tablet devices to more easily view the pictures, and to optimise convenience and mobility. 
+
 ##App link:
 to be added.
 
@@ -17,44 +19,52 @@ to be added.
 
 ##Team Roles / Accountabilities
 
+###Owner / Fun Master - The Glorious Leader
+* Approve product direction and requirements.
+* Organise and enforce mandatory fun times.
+* Syph manager.
+
 ###Git Master - Mel.i.am
 * Approve pull requests.
 
-###Owner / Fun Master - The Glorious Leader
-* Approve product direction and requirements.
-* Organise and enforce mandatory fun times at 3pm.
-* Syph manager.
-
 ###Scrum Master / Communicator - The Zen Master
-* Manages Zen.
 * Does agile tasks.
 * Project manages.
+* Zen manager.
 
 ###Deployment Master / Scheduler - Tobylerone
 * Manages workflow and schedule.
 * Oversee deployment.
 
 ##Typical Day Plan
-* Hours are 9am - 8pm until we hit MVP and then we can review.
-* Review and stand up at 9am.
-* 11am mindfulness and coffee break.
-* Checkin at 12.20pm.
-* Lunch from 12.30 - 1.30pm.
-* Mandatory fun at 3 or 4pm.
-* 7pm wrap up / dinner.
-* 8pm guilt free home time.
-
+* 9am - 8pm: until we hit MVP and then we can review.
+* 9am: Review and stand up.
+* 11am: Mindfulness and coffee break.
+* 12.20pm: Checkin.
+* 12.30 - 1.30pm: Lunch.
+* 3 or 4pm: Mandatory fun.
+* 7pm: Wrap up and dinner.
+* 8pm: Home time.
 
 ##Learning Objectives and Technologies
-* React and Babel (or possibly Angular?)
+* React and Babel (or possibly Angular)
 * Enzyme and Nightwatch
 * Postgres database
 * Webpack
 * Heroku
 
 ##User Stories
-to be added
- 
+* As a user I want to have an easy to use navigation page.
+* As a user I want to have a clear "ask" board at the top of the screen.
+* As a user I want to have my recently selected images in a convenient place so I can reuse them easily.
+* As a user I want to be able to easily select a picture from the gallery with quick jump buttons.
+* As a user I want to scroll through the picture gallery.
+* As a user I want to see a visual representation of how long I have to wait for my request to be completed.
+
+* As a user I want to have quick access to the timer.
+* As a user I want to be able to set the countdown timer to a specified time.
+* As a user I want to have a simple password to limit access to the timer.
+
 ##MVP
 * There is a home navigation page.
 * The user can choose a picture from a picture gallery and place it on an "ask" panel.
