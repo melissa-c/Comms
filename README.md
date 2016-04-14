@@ -1,31 +1,26 @@
 # Comms Companion
 A communication tool for children with alternative abilities in speech and language.
 
-Planning  
-========
+##Planning
 Schematics, learning objectives, technology, roles, schedules.
 
-Project Description
--------------------
+##Project Description
 A communication tool to assist children with alternative abilities in speech and language to communicate on a day to day basis.
 
-App link:
----------
-to be determined.
+##App link:
+to be added.
 
-Github workflow
----------------
+##Github workflow
 * Master always has passing tests.
 * Pull requests approved by Git master
 * Features should be built on branches and the merged via pull request.
 
-Team Roles / Accountabilities
------------------------------
+##Team Roles / Accountabilities
 
 ###Git Master - Mel.i.am
 * Approve pull requests.
 
-###Owner / Fun Master - Glorious Leader
+###Owner / Fun Master - The Glorious Leader
 * Approve product direction and requirements.
 * Organise and enforce mandatory fun times at 3pm.
 * Syph manager.
@@ -39,8 +34,7 @@ Team Roles / Accountabilities
 * Manages workflow and schedule.
 * Oversee deployment.
 
-Typical Day Plan
-----------------
+##Typical Day Plan
 * Hours are 9am - 8pm until we hit MVP and then we can review.
 * Review and stand up at 9am.
 * 11am mindfulness and coffee break.
@@ -51,30 +45,26 @@ Typical Day Plan
 * 8pm guilt free home time.
 
 
-Learning Objectives
-----------------
+##Learning Objectives and Technologies
 * React and Babel (or possibly Angular?)
-* Enzyme testing and Nightwatch
-* Postgres Database
+* Enzyme and Nightwatch
+* Postgres database
 * Webpack
 * Heroku
 
-User Stories
-------------  
-
+##User Stories
+to be added
  
-MVP
------
+##MVP
 * There is a home navigation page.
 * The user can choose a picture from a picture gallery and place it on an "ask" panel.
-* There is a "response" countdown timer animation.
+* There is a "response" countdown timer animation to help users visualise the time remaining for their request to be completed.
+* The countdown timer has admin properties with password protection.
 
-Wireframes
-------------
-XXX
+##Wireframes
+to be added
 
-Stretches
------------
+##Stretches
 * The picture gallery contains more abstract concepts.
 * There is an "about me" section with details and photos of emergency contacts.
 * There is a "schedule" section showing the daily schedule with pictures and words.
