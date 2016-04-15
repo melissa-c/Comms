@@ -3,6 +3,13 @@
 module.exports = {
 
   development: {
+    client: 'sqlite3',
+    connection: {
+      filename: './dev.sqlite3'
+    }
+  },
+
+  staging: {
     client: 'postgresql',
     connection: {
       database: 'commspics',
@@ -14,23 +21,7 @@ module.exports = {
       max: 10
     },
     migrations: {
-      tableName: 'gallery'
-    }
-  },
-
-  staging: {
-    client: 'postgresql',
-    connection: {
-      database: 'commspics',
-      user:     'admin',
-      password: 'LordByron'
-    },
-    pool: {
-      min: 2,
-      max: 10
-    },
-    migrations: {
-      tableName: 'gallery'
+      tableName: 'knex_migrations'
     }
   },
 
@@ -38,15 +29,15 @@ module.exports = {
     client: 'postgresql',
     connection: {
       database: 'commspics',
-      user:     'admin',
-      password: 'LordByron'
+      user:     process.env.PG_DATABASE_USER,
+      password: process.env.PG_DATABASE_PASSWORD
     },
     pool: {
       min: 2,
       max: 10
     },
     migrations: {
-      tableName: 'gallery'
+      tableName: 'knex_migrations'
     }
   }
 
