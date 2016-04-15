@@ -12,7 +12,22 @@ function clickfun(){
 
 function parentAccess () {
 
-  console.log ('grant parent access')
+  //console.log ('grant parent access')
+  var timer = $('#countdown').countdown360({
+    radius: 60,
+    seconds: 20,
+    label:['sec', 'secs'],
+    fontColor: '#blue',
+    autostart: false,
+    onComplete : function () {
+      console.log('done')
+    }
+
+
+  })
+
+  countdown.start()
+
 }
 
 
