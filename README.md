@@ -19,20 +19,20 @@ to be added.
 
 ##Team Roles / Accountabilities
 
-###Owner / Fun Master - The Glorious Leader
+####Owner / Fun Master - The Glorious Leader
 * Approve product direction and requirements.
 * Organise and enforce mandatory fun times.
 * Syph manager.
 
-###Git Master - Mel.i.am
+####Git Master - Mel.i.am
 * Approve pull requests.
 
-###Scrum Master / Communicator - The Zen Master
+####Scrum Master / Communicator - The Zen Master
 * Does agile tasks.
 * Project manages.
 * Zen manager.
 
-###Deployment Master / Scheduler - Tobylerone
+####Deployment Master / Scheduler - Tobylerone
 * Manages workflow and schedule.
 * Oversee deployment.
 
