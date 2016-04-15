@@ -27,6 +27,9 @@
   },
   "homepage": "https://github.com/author/CommsCompanion",
   "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "path": "^0.12.7",
     "react": "^15.0.1",
     "react-dom": "^15.0.1"
   },
