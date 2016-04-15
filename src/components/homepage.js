@@ -3,14 +3,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
-module.exports = class HomePageBtn extends React.Component {
+module.exports = class HomePage extends React.Component {
   constructor(props){
    super(props)
   }
   render (){
-   return  <div><button className='navBtn'>{this.props.txt}</button></div>
+   return  <div>Home Page Route</div>
       
   }
 }
-
 
