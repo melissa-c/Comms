@@ -46,39 +46,12 @@ to be added.
 * 7pm: Wrap up and dinner.
 * 8pm: Home time.
 
-##Learning Objectives and Technologies
-* React and Babel (or possibly Angular)
-* Enzyme and Nightwatch
-* Postgres database
-* Webpack
-* Heroku
+##[Learning Objectives and Technologies](readMeLinks/learningObjs.md)
 
-##User Stories
-* As a user I want to have an easy to use navigation page.
-* As a user I want to have a clear "ask" board at the top of the screen.
-* As a user I want to have a database of pictures to choose from.
-* As a user I want to easily view pictures from the gallery with quick jump/category buttons.
-* As a user I want to scroll through the picture gallery.
-* As a user I want to select an image to display.
-* As a user I want to have my recently selected images in a convenient place so I can reuse them easily.
-* As a user I want to see a visual representation of how long I have to wait for my request to be completed.
-* As a user I want to have quick access to the timer.
-* As a user I want to be able to set the countdown timer to a specified time.
-* As a user I want to have a simple password to limit access to the timer.
-* As a user I want to be able to close the timer.
+##[User Stories](readMeLinks/userStories.md)
 
-##MVP
-* There is a home navigation page.
-* The user can choose a picture from a picture gallery and place it on an "ask" panel.
-* There is a "response" countdown timer animation to help users visualise the time remaining for their request to be completed.
-* The countdown timer has admin properties with password protection.
+##[MVP](readMeLinks/mvp.md)
 
-##Wireframes
-to be added
+##[Wireframes](readMeLinks/wireframes.md)
 
-##Stretches
-* The picture gallery contains more abstract concepts.
-* There is an "about me" section with details and photos of emergency contacts.
-* There is a "schedule" section showing the daily schedule with pictures and words.
-* The "schedule" section has admin properties with password protection and ability to add custom items.
-* There is a "social stories" section with photos and symbols to explain interruptions to routine.
+##[Stretches](readMeLinks/stretch.md)
