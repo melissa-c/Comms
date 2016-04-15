@@ -9,7 +9,7 @@ module.exports = class HomePageBtn extends React.Component {
   }
   render (){
   	console.log(this.props, "*")
-   return  <div><button className='navBtn'>{this.props.txt}</button></div>
+   return  <div><button className='navBtn' onClick={this.props.onClick}>{this.props.txt}</button></div>
       
   }
 }
