@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var express =require('express')
 var bodyParser =require('body-parser')
 var path = require('path')
@@ -19,3 +20,22 @@ if (require.main === module) {
 }
 
 module.exports =app
+=======
+//import react and react-dom 
+import React from 'react'
+import ReactDOM from 'react-dom'
+//import homepage button component
+import HomePageBtn from './src/components/homePageBtn'
+
+var btnNames = ['Schedule', 'I would like...', 'I can...', 'Social Stories']
+var buttons = btnNames.map(function(name, id){
+	
+	return <HomePageBtn key={id} txt={name} />
+});
+
+
+	ReactDOM.render(
+		<div> {buttons} </div>, document.getElementById('content')
+
+)
+>>>>>>> d05dc485adf5837b7a0e5ffaefcef6f645a951ed
