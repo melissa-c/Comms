@@ -5,6 +5,7 @@ import {Router, Route, hashHistory} from 'react-router'
 
 import HomePage from './src/components/homepage'
 //import AskPage from './src/components/askpage'
+import Timer from './src/components/timer'
 
 
 
