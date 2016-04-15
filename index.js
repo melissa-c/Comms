@@ -1,18 +1,18 @@
-console.log("welcome to CommsCompanion")
-'use strict'
- 
+//import react and react-dom 
 import React from 'react'
 import ReactDOM from 'react-dom'
+//import homepage button component
+import homepagebtn from './src/components/homePageBtn'
+console.log(homepagebtn)
 
-class Test extends React.Component {
-	render (){
-			return 
-			<div>
-				<button>{}</button><br/>
-			</div>
-	}
-}
- ReactDOM.render(<Test txt ="hey there"/>, document.getElementById('content'))
-
+var btnNames = ['Schedule', 'I would like', 'I can', 'Social Stories']
+var buttons = btnNames.map(function(name, id){
+	
+	return <homepagebtn key={id} txt={name} />
+});
 
 
+	ReactDOM.render(
+		<div> {buttons} </div>, document.getElementById('content')
+
+)
