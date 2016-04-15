@@ -32,8 +32,8 @@ var buttons = btnNames.map(function(name, id){
 });
 
 
-// 	ReactDOM.render(
-// 		<div> {buttons} </div>, document.getElementById('content')
+	ReactDOM.render(
+		<div> {buttons} </div>, document.getElementById('content')
 
-// )
+)
 
