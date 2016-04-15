@@ -9,10 +9,16 @@ module.exports = class HomePageBtn extends React.Component {
   }
   render (){
    return  (
+  <div>
    	<div className="imgGallery">
-    image gallery
-   		</div>
-   		)
+      image gallery
+   	</div>
+    <button className='yellow'></button>
+    <button className='blue'></button>
+    <button className='red'></button>
+    <button className='green'></button>
+   </div>
+  )
       
   }
 }
