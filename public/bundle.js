@@ -1,1 +1,0 @@
-console.error("SyntaxError: /home/isha/EDA/Comms/src/components/app.js: Unterminated JSX contents (11:9) while parsing file: /home/isha/EDA/Comms/src/components/app.js");
