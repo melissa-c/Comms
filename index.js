@@ -1,4 +1,4 @@
-var express = require('express')
+var express =require('express')
 var bodyParser =require('body-parser')
 var path = require('path')
 var http= require('http')
@@ -9,12 +9,11 @@ var server = http.createServer(app)
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: false}))
-app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static('index.html'))
 
 if (require.main === module) {
 	server.listen(port, function(){
 		console.log('Coms server listening on port: ', port)
-
 	})
 
 }
