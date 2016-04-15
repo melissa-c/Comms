@@ -3,12 +3,19 @@ main {
 	text-align: center;
  	border: 1px solid black;
  	height: 500px;
+ 	width: 600px;
 }
 
 .navBtn {
 	height: 50px;
 	width:500px; 
 	margin: 10px;
-	
-
 }
+
+.iWouldLike{
+	display: flex;
+	height: 100px;
+	width: 100px;
+	background-color: #ffffe6; 
+	align-items:center;
+	}
