@@ -8,11 +8,9 @@ module.exports = class HomePageBtn extends React.Component {
    super(props)
   }
   render (){
-   return  (
-   	<div className="imgGallery">
-    image gallery
-   		</div>
-   		)
+   return  <div><button className='backBtn'></button></div>
       
   }
 }
+
+

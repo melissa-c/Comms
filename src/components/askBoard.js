@@ -9,9 +9,9 @@ module.exports = class HomePageBtn extends React.Component {
   }
   render (){
    return  (
-   	<div>
-   		<div className="askBoard">I would like</div>
-   		<div className="askBoard">I would like</div>
+   	<div className="askBoard">
+   		<div>I would like</div>
+   		<div><img></img></div>
    		</div>
    		)
       

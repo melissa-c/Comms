@@ -9,10 +9,9 @@ module.exports = class HomePageBtn extends React.Component {
   }
   render (){
    return  (
-   	<div className="imgGallery">
-    image gallery
+   	<div className="recentImgs">
+    Recent images
    		</div>
    		)
-      
   }
 }

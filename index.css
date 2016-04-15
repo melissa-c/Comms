@@ -12,10 +12,20 @@ main {
 	margin: 10px;
 }
 
-.iWouldLike{
+.askBoard{
 	display: flex;
-	height: 100px;
-	width: 100px;
-	background-color: #ffffe6; 
-	align-items:center;
-	}
+	height: 90px;
+	width: 400px;
+	background-color: #ffffe6;
+	border: 1px solid black; 
+}
+
+.imgGallery{
+	border: 1px solid black; 
+}
+
+.recentImgs{
+	border: 1px solid black; 
+}
+
+

@@ -3,6 +3,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import HomePageBtn from './homePageBtn'
+import ParentAdmin from './parentAdminBtn'
+
+import {Router, Route} from 'react-router'
 
 
 // var btnNames = ['Schedule', 'I would like...', 'I can...', 'Social Stories']
@@ -11,8 +14,8 @@ import HomePageBtn from './homePageBtn'
 // 	return <HomePageBtn key={id} txt={name} />
 //});
 
-function clickfun(){
-	console.log('yea')
+function goToAskPage(){
+	window.location = "/#/askpage"
 }
 
 
@@ -24,8 +27,9 @@ module.exports = class HomePage extends React.Component {
    return  (
   		<div>
   			<HomePageBtn txt={"Schedule"} />
-  			<HomePageBtn txt={"I would like..."} onClick={clickfun} />
+  			<HomePageBtn txt={"I would like..."} onClick={goToAskPage} />
   			<HomePageBtn txt={"I can..."} />
+        <ParentAdmin />
    		</div>
    		)
   }

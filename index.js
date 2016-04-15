@@ -12,10 +12,8 @@ import AskPage from './src/components/askpage'
 
 	ReactDOM.render((
 		<Router history={hashHistory}>
-
-		<Route path='/' component={HomePage}/>
-		<Route path='askpage' component={AskPage}/>
-
+			<Route path='/' component={HomePage}/>
+			<Route path='askpage' component={AskPage}/>
 		</Router>
 
 		), document.getElementById('content')
