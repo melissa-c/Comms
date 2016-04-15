@@ -5,19 +5,19 @@ import {Router, Route, hashHistory} from 'react-router'
 
 import HomePage from './src/components/homepage'
 //import AskPage from './src/components/askpage'
-import Timer from './src/components/timer'
+//import Timer from './src/components/timer'
 
 
 
 
 
-	ReactDOM.render((
+	ReactDOM.render(
 		<Router history={hashHistory}>
 
-		<Route path='/' component={HomePage}/>
+		<Route path='/' component={HomePage} > 
+		</Route>
+		</Router>,
 
-		</Router>
-
-		), document.getElementById('content')
+	 document.getElementById('content')
 )
 
