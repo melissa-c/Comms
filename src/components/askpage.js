@@ -7,9 +7,6 @@ import ImgGallery from './imgGallery'
 import RecentImgs from './recentImgs'
 import BackBtn from './backBtn'
 
-function back(){
-  window.location = '/#/'
-}
 
 module.exports = class HomePage extends React.Component {
   constructor(props){
@@ -24,5 +21,9 @@ module.exports = class HomePage extends React.Component {
     </div>)
       
   }
+}
+
+function back(){
+  window.location = '/#/'
 }
 
