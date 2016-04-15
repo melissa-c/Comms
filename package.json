@@ -30,7 +30,6 @@
   "dependencies": {
     "body-parser": "^1.15.0",
     "express": "^4.13.4",
-    "nodemon": "^1.9.1",
     "path": "^0.12.7",
     "react": "^15.0.1",
     "react-dom": "^15.0.1",
@@ -44,6 +43,7 @@
     "browserify": "^13.0.0",
     "budo": "^8.2.1",
     "gh-pages": "^0.11.0",
+    "nodemon": "^1.9.1",
     "smokestack": "^3.3.0",
     "tap-spec": "^4.0.2",
     "tape": "^4.0.0",
