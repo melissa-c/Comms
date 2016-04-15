@@ -2,13 +2,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 //import homepage button component
-import homepagebtn from './src/components/homePageBtn'
-console.log(homepagebtn)
+import HomePageBtn from './src/components/homePageBtn'
 
-var btnNames = ['Schedule', 'I would like', 'I can', 'Social Stories']
+var btnNames = ['Schedule', 'I would like...', 'I can...', 'Social Stories']
 var buttons = btnNames.map(function(name, id){
 	
-	return <homepagebtn key={id} txt={name} />
+	return <HomePageBtn key={id} txt={name} />
 });
 
 

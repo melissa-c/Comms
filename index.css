@@ -1,3 +1,13 @@
 main {
-  text-align: center;
+	font-family: Arial;
+	text-align: center;
+ 	border: 1px solid black;
+ 	height: 500px;
+}
+
+.navBtn {
+	height: 50px;
+	width:500px; 
+	margin: 10px;
+
 }
