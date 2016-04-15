@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom'
 import AskBoard from './askBoard'
 import ImgGallery from './imgGallery'
 import RecentImgs from './recentImgs'
+import BackBtn from './backBtn'
 
 
 module.exports = class HomePage extends React.Component {
@@ -16,6 +17,7 @@ module.exports = class HomePage extends React.Component {
       <AskBoard />
       <RecentImgs />
       <ImgGallery />
+      <BackBtn />
     </div>)
       
   }
