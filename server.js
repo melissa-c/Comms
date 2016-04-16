@@ -6,12 +6,12 @@ var accessDB = 'postgres://testuser:test@localhost/flowers'
 
 var Client = new pg.Client(accessDB)
 
-
-
+console.log('server')
 
 
 
 function getDB(){
+	console.log('inside getDB')
 	Client.connect(function(err){
 		if(err){
 			return console.log('connection error', err)
@@ -28,8 +28,9 @@ function getDB(){
 	})
 }
 
-//app.get('/test', function(req,res){
+app.get('/database', function(req,res){
   getDB(function(err, data){
+  	res.json(data)
 
   })
-    
+})
