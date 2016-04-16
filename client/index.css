@@ -1,5 +1,5 @@
 body {
-  font-family: helvetica, sans-serif;
+  font-family: 'Short Stack', helvetica, sans-serif;
   margin: 0 auto;
   max-width: 1000px;
 }
@@ -19,7 +19,7 @@ footer {
 
 header {
   background: #4d4d4d; 
-  height: 80px;
+  height: 95px;
   letter-spacing: .2em;
   padding: 10px;
 }
@@ -33,7 +33,12 @@ h1 {
   color: #fff;
   display: inline-block;
   font-size: 40px;
-  margin: 15px;
+  line-height: 1em;
+  margin: 0;
+}
+
+h1 span {
+  font-size: 45px;
 }
 
 button {
@@ -42,8 +47,9 @@ button {
   -khtml-user-select: none;
   -moz-user-select: none;
   user-select: none;
-  cursor: pointer;
+  font-family: 'Short Stack', cursive;
   outline: none;
+  cursor: pointer;
 }
 
 .homeBtn,
@@ -126,10 +132,13 @@ button:active .labels {
   padding: 36px 0 0;
 }
 .askBoard {
-  background-color: #ffffe6;
+  background-color: #fff;
   border: 1px solid #000;
-  display: flex;
+  border-radius: 5px;
+  font-size: 30px;
+  text-align: left;
   height: 90px;
+  padding: 20px;
   width: 400px;
 }
 
