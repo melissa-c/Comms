@@ -25,8 +25,8 @@ header {
 }
 
 main {
-  height: 600px;
-  padding: 20px;
+  height: 700px;
+  padding: 20px 10px;
 }
 
 h1 {
@@ -135,20 +135,36 @@ button:active .labels {
   background-color: #fff;
   border: 1px solid #000;
   border-radius: 5px;
-  font-size: 30px;
-  text-align: left;
-  height: 90px;
-  padding: 20px;
-  width: 400px;
-}
-
-.imgGallery {
-  border: 1px solid #000;
   display: flex;
+  font-size: 40px;
+  height: 90px;
+  margin: 20px 20px 40px;
+  padding: 20px;
+  text-align: left;
 }
 
 .recentImgs {
+  background-color: #fff;
   border: 1px solid #000;
+  border-radius: 5px;
+  display: flex;
+  font-size: 20px;
+  height: 110px;
+  margin: 20px;
+  padding: 10px;
+  text-align: left;
+}
+
+.imgGallery {
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  display: flex;
+  font-size: 20px;
+  height: 300px;
+  margin: 20px;
+  padding: 10px;
+  text-align: left;
 }
 
 /* @media
