@@ -16,14 +16,15 @@ module.exports = {
     migrations: {
       tableName: 'knex_migrations'
     }
+
   },
 
   staging: {
     client: 'postgresql',
     connection: {
-      database: 'commspics',
-      user:     process.env.PG_DATABASE_USER,
-      password: process.env.PG_DATABASE_PASSWORD
+      database: 'my_db',
+      user:     'username',
+      password: 'password'
     },
     pool: {
       min: 2,
@@ -34,7 +35,7 @@ module.exports = {
     }
   },
 
-  production: {
+  production: process.env.DATABASE_URL || {
     client: 'postgresql',
     connection: {
       database: 'commspics',
