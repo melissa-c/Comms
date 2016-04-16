@@ -16,7 +16,6 @@ module.exports = class ImgGallery extends React.Component {
     Request
     .get('/database')
     .end(function(err, res){
-      console.log(res.text, 'text')
       this.setState({images: JSON.parse(res.text)})
       
     }.bind(this))
@@ -29,7 +28,7 @@ module.exports = class ImgGallery extends React.Component {
   <div>
     <div className="imgGallery">
       {this.state.images.map(function(image){
-        return(<div><img src={image.filepath}></img></div>)
+        return(<img name={image.name} src={image.filepath}  ></img>)
       })}
    	</div>
     
@@ -41,4 +40,10 @@ module.exports = class ImgGallery extends React.Component {
   )
       
   }
+}
+
+function imgChoice(e) {
+  var imgname = e.target.src
+  console.log(imgname,'here')
+  return imgname
 }

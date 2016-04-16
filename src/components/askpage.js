@@ -8,16 +8,17 @@ import RecentImgs from './recentImgs'
 import BackBtn from './backBtn'
 
 
-module.exports = class HomePage extends React.Component {
+module.exports = class AskPage extends React.Component {
   constructor(props){
    super(props)
   }
   render (){
    return (<div>
+    
       <AskBoard />
       <RecentImgs />
       <ImgGallery />
-      <BackBtn  onClick={back}/>
+      <BackBtn onClick={back}/>
     </div>)
       
   }
