@@ -7,17 +7,18 @@ body {
 header,
 main, 
 footer {
-  background: #ffffb3; 
-  background-color: #ffffcc;
+  background: #ffffcc; 
+  background-color: #ffffe6;
   background-image:
     linear-gradient(
-      #ffffcc, #ffffb3
+      #ffffe6, #ffffcc
     );
+  min-width: 600px;
   text-align: center;
 }
 
 header {
-  background: #3d3d29; 
+  background: #4d4d4d; 
   height: 80px;
   letter-spacing: .2em;
   padding: 10px;
@@ -36,6 +37,11 @@ h1 {
 }
 
 button {
+  box-shadow: 3px 3px #666;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
   cursor: pointer;
   outline: none;
 }
@@ -43,29 +49,49 @@ button {
 .homeBtn,
 .backBtn,
 .parentAdmin {
+  border-radius: 5px;
   float: left;
   font-size: 20px;
   height: 80px;
+  padding: 2px;
   width: 80px;
 }
 
 .timerBtn {
   background-color: #fff;
+  border-radius: 5px;
   float: right;
   font-size: 20px;
   height: 80px;
+  padding: 2px;
   width: 80px;
 }
 
+.homeBtn:active,
+.backBtn:active,
+.parentAdmin:active,
+.timerBtn:active {
+  background-color: #f2f2f2;
+  padding: 6px 2px 0;
+}
+
 .navBtn {
-  border-radius: 15px;
+  border-radius: 10px;
   font-size: 30px;
   height: 100px;
   letter-spacing: .2em;
   margin: 20px;
+  padding: 10px;
   text-align: left;
-  width: 600px;
+  width: 500px;
 }
+
+.navBtn:active {
+  background-color: #f2f2f2;
+  padding: 12px 10px 0;
+}
+
+
 
 .askBoard {
   background-color: #ffffe6;
