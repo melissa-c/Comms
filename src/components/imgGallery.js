@@ -11,11 +11,7 @@ module.exports = class ImgGallery extends React.Component {
 
    
   }
-  // getInitialState(){
-  //   return {
-  //     images: [{id: 0, name: "", category: "", filepath: ""}]
-  //   }
-  //}
+
   componentDidMount(){
     Request
     .get('/database')
