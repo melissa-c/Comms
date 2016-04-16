@@ -4,8 +4,8 @@
   "description": "it's a real sweet app",
   "main": "index.js",
   "scripts": {
-    "start": "budo . -d --serve bundle.js --live",
-    "dev:watch": "watchify ./src/components/app.js -o bundle.js -dv -t babelify",
+    "start": "nodemon server.js ",
+    "watch": "watchify ./index.js -o client/bundle.js -dv -t babelify",
     "build": "browserify . -o bundle.js -g uglifyify",
     "test": "browserify test.js | smokestack | tap-spec",
     "dist": "mkdir -p dist && bash -c 'cp *.{js,html,css} dist'",

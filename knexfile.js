@@ -3,9 +3,18 @@
 module.exports = {
 
   development: {
-    client: 'sqlite3',
+     client: 'postgresql',
     connection: {
-      filename: './dev.sqlite3'
+      database: 'commspics',
+       user:     'testuser',
+      password: 'test'
+    },
+    pool: {
+      min: 2,
+      max: 10
+    },
+    migrations: {
+      tableName: 'knex_migrations'
     }
   },
 
