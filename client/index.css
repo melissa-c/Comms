@@ -51,17 +51,24 @@ button {
 .parentAdmin {
   border-radius: 5px;
   float: left;
-  font-size: 20px;
   height: 80px;
   padding: 2px;
   width: 80px;
+}
+
+.homeBtn img,
+.parentAmin img {
+  height: 75%;
+}
+
+.timerBtn img {
+  height: 90%;
 }
 
 .timerBtn {
   background-color: #fff;
   border-radius: 5px;
   float: right;
-  font-size: 20px;
   height: 80px;
   padding: 2px;
   width: 80px;
@@ -72,6 +79,8 @@ button {
 .parentAdmin:active,
 .timerBtn:active {
   background-color: #f2f2f2;
+  font-size: 20px;
+  font-weight: bold;
   padding: 6px 2px 0;
 }
 
@@ -81,18 +90,41 @@ button {
   height: 100px;
   letter-spacing: .2em;
   margin: 20px;
-  padding: 10px;
+  padding: 20px;
   text-align: left;
   width: 500px;
 }
 
 .navBtn:active {
   background-color: #f2f2f2;
-  padding: 12px 10px 0;
+  padding: 8px 20px 0;
 }
 
+button .labels {
+  border-radius: 5px;
+  display: none;
+  font-size: 20px;
+  font-weight: bold;
+  height: 50px;
+  margin: -4px -2px;
+  padding: 30px 0 0;
+  text-align: center;
+  width: 80px;
+}
 
-
+button:hover .labels,
+button:active .labels {
+  background: #f2f2f2;
+  color: #000;
+  display: block;
+  opacity: .7;
+  position: absolute;
+  top: 15px;
+}
+button:active .labels {
+  height: 44px;
+  padding: 36px 0 0;
+}
 .askBoard {
   background-color: #ffffe6;
   border: 1px solid #000;
