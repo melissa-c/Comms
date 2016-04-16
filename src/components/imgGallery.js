@@ -8,7 +8,6 @@ module.exports = class ImgGallery extends React.Component {
   constructor(props){
    super(props)
    this.state = {images: []}
-
    
   }
 
@@ -20,17 +19,20 @@ module.exports = class ImgGallery extends React.Component {
       
     }.bind(this))
   
+  console.log(this.props.onClick, 'props')
     
   }
 
   render (){
+
    return  (
   <div>
     <div className="imgGallery">
       {this.state.images.map(function(image){
-        return(<img name={image.name} src={image.filepath}  ></img>)
+        return(<div><img src={image.filepath} ></img></div>)
       })}
    	</div>
+    
     
     <button className='yellow'></button>
     <button className='blue'></button>
