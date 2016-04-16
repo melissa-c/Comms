@@ -1,82 +1,90 @@
 body {
+  font-family: helvetica, sans-serif;
   margin: 0 auto;
   max-width: 1000px;
 }
 
-body > div {
-  display: flex;
-  flex-flow: wrap;
-}
-header, main, footer {
-  background: #CCC; border-radius: 5px; margin: 3px; padding: 20px;
-}
-header {
-  order: 1;
-  height: 30px;
+header,
+main, 
+footer {
+  background: #ffffb3; 
+  background-color: #ffffcc;
+  background-image:
+    linear-gradient(
+      #ffffcc, #ffffb3
+    );
   text-align: center;
-  flex: 0 1 100%;
 }
 
-header >h1{
-  margin: 0;
-  display: inline-block;
-}
-
-#home {
-  float: left;
-  height: 40px;
-  width: 40px;
+header {
+  background: #3d3d29; 
+  height: 80px;
+  letter-spacing: .2em;
+  padding: 10px;
 }
 
 main {
-  order: 3;
-  text-align: center;
   height: 600px;
-  flex: 1;
+  padding: 20px;
 }
 
-#timer {
-  height: 40px;
-  width: 40px;
-  background-color: #ffffe6;
-  border: 1px solid black;
+h1 {
+  color: #fff;
+  display: inline-block;
+  font-size: 40px;
+  margin: 15px;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+}
+
+.homeBtn,
+.backBtn,
+.parentAdmin {
+  float: left;
+  font-size: 20px;
+  height: 80px;
+  width: 80px;
+}
+
+.timerBtn {
+  background-color: #fff;
   float: right;
-  position: relative;
+  font-size: 20px;
+  height: 80px;
+  width: 80px;
 }
 
 .navBtn {
+  border-radius: 15px;
+  font-size: 30px;
   height: 100px;
-  width: 400px;
-  margin: 10px;
-  object-position: center;
-  font-size: 25px;
-}
-.parentAdmin {
-  height: 50px;
-  width: 200px;
-  margin: 10px;
-  object-position: center;
-  font-size: 25px;
+  letter-spacing: .2em;
+  margin: 20px;
+  text-align: left;
+  width: 600px;
 }
 
-.askBoard{
+.askBoard {
+  background-color: #ffffe6;
+  border: 1px solid #000;
   display: flex;
   height: 90px;
   width: 400px;
-  background-color: #ffffe6;
-  border: 1px solid black;
 }
 
-.imgGallery{
-  border: 1px solid black;
+.imgGallery {
+  border: 1px solid #000;
   display: flex;
 }
 
-.recentImgs{
-  border: 1px solid black;
+.recentImgs {
+  border: 1px solid #000;
 }
 
-@media
+/* @media
   (min-device-width: 800px)
   and (max-device-width: 1280px) {
 
@@ -92,4 +100,4 @@ main {
   (max-device-width: 1280px)
   and (orientation: landscape) {
 
-}
+} */
