@@ -17,9 +17,13 @@ module.exports = class HomePage extends React.Component {
       <AskBoard />
       <RecentImgs />
       <ImgGallery />
-      <BackBtn />
+      <BackBtn  onClick={back}/>
     </div>)
       
   }
+}
+
+function back(){
+  window.location = '/#/'
 }
 
