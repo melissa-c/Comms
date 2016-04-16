@@ -1,0 +1,95 @@
+body {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+body > div {
+  display: flex;
+  flex-flow: wrap;
+}
+header, main, footer {
+  background: #CCC; border-radius: 5px; margin: 3px; padding: 20px;
+}
+header {
+  order: 1;
+  height: 30px;
+  text-align: center;
+  flex: 0 1 100%;
+}
+
+header >h1{
+  margin: 0;
+  display: inline-block;
+}
+
+#home {
+  float: left;
+  height: 40px;
+  width: 40px;
+}
+
+main {
+  order: 3;
+  text-align: center;
+  height: 600px;
+  flex: 1;
+}
+
+#timer {
+  height: 40px;
+  width: 40px;
+  background-color: #ffffe6;
+  border: 1px solid black;
+  float: right;
+  position: relative;
+}
+
+.navBtn {
+  height: 100px;
+  width: 400px;
+  margin: 10px;
+  object-position: center;
+  font-size: 25px;
+}
+.parentAdmin {
+  height: 50px;
+  width: 200px;
+  margin: 10px;
+  object-position: center;
+  font-size: 25px;
+}
+
+.askBoard{
+  display: flex;
+  height: 90px;
+  width: 400px;
+  background-color: #ffffe6;
+  border: 1px solid black;
+}
+
+.imgGallery{
+  border: 1px solid black;
+  display: flex;
+}
+
+.recentImgs{
+  border: 1px solid black;
+}
+
+@media
+  (min-device-width: 800px)
+  and (max-device-width: 1280px) {
+
+}
+
+@media
+  (max-device-width: 800px)
+  and (orientation: portrait) {
+
+}
+
+@media
+  (max-device-width: 1280px)
+  and (orientation: landscape) {
+
+}
