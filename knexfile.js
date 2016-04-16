@@ -3,10 +3,10 @@
 module.exports = {
 
   development: {
-     client: 'postgresql',
+    client: 'postgresql',
     connection: {
       database: 'commspics',
-       user:     'testuser',
+      user:     'testuser',
       password: 'test'
     },
     pool: {
