@@ -19,7 +19,7 @@ footer {
   top: 0;
 }
 
-.TESTvisible{
+.timerDivVisible{
   z-index: 1;
 display: block;
 height:600px;
@@ -39,7 +39,6 @@ main {
     linear-gradient(
       #ffffe6, #ffffcc
     );
-  background: red; 
   height: 700px;
   padding: 0 0 20px;
 }
@@ -83,8 +82,15 @@ button {
   height: 75%;
 }
 
-.timerBtn img {
+.navBtn img {
   height: 90%;
+  margin-right: 20px;
+}
+
+.timerBtn img {
+  display: inline-block;
+  height: 100%;
+  margin-right: 20px; 
 }
 
 .timerBtn {

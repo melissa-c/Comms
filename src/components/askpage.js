@@ -5,7 +5,6 @@ import ReactDOM from 'react-dom'
 import AskBoard from './askBoard'
 import ImgGallery from './imgGallery'
 import RecentImgs from './recentImgs'
-import BackBtn from './backBtn'
 import Header from './header'
 
 var imgLocation = 'test'
@@ -37,9 +36,9 @@ module.exports = class AskPage extends React.Component {
       <AskBoard text= {this.state.imageURL}/>
       <RecentImgs text= {this.state.imageURL} />
       <ImgGallery onClick={this.update.bind(this)}/>
-      
+
     </div>
-    </div>)
-      
+    </div>
+    )      
   }
 }

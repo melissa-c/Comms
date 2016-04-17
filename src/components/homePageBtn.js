@@ -8,8 +8,15 @@ module.exports = class HomePageBtn extends React.Component {
    super(props)
   }
   render (){
-   return  <div><button className='navBtn' onClick={this.props.onClick}><img src={this.props.test}></img>{this.props.txt}</button></div>
-      
+
+    return  (
+      <div>
+        <button className='navBtn' onClick={this.props.onClick}>
+          <img src={this.props.img} />
+          {this.props.txt}
+        </button>
+      </div>
+    )
   }
 }
 

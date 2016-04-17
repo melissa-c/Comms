@@ -3,12 +3,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+
 function back(){
   window.location = '/#/';
 }
 
 function counter(){
-  document.getElementById('TESTY').className = "TESTvisible"
+  document.getElementById('TESTY').className = "timerDivVisible"
   var loader = document.getElementById('loader')
 //   ,   border = document.getElementById('border')
   ,   alpha  = 0
@@ -43,27 +44,48 @@ function counter(){
 
 
 
+
 module.exports = class Header extends React.Component {
   constructor(props){
    super(props)
   }
   render (){
-   return  (<div className="header">
-    <button onClick={back}>button home</button>
-    <h2>COMMS COMPANION</h2>
-    <button onClick={counter}>button timer</button>
-    <div id='TESTY' className='hidden'>
-    <svg width="400" height="400" viewbox="0 0 250 250">
-        <path id="border" transform="translate(125, 125)"/>
-        <path id="loader" transform="translate(125, 125) scale(.8)"/>
-      </svg>
+
+
+   return  (
+    <div className="header">
+
+      <button className="homeBtn" onClick={back}> 
+        <img src="icon/home.png" />
+        <p className="labels">home</p>
+      </button>
+
+      <button className="parentAdmin">
+        <img src="icon/lock.png" />
+        <p className="labels">admin</p>        
+      </button>
+
+      <h1><span>Comms</span><br /> Companion</h1>
+
+      <button className="timerBtn" onClick={counter}>
+        <img src="icon/FPO_timer.png" />
+        <p className="labels">timer</p>  
+      </button>
+
+      <div id='TESTY' className='hidden'>
+        <svg width="400" height="400" viewbox="0 0 250 250">
+            <path id="border" transform="translate(125, 125)"/>
+            <path id="loader" transform="translate(125, 125) scale(.8)"/>
+        </svg>
       </div>
     
    
    		
    		</div>
 
-   		)
-      
+
+     		
+   		
+   	) 
   }
 }
