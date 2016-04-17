@@ -4,41 +4,47 @@ body {
   max-width: 1000px;
 }
 
-header,
+.header,
 main, 
 footer {
+  min-width: 600px;
+  text-align: center;
+}
+
+.header {
+  background: #4d4d4d; 
+  height: 120px;
+  letter-spacing: .2em;
+  margin-bottom: 40px;
+  top: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+main {
   background: #ffffcc; 
   background-color: #ffffe6;
   background-image:
     linear-gradient(
       #ffffe6, #ffffcc
     );
-  min-width: 600px;
-  text-align: center;
-}
-
-header {
-  background: #4d4d4d; 
-  height: 95px;
-  letter-spacing: .2em;
-  padding: 10px;
-}
-
-main {
+  background: red; 
   height: 700px;
-  padding: 20px 10px;
+  padding: 0 0 20px;
 }
 
 h1 {
   color: #fff;
   display: inline-block;
-  font-size: 40px;
+  font-size: 45px;
   line-height: 1em;
-  margin: 0;
+  margin: 15px;
 }
 
 h1 span {
-  font-size: 45px;
+  font-size: 50px;
 }
 
 button {
@@ -58,12 +64,13 @@ button {
   border-radius: 5px;
   float: left;
   height: 80px;
+  margin: 20px;
   padding: 2px;
   width: 80px;
 }
 
 .homeBtn img,
-.parentAmin img {
+.parentAdmin img {
   height: 75%;
 }
 
@@ -76,6 +83,7 @@ button {
   border-radius: 5px;
   float: right;
   height: 80px;
+  margin: 20px;
   padding: 2px;
   width: 80px;
 }
@@ -112,7 +120,7 @@ button .labels {
   font-size: 20px;
   font-weight: bold;
   height: 50px;
-  margin: -4px -2px;
+  margin: 4px -2px;
   padding: 30px 0 0;
   text-align: center;
   width: 80px;
@@ -127,6 +135,7 @@ button:active .labels {
   position: absolute;
   top: 15px;
 }
+
 button:active .labels {
   height: 44px;
   padding: 36px 0 0;
@@ -137,7 +146,7 @@ button:active .labels {
   border: 1px solid #000;
   border-radius: 5px;
   display: flex;
-  font-size: 40px;
+  font-size: 70px;
   height: 90px;
   margin: 20px 20px 40px;
   padding: 20px;
@@ -170,9 +179,23 @@ button:active .labels {
 
 .indAskImg{
   border: 4px solid #000;
+  cursor: pointer;
   height: 100px;
   margin: 5px;
+  padding: 2px;
   width: 100px;
+}
+
+.indAskImg:hover,
+.indAskImg:active {
+  background: #f2f2f2;
+  opacity: .7;
+  padding: 3px 2px 1px;
+}
+
+.chosenPic{
+  height: 90px;
+  margin-left: 20px;
 }
 
 /* @media

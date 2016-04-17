@@ -9,9 +9,10 @@ module.exports = class BackBtn extends React.Component {
   }
   render (){
 
-   return ( <div>
-	   <button className='backBtn' onClick={this.props.onClick}>Back</button>
-	   </div>
+   return ( 
+   		<div>
+	   		<button className='backBtn' onClick={this.props.onClick}>Back</button>
+	 	</div>
 	   )
 	}
 }
