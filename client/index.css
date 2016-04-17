@@ -204,6 +204,24 @@ button:active .labels {
   margin-left: 20px;
 }
 
+svg {
+  display: block;
+}
+
+#loader 
+{ fill: #00ffbf }
+
+#border 
+{ fill: #4000ff }
+
+.timerDivVisible{
+  z-index: 1;
+display: block;
+height:600px;
+width: 600px;
+background-color: yellow;
+}
+
 /* @media
   (min-device-width: 800px)
   and (max-device-width: 1280px) {
