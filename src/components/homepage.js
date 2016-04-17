@@ -8,12 +8,6 @@ import Header from './header'
 import {Router, Route} from 'react-router'
 
 
-// var btnNames = ['Schedule', 'I would like...', 'I can...', 'Social Stories']
-// var buttons = btnNames.map(function(name, id){
-	
-// 	return <HomePageBtn key={id} txt={name} />
-//});
-
 function goToAskPage(){
 	window.location = "/#/askpage"
 }
@@ -27,6 +21,8 @@ module.exports = class HomePage extends React.Component {
    return  (
   		<div>
         <Header />
+
+        
   			<HomePageBtn txt={"Schedule"} />
   			<HomePageBtn txt={"I would like..."} onClick={goToAskPage} />
   			<HomePageBtn txt={"I can..."} />
