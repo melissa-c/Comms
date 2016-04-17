@@ -19,6 +19,10 @@ footer {
   top: 0;
 }
 
+.hidden {
+  display: none;
+}
+
 main {
   background: #ffffcc; 
   background-color: #ffffe6;
@@ -26,7 +30,6 @@ main {
     linear-gradient(
       #ffffe6, #ffffcc
     );
-  background: red; 
   height: 700px;
   padding: 0 0 20px;
 }
@@ -60,18 +63,25 @@ button {
   border-radius: 5px;
   float: left;
   height: 80px;
+  margin: 20px;
   padding: 2px;
   width: 80px;
-  margin: 20px;
 }
 
 .homeBtn img,
-.parentAmin img {
+.parentAdmin img {
   height: 75%;
 }
 
-.timerBtn img {
+.navBtn img {
   height: 90%;
+  margin-right: 20px;
+}
+
+.timerBtn img {
+  display: inline-block;
+  height: 100%;
+  margin-right: 20px; 
 }
 
 .timerBtn {
@@ -79,9 +89,9 @@ button {
   border-radius: 5px;
   float: right;
   height: 80px;
+  margin: 20px;
   padding: 2px;
   width: 80px;
-  margin: 20px;
 }
 
 .homeBtn:active,
@@ -131,6 +141,7 @@ button:active .labels {
   position: absolute;
   top: 15px;
 }
+
 button:active .labels {
   height: 44px;
   padding: 36px 0 0;
@@ -141,7 +152,7 @@ button:active .labels {
   border: 1px solid #000;
   border-radius: 5px;
   display: flex;
-  font-size: 40px;
+  font-size: 70px;
   height: 90px;
   margin: 20px 20px 40px;
   padding: 20px;
@@ -174,9 +185,23 @@ button:active .labels {
 
 .indAskImg{
   border: 4px solid #000;
+  cursor: pointer;
   height: 100px;
   margin: 5px;
+  padding: 2px;
   width: 100px;
+}
+
+.indAskImg:hover,
+.indAskImg:active {
+  background: #f2f2f2;
+  opacity: .7;
+  padding: 3px 2px 1px;
+}
+
+.chosenPic{
+  height: 90px;
+  margin-left: 20px;
 }
 
 /* @media

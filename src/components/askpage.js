@@ -26,15 +26,15 @@ module.exports = class AskPage extends React.Component {
    super(props)
   }
   render (){
-   return (<div>
+   return (
+    <div>
       <Header />
     <div>
       
       <AskBoard text={imgChoice} />
       <ImgGallery onClick={imgChoice}/>
-      <BackBtn onClick={back}/>
     </div>
-    </div>)
-      
+    </div>
+    )      
   }
 }
