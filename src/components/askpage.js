@@ -17,17 +17,7 @@ function back(){
   window.location = '/#/';
 }
 
-// function imgChoice(e) {
-//     imgLocation = e.target.src
-//       if(recentImages.length>=5){
-//         recentImages.shift()
-//         recentImages.push(imgLocation)
-//       } else{
-//         recentImages.push(imgLocation)
-//       }
-//       console.log(recentImages)
-//     return imgLocation
-// }
+
 
 module.exports = class AskPage extends React.Component {
   constructor(props){

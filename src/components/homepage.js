@@ -22,7 +22,7 @@ module.exports = class HomePage extends React.Component {
   		<div>
         <Header />
 
-        
+
   			<HomePageBtn txt={"Schedule"} />
   			<HomePageBtn txt={"I would like..."} onClick={goToAskPage} />
   			<HomePageBtn txt={"I can..."} />
