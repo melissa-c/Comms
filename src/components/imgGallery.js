@@ -15,7 +15,9 @@ module.exports = class ImgGallery extends React.Component {
     Request
     .get('/database')
     .end(function(err, res){
-      this.setState({images: JSON.parse(res.text)})
+      this.setState(
+        {images: JSON.parse(res.text)}
+        )
       
     }.bind(this))
   

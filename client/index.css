@@ -5,9 +5,9 @@ body {
 }
 
 header,
-main, 
+main,
 footer {
-  background: #ffffcc; 
+  background: #ffffcc;
   background-color: #ffffe6;
   background-image:
     linear-gradient(
@@ -18,7 +18,7 @@ footer {
 }
 
 header {
-  background: #4d4d4d; 
+  background: #4d4d4d;
   height: 95px;
   letter-spacing: .2em;
   padding: 10px;
@@ -131,6 +131,12 @@ button:active .labels {
   height: 44px;
   padding: 36px 0 0;
 }
+.indAskImg{
+  margin: 5px;
+  border-color: black;
+  border-style:solid;
+  border-width:thick;
+}
 .askBoard {
   background-color: #fff;
   border: 1px solid #000;
@@ -163,14 +169,21 @@ button:active .labels {
   font-size: 20px;
   height: 300px;
   margin: 20px;
+  display: inline-block;
   padding: 10px;
-  text-align: left;
-  overflow-y: scroll; 
+  /*text-align: left;*/
+  clear: right;
+  overflow-y: scroll;
 }
 
 .indAskImg{
   width: 100px;
   height: 100px;
+}
+
+.chosenPic{
+  height: 90px;
+  margin-left: 20px;
 }
 
 /* @media

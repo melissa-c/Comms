@@ -17,21 +17,28 @@ function back(){
   window.location = '/#/';
 }
 
-function imgChoice(e) {
-   imgLocation = e.target.src
-    if(recentImages.length===5){
-      recentImages.shift()
-      recentImages.push(imgLocation)
-    } else{
-      recentImages.push(imgLocation)
-    }
-    console.log(recentImages)
-  return imgLocation
-}
+// function imgChoice(e) {
+//     imgLocation = e.target.src
+//       if(recentImages.length>=5){
+//         recentImages.shift()
+//         recentImages.push(imgLocation)
+//       } else{
+//         recentImages.push(imgLocation)
+//       }
+//       console.log(recentImages)
+//     return imgLocation
+// }
 
 module.exports = class AskPage extends React.Component {
   constructor(props){
    super(props)
+   this.state = {imageURL:''}
+  }
+
+  update(e){
+    this.setState({imageURL: e.target.src})
+    console.log("beep", e.target)
+  
   }
   render (){
    return (
@@ -39,9 +46,9 @@ module.exports = class AskPage extends React.Component {
       <Header />
     <div>
       
-      <AskBoard />
-      <RecentImgs />
-      <ImgGallery onClick={imgChoice}/>
+      <AskBoard text= {this.state.imageURL}/>
+      <RecentImgs text= {this.state.imageURL} />
+      <ImgGallery onClick={this.update.bind(this)}/>
       <BackBtn onClick={back}/>
     </div>
     </div>)
