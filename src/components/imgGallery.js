@@ -8,7 +8,6 @@ module.exports = class ImgGallery extends React.Component {
   constructor(props){
    super(props)
    this.state = {images: []}
-
    
   }
 
@@ -16,23 +15,22 @@ module.exports = class ImgGallery extends React.Component {
     Request
     .get('/database')
     .end(function(err, res){
-      console.log(res.text, 'text')
       this.setState({images: JSON.parse(res.text)})
       
     }.bind(this))
   
-    
   }
 
   render (){
+
    return  (
   <div>
     <div className="imgGallery">
       {this.state.images.map(function(image){
-        return(<div><img src={image.filepath}></img></div>)
-      })}
-   	</div>
-    
+        return(<img className= "indAskImg" src={image.filepath} onClick={this.props.onClick}></img>)
+      }, this)}
+      
+    </div>
     <button className='yellow'></button>
     <button className='blue'></button>
     <button className='red'></button>
@@ -42,3 +40,4 @@ module.exports = class ImgGallery extends React.Component {
       
   }
 }
+

@@ -31,7 +31,6 @@ function getDB(callback){
 
 app.get('/database', function(req,res){
   getDB(function(err, data){
-  	console.log(data, 'data')
   	res.send(data)
 
   })

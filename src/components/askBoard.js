@@ -2,17 +2,20 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
+import imgname from './imgGallery'
 
-module.exports = class HomePageBtn extends React.Component {
+module.exports = class AskBoard extends React.Component {
   constructor(props){
    super(props)
+   
   }
   render (){
    return  (
    	<div className="askBoard">
    		<div>I would like</div>
-   		<div><img></img></div>
+   		<div id=''><img src={this.props.text}></img></div>
    		</div>
+
    		)
       
   }

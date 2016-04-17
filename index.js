@@ -11,8 +11,13 @@ import Header from './src/components/header'
 
 
 
+<<<<<<< HEAD
+	ReactDOM.render((
+		
+=======
 	ReactDOM.render(
 		(
+>>>>>>> 70ea821b35352dac649b2b5a19e27fe45234621a
 		<Router history={hashHistory}>
 			<Route path='/' component={HomePage}/>
 			<Route path='askpage' component={AskPage}/>
