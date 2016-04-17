@@ -165,22 +165,23 @@ button:active .labels {
   margin: 20px;
   padding: 10px;
   text-align: left;
+  overflow-y: scroll; 
+}
+
+.indAskImg{
+  width: 100px;
+  height: 100px;
 }
 
 /* @media
   (min-device-width: 800px)
   and (max-device-width: 1280px) {
-
 }
-
 @media
   (max-device-width: 800px)
   and (orientation: portrait) {
-
 }
-
 @media
   (max-device-width: 1280px)
   and (orientation: landscape) {
-
 } */
