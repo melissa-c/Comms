@@ -6,8 +6,8 @@ import {Router, Route} from 'react-router'
 import HomePageBtn from './homePageBtn'
 
 
-function clickfun(){
-	console.log('yea')
+function clickfun(){  /// 
+  console.log('yea')
 }
 
 
@@ -33,7 +33,7 @@ function counter () {
       //  d = Math.round( d * 1e3 ) / 1e3;
       //});
            
-      if(alpha <=360) {
+      if(alpha <360) {
         setTimeout(draw, t) // Redraw
       } else {
           var animate ="M 0 0 v -125 A 125 125 1 1 1 -.1 -125 z";
