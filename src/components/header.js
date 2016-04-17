@@ -9,12 +9,22 @@ module.exports = class Header extends React.Component {
    super(props)
   }
   render (){
-   return  (<div className="header">
-    <button>button home</button>
-    <h2>COMMS COMPANION</h2>
-    <button>button timer</button>
+   return  (
+    <div className="header">
+      <button className="homeBtn" type="submit">
+        <img src="icon/home.png" />
+        <p className="labels">home</p>      
+      </button>
+
+      <h1><span>Comms</span><br /> Companion</h1>
+      
+      <button className="timerBtn">
+        <img src="icon/FPO_timer.png" />
+        <p className="labels">timer</p>      
+        
+      </button>
    		
-   		</div>
+ 		</div>
 
    		)
       

@@ -8,7 +8,7 @@ module.exports = class ParentAdminBtn extends React.Component {
    super(props)
   }
   render (){
-   return  <div><button className='parentAdmin'>parent admin</button></div>
+   return  <div><button className='parentAdmin'>admin</button></div>
       
   }
 }
