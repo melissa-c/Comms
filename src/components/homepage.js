@@ -13,46 +13,41 @@ function clickfun(){
 
 function counter () {
   var loader = document.getElementById('loader')
-  , border = document.getElementById('border')
-  , α = 0
-  , π = Math.PI
-  , t = 60;
+  ,   border = document.getElementById('border')
+  ,   alpha  = 0
+  ,        π = Math.PI
+  ,        t = prompt('Time');
 
-  (function draw() {
-  α++;
-  //α %= 360;
-  var r = ( α * π / 180 )
-    , x = Math.sin( r ) * 125
-    , y = Math.cos( r ) * - 125
-    , mid = ( α >= 180 ) ? 1 : 0
-    , anim = 'M 0 0 v -125 A 125 125 1 ' 
-           + mid + ' 1 ' 
-           +  x  + ' ' 
-           +  y  + ' z';
-  //[x,y].forEach(function( d ){
-  //  d = Math.round( d * 1e3 ) / 1e3;
-  //});
- 
-  
-  if(α <=360) {
-    setTimeout(draw, t) // Redraw
-  } else {
-
-    animate ="M 0 0 v -125 A 125 125 1 1 1 -.1 -125 z"
-  }
-    loader.setAttribute( 'd', anim );
-    border.setAttribute( 'd', anim );
-})();
-
-
+    (function draw() {
+      alpha++;
+      //alpha %= 360;
+      var r = ( alpha * π / 180 )
+      var x = Math.sin( r ) * 125
+      var y = Math.cos( r ) * - 125
+      var mid = ( alpha >= 180 ) ? 1 : 0
+      var anim = 'M 0 0 v -125 A 125 125 1 ' 
+               + mid + ' 1 ' 
+               +  x  + ' ' 
+               +  y  + ' z';
+      //[x,y].forEach(function( d ){
+      //  d = Math.round( d * 1e3 ) / 1e3;
+      //});
+           
+      if(alpha <=360) {
+        setTimeout(draw, t) // Redraw
+      } else {
+          var animate ="M 0 0 v -125 A 125 125 1 1 1 -.1 -125 z";
+         // alert("Thanks for waiting");
+      }
+        loader.setAttribute( 'd', anim );
+        border.setAttribute( 'd', anim );
+    })()
 }
 
 function parentAccess () {
 
   counter()
-  console.log ('grant parent access')
-  
-  
+  // console.log ('grant parent access')
 }
      
 
