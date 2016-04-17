@@ -9,7 +9,7 @@ function back(){
 }
 
 function counter(){
-  document.getElementById('TESTY').className = "timerDivVisible"
+  document.getElementById('timerDiv').className = "timerDivVisible"
   var loader = document.getElementById('loader')
 //   ,   border = document.getElementById('border')
   ,   alpha  = 0
@@ -72,7 +72,7 @@ module.exports = class Header extends React.Component {
         <p className="labels">timer</p>  
       </button>
 
-      <div id='TESTY' className='hidden'>
+      <div id='timerDiv' className='hidden'>
         <svg width="400" height="400" viewbox="0 0 250 250">
             <path id="border" transform="translate(125, 125)"/>
             <path id="loader" transform="translate(125, 125) scale(.8)"/>
