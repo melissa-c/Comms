@@ -165,6 +165,12 @@ button:active .labels {
   margin: 20px;
   padding: 10px;
   text-align: left;
+  overflow-y: scroll; 
+}
+
+.indAskImg{
+  width: 100px;
+  height: 100px;
 }
 
 /* @media

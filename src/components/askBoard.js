@@ -13,7 +13,7 @@ module.exports = class AskBoard extends React.Component {
    return  (
    	<div className="askBoard">
    		<div>I would like</div>
-   		<div id=''><img></img></div>
+   		<div id=''><img src={this.props.text}></img></div>
    		</div>
 
    		)

@@ -12,9 +12,9 @@ function back(){
 }
 
 function imgChoice(e) {
-  var imgname = e.target.src
-  console.log(imgname,'here')
-  return imgname
+  var imgLocation = e.target.src
+  console.log(e.target.src,'here', imgLocation)
+  return imgLocation
 }
 
 module.exports = class AskPage extends React.Component {
@@ -23,14 +23,10 @@ module.exports = class AskPage extends React.Component {
   }
   render (){
    return (<div>
-
-      <AskBoard />
-      <RecentImgs />
+      <AskBoard text={imgChoice} />
       <ImgGallery onClick={imgChoice}/>
       <BackBtn onClick={back}/>
     </div>)
       
   }
 }
-
-

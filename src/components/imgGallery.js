@@ -19,8 +19,6 @@ module.exports = class ImgGallery extends React.Component {
       
     }.bind(this))
   
-  console.log(this.props.onClick, 'props')
-    
   }
 
   render (){
@@ -29,9 +27,10 @@ module.exports = class ImgGallery extends React.Component {
   <div>
   <div className="imgGallery">
       {this.state.images.map(function(image){
-        return(<div><img src={image.filepath} ></img></div>)
-      })}
-    
+        return(<img className= "indAskImg" src={image.filepath} onClick={this.props.onClick}></img>)
+      }, this)}
+      
+    </div>
     <button className='yellow'></button>
     <button className='blue'></button>
     <button className='red'></button>
@@ -42,8 +41,3 @@ module.exports = class ImgGallery extends React.Component {
   }
 }
 
-function imgChoice(e) {
-  var imgname = e.target.src
-  console.log(imgname,'here')
-  return imgname
-}
