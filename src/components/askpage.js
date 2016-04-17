@@ -49,9 +49,9 @@ module.exports = class AskPage extends React.Component {
       <AskBoard text= {this.state.imageURL}/>
       <RecentImgs text= {this.state.imageURL} />
       <ImgGallery onClick={this.update.bind(this)}/>
-      <BackBtn onClick={back}/>
+
     </div>
-    </div>)
-      
+    </div>
+    )      
   }
 }

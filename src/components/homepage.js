@@ -3,7 +3,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import HomePageBtn from './homePageBtn'
-import ParentAdmin from './parentAdminBtn'
 import Header from './header'
 import {Router, Route} from 'react-router'
 
@@ -21,12 +20,10 @@ module.exports = class HomePage extends React.Component {
    return  (
   		<div>
         <Header />
-
         
-  			<HomePageBtn txt={"Schedule"} />
-  			<HomePageBtn txt={"I would like..."} onClick={goToAskPage} />
-  			<HomePageBtn txt={"I can..."} />
-        <ParentAdmin />
+  			<HomePageBtn txt={"Schedule"} img={"icon/clipboard.png"} />
+  			<HomePageBtn txt={"I would like..."} onClick={goToAskPage} img={"icon/question.png"} />
+  			<HomePageBtn txt={"I can..."} img={"icon/user.png"} />
    		</div>
    		)
   }
