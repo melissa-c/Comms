@@ -27,12 +27,10 @@ module.exports = class ImgGallery extends React.Component {
 
    return  (
   <div>
-    <div className="imgGallery">
+  <div className="imgGallery">
       {this.state.images.map(function(image){
         return(<div><img src={image.filepath} ></img></div>)
       })}
-   	</div>
-    
     
     <button className='yellow'></button>
     <button className='blue'></button>

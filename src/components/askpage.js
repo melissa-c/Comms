@@ -26,7 +26,7 @@ module.exports = class AskPage extends React.Component {
 
       <AskBoard />
       <RecentImgs />
-      <ImgGallery onClick={hello}/>
+      <ImgGallery onClick={imgChoice}/>
       <BackBtn onClick={back}/>
     </div>)
       
