@@ -8,7 +8,7 @@ import {Router, Route} from 'react-router'
 
 
 function goToAskPage(){
-	window.location = "/#/askpage"
+  window.location = "/#/askpage"
 }
 
 
@@ -18,14 +18,14 @@ module.exports = class HomePage extends React.Component {
   }
   render (){
    return  (
-  		<div>
+      <div>
         <Header />
         
-  			<HomePageBtn txt={"Schedule"} img={"icon/clipboard.png"} />
-  			<HomePageBtn txt={"I would like..."} onClick={goToAskPage} img={"icon/question.png"} />
-  			<HomePageBtn txt={"I can..."} img={"icon/user.png"} />
-   		</div>
-   		)
+        <HomePageBtn txt={"Schedule"} img={"icon/clipboard.png"} />
+        <HomePageBtn txt={"I would like..."} onClick={goToAskPage} img={"icon/question.png"} />
+        <HomePageBtn txt={"I can..."} img={"icon/user.png"} />
+      </div>
+      )
   }
 }
 

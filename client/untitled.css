@@ -7,6 +7,7 @@ body {
 .header,
 main, 
 footer {
+
   min-width: 600px;
   text-align: center;
 }
@@ -18,6 +19,15 @@ footer {
   margin-bottom: 40px;
   top: 0;
 }
+
+.timerDivVisible{
+  z-index: 1;
+display: block;
+height:600px;
+width: 600px;
+background-color: yellow;
+}
+
 
 .hidden {
   display: none;
@@ -105,6 +115,7 @@ button {
 }
 
 .navBtn {
+  z-index: -1;
   border-radius: 10px;
   font-size: 30px;
   height: 100px;
@@ -204,23 +215,16 @@ button:active .labels {
   margin-left: 20px;
 }
 
-svg {
-  display: block;
+.timerDisplay{
+  background-color: yellow;
+  height: 100px;
+  width: 100px;
+
 }
 
-#loader 
-{ fill: #00ffbf }
 
-#border 
-{ fill: #4000ff }
 
-.timerDivVisible{
-  z-index: 1;
-display: block;
-height:600px;
-width: 600px;
-background-color: yellow;
-}
+
 
 /* @media
   (min-device-width: 800px)

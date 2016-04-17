@@ -23,7 +23,7 @@ module.exports = class recentImgs extends React.Component {
     console.log(recentArray)
    return  (
    	<div className="recentImgs">
-    {recentArray}
+    {this.props.text}
    		</div>
    		)
   }
