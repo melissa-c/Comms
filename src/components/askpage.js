@@ -9,6 +9,8 @@ import BackBtn from './backBtn'
 import Header from './header'
 
 var imgLocation = 'test'
+var recentImages = []
+
 
 
 function back(){
@@ -17,7 +19,13 @@ function back(){
 
 function imgChoice(e) {
    imgLocation = e.target.src
-  console.log(e.target.src,'here', imgLocation)
+    if(recentImages.length===5){
+      recentImages.shift()
+      recentImages.push(imgLocation)
+    } else{
+      recentImages.push(imgLocation)
+    }
+    console.log(recentImages)
   return imgLocation
 }
 
@@ -26,11 +34,13 @@ module.exports = class AskPage extends React.Component {
    super(props)
   }
   render (){
-   return (<div>
+   return (
+    <div>
       <Header />
     <div>
       
-      <AskBoard text={imgChoice} />
+      <AskBoard />
+      <RecentImgs />
       <ImgGallery onClick={imgChoice}/>
       <BackBtn onClick={back}/>
     </div>
