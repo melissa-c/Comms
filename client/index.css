@@ -276,15 +276,15 @@ button:active .labels {
 }
 
 svg {
-  position: fixed;
-  top: 150px;
+  top: 300px;
 }
 
 .timerDiv {
+  padding-top: 20px;
   background-color: white;
   margin: 0 auto;
-  height: 400px;
-  width: 500px;
+  height: 450px;
+  width: 520px;
 }
 
 /* @media
