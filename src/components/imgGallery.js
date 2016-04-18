@@ -8,7 +8,6 @@ module.exports = class ImgGallery extends React.Component {
   constructor(props){
    super(props)
    this.state = {images: []}
-   
   }
 
   componentDidMount(){
@@ -20,16 +19,15 @@ module.exports = class ImgGallery extends React.Component {
         )
       
     }.bind(this))
-  
   }
 
   render (){
-
    return  (
+     //Indendation
   <div>
     <div className="imgGallery">
-      {this.state.images.map(function(image){
-        return(<img className= "indAskImg" src={image.filepath} onClick={this.props.onClick}></img>)
+      {this.state.images.map(function(image, index){
+        return(<img key={index} className="indAskImg" src={image.filepath} onClick={this.props.onClick}></img>)
       }, this)}
       
     </div>
