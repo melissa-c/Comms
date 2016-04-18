@@ -22,7 +22,7 @@ module.exports = class AskPage extends React.Component {
           <Items txt="Breakfast"/>
           <Items txt="Get Ready"/>
           <Items txt="School"/>
-          <Items txt="TV"/>
+          <Items txt="Choice" img="img/choice.png"/>
           <Items txt="Homework"/>
           <Items txt="Dinner"/>
           <Items txt="Bed Time"/>

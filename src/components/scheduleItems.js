@@ -13,6 +13,7 @@ module.exports = class recentImgs extends React.Component {
   return (
     <div>
       <div className="scheduleItems">
+      <img className="scheduleImg" src={this.props.img} />
         <h2>{this.props.txt}</h2>
       </div>
     </div>
