@@ -45,9 +45,7 @@ module.exports = class ImgGallery extends React.Component {
               case "school":
                   return(<img className= "indAskImg Red" src={image.filepath} onClick={this.props.onClick}></img>)
                   break;
-              case "verbs":
-                  return(<img className= "indAskImg Black" src={image.filepath} onClick={this.props.onClick}></img>)
-                  break;
+              
             }
           }, this)}
         </div>
