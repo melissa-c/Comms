@@ -14,6 +14,7 @@ import Header from '../src/components/header'
 
 test('<Header />', t => {
 
+<<<<<<< HEAD
 	const expected ='Comms Companion'
 
 	const wrapper =shallow(<Header />)
@@ -30,5 +31,23 @@ test('<Header />', t => {
 // 		const wrapper =shallow(<Header />)
 // 		expect(wrapper.contains(<div className='header' />)).to.equal(true)
 // 	});	
+=======
+  const expected ='Comms Companion'
+
+  const wrapper =shallow(<Header />)
+  var h1 = wrapper.find('h1')
+  console.log('here is h1', h1.text())
+
+
+  t.deepEqual(h1.length, 1)
+  t.deepEqual(h1.text(), expected)
+})
+
+// describe('<Header />', () => {
+//  it('should render header emlent', () => {
+//    const wrapper =shallow(<Header />)
+//    expect(wrapper.contains(<div className='header' />)).to.equal(true)
+//  }); 
+>>>>>>> 28b736089c522bb58ee83eb1e5f524196a59ce10
 
 // });
