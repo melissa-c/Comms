@@ -25,7 +25,7 @@ module.exports = class AskPage extends React.Component {
           <Items txt="Choice" img="img/choice.png"/>
           <Items txt="Homework"/>
           <Items txt="Dinner"/>
-          <Items txt="Bed Time"/>
+          <Items txt="Bed Time" img="img/bedTime.png"/>
 
         </div>
       )      
