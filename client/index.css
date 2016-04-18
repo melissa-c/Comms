@@ -183,8 +183,61 @@ button:active .labels {
   padding: 10px;
 }
 
-.indAskImg{
-  border: 4px solid #000;
+.indAskImgPurple{
+  border: 4px solid purple;
+  cursor: pointer;
+  height: 100px;
+  margin: 5px;
+  padding: 2px;
+  width: 100px;
+}
+.indAskImgOrange{
+  border: 4px solid orange;
+  cursor: pointer;
+  height: 100px;
+  margin: 5px;
+  padding: 2px;
+  width: 100px;
+}
+
+.indAskImgBlue{
+  border: 4px solid blue;
+  cursor: pointer;
+  height: 100px;
+  margin: 5px;
+  padding: 2px;
+  width: 100px;
+}
+
+.indAskImgYellow{
+  border: 4px solid yellow;
+  cursor: pointer;
+  height: 100px;
+  margin: 5px;
+  padding: 2px;
+  width: 100px;
+}
+
+.indAskImgGreen{
+  border: 4px solid green;
+  cursor: pointer;
+  height: 100px;
+  margin: 5px;
+  padding: 2px;
+  width: 100px;
+}
+
+.indAskImgRed{
+  border: 4px solid red;
+  cursor: pointer;
+  height: 100px;
+  margin: 5px;
+  padding: 2px;
+  width: 100px;
+}
+
+.indAskImgBlack{
+  border: 4px solid black;
   cursor: pointer;
   height: 100px;
   margin: 5px;
@@ -198,6 +251,8 @@ button:active .labels {
   opacity: .7;
   padding: 3px 2px 1px;
 }
+
+
 
 .chosenPic{
   height: 90px;

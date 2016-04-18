@@ -6,36 +6,35 @@ import AskBoard from './askBoard'
 import ImgGallery from './imgGallery'
 import RecentImgs from './recentImgs'
 import Header from './header'
-
-var imgLocation = 'test'
-var recentImages = []
-
-
-
-
-
-
+var recentArray = []
 
 module.exports = class AskPage extends React.Component {
   constructor(props){
    super(props)
-   this.state = {imageURL:''}
+   this.state = {imageURL:'', recentURL: []}
   }
 
   update(e){
-    this.setState({imageURL: e.target.src})
-    console.log("beep", e.target)
-  
-  }
+    if(recentArray.length>=5){
+      recentArray.shift()
+      recentArray.push([e.target.src, e.target.className])
+    } else {
+      recentArray.push([e.target.src, e.target.className])
+
+    }
+      this.setState(
+        {imageURL: e.target.src, recentURL: recentArray}
+        )
+    }
+
   render (){
    return (
     <div>
       <Header />
     <div>
-      
-      <AskBoard text= {this.state.imageURL}/>
-      <RecentImgs text= {this.state.imageURL} />
-      <ImgGallery onClick={this.update.bind(this)}/>
+    <AskBoard text= {this.state.imageURL}/>
+    <RecentImgs text= {this.state.recentURL} />
+    <ImgGallery onClick={this.update.bind(this)}/>
 
     </div>
     </div>
