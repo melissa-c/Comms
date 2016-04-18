@@ -33,7 +33,7 @@ module.exports = class AskPage extends React.Component {
       <Header />
     <div>
     <AskBoard text= {this.state.imageURL}/>
-    <RecentImgs text= {this.state.recentURL} />
+    <RecentImgs text= {this.state.recentURL} onClick={this.update.bind(this)} />
     <ImgGallery onClick={this.update.bind(this)}/>
 
     </div>
