@@ -20,10 +20,10 @@ function counter(){
       alpha++;
       //alpha %= 360;
       var r = ( alpha * π / 180 )
-      var x = Math.sin( r ) * 125
-      var y = Math.cos( r ) * - 125
+      var x = Math.sin( r ) * 200
+      var y = Math.cos( r ) * - 200
       var mid = ( alpha >= 180 ) ? 1 : 0
-      var anim = 'M 0 0 v -125 A 125 125 1 ' 
+      var anim = 'M 0 0 v -200 A 200 200 1 ' 
                + mid + ' 1 ' 
                +  x  + ' ' 
                +  y  + ' z';
@@ -34,7 +34,7 @@ function counter(){
       if(alpha <360) {
         setTimeout(draw, t) // Redraw
       } else {
-          var animate ="M 0 0 v -125 A 125 125 1 1 1 -.1 -125 z";
+          var animate ="M 0 0 v -200 A 200 200 1 1 1 -.1 -200 z";
          // alert("Thanks for waiting");
       }
         loader.setAttribute( 'd', anim );
@@ -74,8 +74,8 @@ module.exports = class Header extends React.Component {
 
       <div id='timerDiv' className='hidden'>
         <svg width="400" height="400" viewbox="0 0 250 250">
-            <path id="border" transform="translate(125, 125)"/>
-            <path id="loader" transform="translate(125, 125) scale(.8)"/>
+            <path id="border" transform="translate(200, 200)"/>
+            <path id="loader" transform="translate(200, 200) scale(.8)"/>
         </svg>
       </div>
     
