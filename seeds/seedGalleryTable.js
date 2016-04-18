@@ -1,0 +1,50 @@
+
+exports.seed = function(knex, Promise) {
+  return Promise.join(
+    // Deletes ALL existing entries
+    knex('gallery').del(), 
+
+    // Inserts seed entries
+    knex('gallery').insert({id: 1, name: 'ankle', category: 'body', filepath: 'img/ankle.png'}),
+    knex('gallery').insert({id: 2, name: 'back', category: 'body', filepath: 'img/back.png'}),
+    knex('gallery').insert({id: 3, name: 'ear', category: 'body', filepath: 'img/ear.png'}),
+    knex('gallery').insert({id: 4, name: 'head', category: 'body', filepath: 'img/head.png'}),
+    knex('gallery').insert({id: 5, name: 'leg', category: 'body', filepath: 'img/leg.png'}),
+    knex('gallery').insert({id: 6, name: 'afraid', category: 'emotions', filepath: 'img/afraid.png'}),
+    knex('gallery').insert({id: 7, name: 'bad', category: 'emotions', filepath: 'img/bad.png'}),
+    knex('gallery').insert({id: 8, name: 'cry', category: 'emotions', filepath: 'img/cry.png'}),
+    knex('gallery').insert({id: 9, name: 'hate', category: 'emotions', filepath: 'img/hate.png'}),
+    knex('gallery').insert({id: 10, name: 'laugh', category: 'emotions', filepath: 'img/laugh.png'}),
+    knex('gallery').insert({id: 11, name: 'like', category: 'emotions', filepath: 'img/like.png'}),
+    knex('gallery').insert({id: 12, name: 'bathe', category: 'home', filepath: 'img/bathe.png'}),
+    knex('gallery').insert({id: 13, name: 'bathroom', category: 'home', filepath: 'img/bathroom.png'}),
+    knex('gallery').insert({id: 14, name: 'bedTime', category: 'home', filepath: 'img/bedTime.png'}),
+    knex('gallery').insert({id: 15, name: 'brushHair', category: 'home', filepath: 'img/brushHair.png'}),
+    knex('gallery').insert({id: 16, name: 'brushTeeth', category: 'home', filepath: 'img/brushTeeth.png'}),
+    knex('gallery').insert({id: 17, name: 'family1', category: 'home', filepath: 'img/family1.png'}),
+    knex('gallery').insert({id: 18, name: 'toyTrain', category: 'home', filepath: 'img/toyTrain.png'}),
+    knex('gallery').insert({id: 19, name: 'car', category: 'outside', filepath: 'img/car.png'}),
+    knex('gallery').insert({id: 20, name: 'leaf', category: 'outside', filepath: 'img/leaf.png'}),
+    knex('gallery').insert({id: 21, name: 'leave', category: 'outside', filepath: 'img/leave.png'}),
+    knex('gallery').insert({id: 22, name: 'trampoline', category: 'outside', filepath: 'img/trampoline.png'}),
+    knex('gallery').insert({id: 23, name: 'tree', category: 'outside', filepath: 'img/tree.png'}),
+    knex('gallery').insert({id: 24, name: 'apple', category: 'food', filepath: 'img/apple.png'}),
+    knex('gallery').insert({id: 25, name: 'apricot', category: 'food', filepath: 'img/apricot.png'}),
+    knex('gallery').insert({id: 26, name: 'bakedPotato', category: 'food', filepath: 'img/bakedPotato.png'}),
+    knex('gallery').insert({id: 27, name: 'banana', category: 'food', filepath: 'img/banana.png'}),
+    knex('gallery').insert({id: 28, name: 'pear', category: 'food', filepath: 'img/pear.png'}),
+    knex('gallery').insert({id: 29, name: 'plums', category: 'food', filepath: 'img/plums.png'}),
+    knex('gallery').insert({id: 30, name: 'watermelon', category: 'food', filepath: 'img/watermelon.png'}),
+    knex('gallery').insert({id: 31, name: 'artClass1', category: 'school', filepath: 'img/artClass1.png'}),
+    knex('gallery').insert({id: 32, name: 'circleTime', category: 'school', filepath: 'img/circleTime.png'}),
+    knex('gallery').insert({id: 33, name: 'count', category: 'school', filepath: 'img/count.png'}),
+    knex('gallery').insert({id: 34, name: 'lunchTime', category: 'school', filepath: 'img/lunchTime.png'}),
+    knex('gallery').insert({id: 35, name: 'pencilSharpener', category: 'school', filepath: 'img/pencilSharpener.png'}),
+    knex('gallery').insert({id: 36, name: 'eat2', category: 'verbs', filepath: 'img/eat2.png'}),
+    knex('gallery').insert({id: 37, name: 'listen', category: 'verbs', filepath: 'img/listen.png'}),
+    knex('gallery').insert({id: 38, name: 'see', category: 'verbs', filepath: 'img/see.png'}),
+    knex('gallery').insert({id: 39, name: 'sick', category: 'verbs', filepath: 'img/sick.png'}),
+    knex('gallery').insert({id: 40, name: 'smell', category: 'verbs', filepath: 'img/smell.png'}),
+    knex('gallery').insert({id: 41, name: 'touch', category: 'verbs', filepath: 'img/touch.png'})
+  );
+};

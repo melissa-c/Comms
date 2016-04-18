@@ -1,7 +1,10 @@
 node_modules
 npm-debug.log*
 
-/bundle.js
 
 .DS_Store
 /dist
+
+.env
+
+*.sqlite3
