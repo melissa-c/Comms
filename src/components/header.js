@@ -7,19 +7,23 @@ import ReactDOM from 'react-dom'
 function back(){
   window.location = '/#/';
 }
+ 
+  function isInteger(t) {
+        return Math.round(t) === t;
+    }
+      
+  
+    (function counter() {
+      document.getElementById('timerDiv').className = "timerDivVisible"
+      var loader = document.getElementById('loader')
+      var border = document.getElementById('border')
+      var     pi = Math.PI
+      var   time = prompt('Time');
+      var alpha  = 0    
 
-function counter(){
-  document.getElementById('timerDiv').className = "timerDivVisible"
-  var loader = document.getElementById('loader')
-//   ,   border = document.getElementById('border')
-  ,   alpha  = 0
-  ,        π = Math.PI
-  ,        t = prompt('Time');
-
-    (function draw() {
       alpha++;
       //alpha %= 360;
-      var r = ( alpha * π / 180 )
+      var r = ( alpha * pi / 180 )
       var x = Math.sin( r ) * 200
       var y = Math.cos( r ) * - 200
       var mid = ( alpha >= 180 ) ? 1 : 0
@@ -32,15 +36,19 @@ function counter(){
       //});
            
       if(alpha <360) {
-        setTimeout(draw, t) // Redraw
+        setTimeout(counter, time) // Redraw
       } else {
           var animate ="M 0 0 v -200 A 200 200 1 1 1 -.1 -200 z";
          // alert("Thanks for waiting");
       }
         loader.setAttribute( 'd', anim );
         border.setAttribute( 'd', anim );
+    
     })()
-}
+
+    
+  
+
 
 
 
