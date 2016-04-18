@@ -7,7 +7,7 @@ body {
 .header,
 main, 
 footer {
-  min-width: 600px;
+  min-width: 700px;
   text-align: center;
 }
 
@@ -30,7 +30,8 @@ main {
     linear-gradient(
       #ffffe6, #ffffcc
     );
-  height: 700px;
+  height: 100%;
+  min-height: 700px;
   padding: 0 0 20px;
 }
 
