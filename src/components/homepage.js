@@ -2,16 +2,16 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import HomePageBtn from './homePageBtn'
-import Header from './header'
 import {Router, Route} from 'react-router'
 
+import HomePageBtn from './homePageBtn'
+import Header from './header'
 
 function goToAskPage(){
   window.location = "/#/askpage"
 }
 
-
+//remove whitespace
 module.exports = class HomePage extends React.Component {
   constructor(props){
    super(props)
@@ -20,7 +20,7 @@ module.exports = class HomePage extends React.Component {
    return  (
       <div>
         <Header />
-        
+//remove whitespace
         <HomePageBtn txt={"Schedule"} img={"icon/clipboard.png"} />
         <HomePageBtn txt={"I would like..."} onClick={goToAskPage} img={"icon/question.png"} />
         <HomePageBtn txt={"I can..."} img={"icon/user.png"} />

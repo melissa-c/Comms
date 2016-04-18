@@ -23,6 +23,36 @@ Using postgres for dev is a bit annoying and doesn't work on my machine, whereas
 
 Ha! Just realised knex is totally unused! Why are you using pg instead of knex?
 
+Also, the way it's setup with postgres, the server has to make a new db connection every single time there is a new request. This is slow. An advantage of knex is that it will setup the connection for you just once.
+
+I changed the review branch to use knex properly. I also changed the knexfile to use sqlite3 just so I could test my code works.
+
+### index.js
+- I like modules required first, then files. With whitespace between.
+- Remove redundant comments and commented code.
+- Tidy code, jsx code was wrapped in unneeded parens.
+- Remove whitespace.
+
+### src/components/app.js
+Unused? If so remove.
+
+### homePageBtn
+nice
+
+### header.js
+
+counter function needs a heavy refactor.
+Function seems poorly named.
+Remove commented code on 14
+What are the leading commas on 15, 16, 17?
+Variables named n, t, r etc should be given good meaningful names. Why call Pi 'n' when you could just call it pi?
+Function is way too long! This should be factored out into several small well named functions. It's very hard to understand what is happening by looking at the code.
+
+Remove all the whitespace!
+
+
+
+
 ##Planning
 Schematics, learning objectives, technology, roles, schedules.
 

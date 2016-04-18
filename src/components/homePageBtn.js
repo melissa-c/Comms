@@ -8,7 +8,7 @@ module.exports = class HomePageBtn extends React.Component {
    super(props)
   }
   render (){
-
+//whitespace
     return  (
       <div>
         <button className='navBtn' onClick={this.props.onClick}>
