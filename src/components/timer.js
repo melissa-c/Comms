@@ -11,15 +11,16 @@ module.exports = class HomePageBtn extends React.Component {
   }
   render (){
     return  (
-    	<Header />
-      <div>
-        <div id='timerDiv' className='hidden'>
-        <svg width="400" height="400" viewbox="0 0 250 250">
-            <path id="border" transform="translate(200, 200)"/>
-            <path id="loader" transform="translate(200, 200) scale(.8)"/>
-        </svg>
-      </div>
-      </div>
+    	<div>
+    		<Header />
+    		<h2>Please wait</h2>
+    		<div id='timerDiv' className='timerDiv'>
+		        <svg width="400" height="400" viewbox="0 0 250 250">
+		            <path id="border" transform="translate(200, 200)"/>
+		            <path id="loader" transform="translate(200, 200) scale(.8)"/>
+		        </svg>
+            </div>
+        </div>
     )
   }
 }

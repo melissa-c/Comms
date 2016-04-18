@@ -3,10 +3,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+function goToTimer(){
+  window.location = '/#/timer';
+}
 
 function back(){
   window.location = '/#/';
 }
+
+
 
 function counter(){
   document.getElementById('timerDiv').className = "timerDivVisible"
@@ -67,17 +72,12 @@ module.exports = class Header extends React.Component {
 
       <h1><span>Comms</span><br /> Companion</h1>
 
-      <button className="timerBtn" onClick={counter}>
+      <button className="timerBtn" onClick={goToTimer}>
         <img src="icon/FPO_timer.png" />
         <p className="labels">timer</p>  
       </button>
 
-      <div id='timerDiv' className='hidden'>
-        <svg width="400" height="400" viewbox="0 0 250 250">
-            <path id="border" transform="translate(200, 200)"/>
-            <path id="loader" transform="translate(200, 200) scale(.8)"/>
-        </svg>
-      </div>
+      
     
    
    		

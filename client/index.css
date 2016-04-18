@@ -280,10 +280,11 @@ svg {
   top: 150px;
 }
 
-.timerDivVisible {
+.timerDiv {
+  background-color: white;
+  margin: 0 auto;
   height: 400px;
-  width: 400px;
-  z-index: 99;
+  width: 500px;
 }
 
 /* @media
