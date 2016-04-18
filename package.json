@@ -7,11 +7,8 @@
     "start": "node server.js",
     "dev-start": "nodemon server.js ",
     "watch": "watchify ./index.js -o client/bundle.js -dv -t babelify",
-    "build": "browserify . -o bundle.js -g uglifyify",
-    "test": "browserify test.js | smokestack | tap-spec",
-    "dist": "mkdir -p dist && bash -c 'cp *.{js,html,css} dist'",
-    "push": "gh-pages -d dist",
-    "deploy": "npm run build && npm run dist && npm run push"
+    "build": "browserify . -o client/bundle.js -g uglifyify",
+    "test": "browserify test.js | node | tap-spec"
   },
   "browserify": {
     "transform": [
@@ -46,10 +43,7 @@
     "babel-preset-react": "^6.5.0",
     "babelify": "^7.2.0",
     "browserify": "^13.0.0",
-    "budo": "^8.2.1",
-    "gh-pages": "^0.11.0",
     "nodemon": "^1.9.1",
-    "smokestack": "^3.3.0",
     "tap-spec": "^4.0.2",
     "tape": "^4.0.0",
     "uglifyify": "^3.0.1",
