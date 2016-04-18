@@ -1,6 +1,28 @@
 # Comms Companion
 A communication tool for children with alternative abilities in speech and language.
 
+## Review
+
+### package.json
+Seems to be a mishmash of slush pages and the express generator. Slush pages is for scaffolding client side apps that can be browserified into a bunch of static files (html, css and js.)
+
+- start script uses nodemon which is fine for dev but not for deploying it to heroku. Just a heads up.
+- changed the test script to remove smokestack and removed it from dependencies
+- dist, push and deploy scripts don't make sense for this project. Removed.
+- build script makes the bundle file in the root but watch is bundling into the client folder. Changed the build script to copy watch.
+- superagent is an unused dependency
+- budo is unused.
+- ghpages is unused
+
+### Testing
+
+### Server.js
+Hardcoding the db connection string is smelly. Load the config from the knexfile.
+
+Using postgres for dev is a bit annoying and doesn't work on my machine, whereas sqlite might have been an easier choice for a new dev. Don't bother changing it but just know that it does make a difference for someone new coming to the project.
+
+Ha! Just realised knex is totally unused! Why are you using pg instead of knex?
+
 ##Planning
 Schematics, learning objectives, technology, roles, schedules.
 
