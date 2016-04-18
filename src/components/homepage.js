@@ -11,6 +11,14 @@ function goToAskPage(){
   window.location = "/#/askpage"
 }
 
+
+
+
+function goToSchedulePage(){
+  window.location = "/#/schedule"
+}
+
+
 module.exports = class HomePage extends React.Component {
   constructor(props){
    super(props)
@@ -19,7 +27,7 @@ module.exports = class HomePage extends React.Component {
     return  (
       <div>
         <Header />
-        <HomePageBtn txt={"Schedule"} img={"icon/clipboard.png"} />
+        <HomePageBtn txt={"Schedule"} onClick={goToSchedulePage} img={"icon/clipboard.png"} />
         <HomePageBtn txt={"I would like..."} onClick={goToAskPage} img={"icon/question.png"} />
         <HomePageBtn txt={"I can..."} img={"icon/user.png"} />
       </div>
