@@ -4,6 +4,7 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 
 import Header from './header'
+import Items from './scheduleItems'
 
 module.exports = class AskPage extends React.Component {
   constructor(props){
@@ -18,7 +19,14 @@ module.exports = class AskPage extends React.Component {
     return (
         <div>
         <Header />
-          <h2>SCHEDULE</h2>
+          <Items txt="Breakfast"/>
+          <Items txt="Get Ready"/>
+          <Items txt="School"/>
+          <Items txt="TV"/>
+          <Items txt="Homework"/>
+          <Items txt="Dinner"/>
+          <Items txt="Bed Time"/>
+
         </div>
       )      
   }
