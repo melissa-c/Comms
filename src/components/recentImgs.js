@@ -21,7 +21,7 @@ module.exports = class recentImgs extends React.Component {
       <div className="recentImgs">
         {recentchoice.map(function(image){
           console.log(image,'image')
-          return(<img className= {image[1]} src={image[0]}></img>)
+          return(<img className= {image[1]} src={image[0]} onClick={this.props.onClick}></img>)
         }, this)}
         
       </div>
