@@ -3,6 +3,7 @@ var app = express()
 var knex = require('knex')
 var pg = require('pg')
 var accessDB = 'postgres://testuser:test@localhost/commspics'
+var port = process.env.PORT || 3000
 
 var Client = new pg.Client(accessDB)
 app.use(express.static('client'))
@@ -35,8 +36,7 @@ app.get('/database', function(req,res){
 
   })
 })
-app.set('port', 3000)
+app.set('port', port)
 var server = app.listen(app.get('port'), function() {
 var port = server.address().port;
 })
-
