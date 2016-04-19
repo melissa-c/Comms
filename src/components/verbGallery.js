@@ -16,18 +16,21 @@ module.exports = class VerbGallery extends React.Component {
     .end(function(err, res){
       this.setState(
         {images: JSON.parse(res.text)}
-        )
+      )
     }.bind(this))
   }
 
   render (){
     var verbPics = this.props.text
     
-    return  (
+    return (
       <div className="verbGallery">
-        {verbPics.map(function(image){
-          return (
-            <img className= "indAskImg Black" src={image.filepath} onClick={this.props.onClick} />)
+        {this.state.images.map(function(image){
+          switch(image.category) {
+            case "verbs":
+            return (<img className= "indAskImg Black" src={image.filepath} onClick={this.props.onClick} />)
+            break;
+          }
         }, this)}
       </div>
     )
