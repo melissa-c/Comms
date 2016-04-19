@@ -6,8 +6,9 @@ import imgname from './imgGallery'
 
 module.exports = class AskBoard extends React.Component {
   constructor(props){
-   super(props)
+    super(props)
   }
+
   render (){
     return  (
      	<div className="askBoard">

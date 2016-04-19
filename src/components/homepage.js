@@ -6,6 +6,7 @@ import {Router, Route} from 'react-router'
 
 import HomePageBtn from './homePageBtn'
 import Header from './header'
+import CommentPage from './commentPage'
 
 
 function clickfun(){
@@ -24,18 +25,26 @@ function goToAskPage(){
 
 }
 
+function goToSchedulePage(){
+  window.location = "/#/schedule"
+}
+
+function goToCommentPage(){
+  window.location = "/#/commentPage"
+}
+
 module.exports = class HomePage extends React.Component {
   constructor(props){
    super(props)
   }
 
   render (){
-    return  (
+    return (
       <div>
         <Header />
-        <HomePageBtn txt={"Schedule"} img={"icon/clipboard.png"} />
+        <HomePageBtn txt={"Schedule"} onClick={goToSchedulePage} img={"icon/clipboard.png"} />
         <HomePageBtn txt={"I would like..."} onClick={goToAskPage} img={"icon/question.png"} />
-        <HomePageBtn txt={"I can..."} img={"icon/user.png"} />
+        <HomePageBtn txt={"I can..."} onClick={goToCommentPage} img={"icon/user.png"} />
       </div>
     )
   }
