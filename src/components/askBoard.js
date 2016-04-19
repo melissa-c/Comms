@@ -10,7 +10,7 @@ module.exports = class AskBoard extends React.Component {
   }
 
   render (){
-    return  (
+    return (
      	<div className="askBoard">
      		<div>I would like</div>
      		<div>
