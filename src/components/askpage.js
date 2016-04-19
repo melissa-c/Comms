@@ -22,9 +22,30 @@ module.exports = class AskPage extends React.Component {
   }
  
   update(e){
-    if(!recentArray.indexOf([e.target.src, e.target.className])){
+/*    for(var i = 0; i < recentArray.length; i++){
+      if(recentArray[i] === [e.target.src, e.target.className]){
+            // console.log('array', [e.target.src, e.target.className])
+            // console.log('array', recentArray)
+        return recentArray
+      } else if (recentArray[i] !== [e.target.src, e.target.className] && recentArray.length < 5){
+        recentArray.push([e.target.src, e.target.className])
+            // console.log('push', [e.target.src, e.target.className])
+            // console.log('push', recentArray)
+      } else {
+        recentArray.shift()
+        recentArray.push([e.target.src, e.target.className])
+            // console.log('shift', [e.target.src, e.target.className])
+            // console.log('shift', recentArray)
+      }
+    }
+    this.setState(
+      {imageURL: e.target.src, recentURL: recentArray}
+    )
+  }
+*/    
+  if(recentArray.indexOf([e.target.src, e.target.className])){
       return recentArray
-    } else if (!recentArray.indexOf([e.target.src, e.target.className]) && recentArray.length < 5){
+    } else if(recentArray.length < 5){
       recentArray.push([e.target.src, e.target.className])
     } else {
       recentArray.shift()
@@ -34,6 +55,7 @@ module.exports = class AskPage extends React.Component {
       {imageURL: e.target.src, recentURL: recentArray}
     )
   }
+
 /*    if(recentArray.length>=5){
       recentArray.shift()
       recentArray.push([e.target.src, e.target.className])
