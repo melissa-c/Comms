@@ -15,6 +15,13 @@ app.get('/database', function(req,res){
   	console.log("Error: ", error)
   })
 })
+app.post('/database', function(req,res) {
+  // knex.raw('INSERT INTO GALLERY values')
+  console.log(req, "ththth")
+})
+
+  })
+})
 
 app.set('port', process.env.PORT || 3000)
 
