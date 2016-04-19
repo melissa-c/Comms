@@ -1,0 +1,24 @@
+'use strict'
+
+import React from 'react'
+import ReactDOM from 'react-dom'
+import imgname from './imgGallery'
+
+module.exports = class CommentBoard extends React.Component {
+  constructor(props){
+    super(props)
+  }
+  render (){
+    return (
+      <div className="commentBoard">
+        <div>I can</div>
+        <div>
+          <img className='chosenVerb' src={this.props.text}></img>
+        </div>
+        <div>
+          <img className='chosenPic' src={this.props.text}></img>
+        </div>
+      </div>
+    )
+  }
+}

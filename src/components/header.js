@@ -14,12 +14,17 @@ function back(){
   window.location = '/#/';
 }
 
+function goToAdmin(){
+  window.location = '/#/parentadmin';
+}
+
 module.exports = class Header extends React.Component {
   constructor(props){
     super(props)
   }
+ 
   render (){
-    return  (
+    return (
       <div className="header">
         <HeaderBtn className={"homeBtn"} txt={"home"} onClick={back} img={"icon/home.png"} />
         <HeaderBtn className={"parentAdmin"} txt={"admin"} onClick={back} img={"icon/lock.png"} />

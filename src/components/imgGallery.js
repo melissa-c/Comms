@@ -6,8 +6,8 @@ import Request from 'superagent'
 
 module.exports = class ImgGallery extends React.Component {
   constructor(props){
-   super(props)
-   this.state = {images: []}
+    super(props)
+    this.state = {images: []}
   }
 
   componentDidMount(){
@@ -21,33 +21,30 @@ module.exports = class ImgGallery extends React.Component {
   }
 
   render (){
-    return  (
+    return (
       <div>
         <div className="imgGallery">
           {this.state.images.map(function(image){
                   
             switch(image.category) {
               case "body":
-                  return(<img className= "indAskImg Purple" src={image.filepath} onClick={this.props.onClick}></img>)
-                  break;
+                return(<img className= "indAskImg Purple" src={image.filepath} onClick={this.props.onClick}></img>)
+                break;
               case "food":
-                  return(<img className= "indAskImg Orange" src={image.filepath} onClick={this.props.onClick}></img>)
-                  break;
+                return(<img className= "indAskImg Orange" src={image.filepath} onClick={this.props.onClick}></img>)
+                break;
               case "emotions":
-                  return(<img className= "indAskImg Blue" src={image.filepath} onClick={this.props.onClick}></img>)
-                  break;
+                return(<img className= "indAskImg Blue" src={image.filepath} onClick={this.props.onClick}></img>)
+                break;
               case "home":
-                  return(<img className= "indAskImg Yellow" src={image.filepath} onClick={this.props.onClick}></img>)
-                  break;
+                return(<img className= "indAskImg Yellow" src={image.filepath} onClick={this.props.onClick}></img>)
+                break;
               case "outside":
-                  return(<img className= "indAskImg Green" src={image.filepath} onClick={this.props.onClick}></img>)
-                  break;
+                return(<img className= "indAskImg Green" src={image.filepath} onClick={this.props.onClick}></img>)
+                break;
               case "school":
-                  return(<img className= "indAskImg Red" src={image.filepath} onClick={this.props.onClick}></img>)
-                  break;
-              case "verbs":
-                  return(<img className= "indAskImg Black" src={image.filepath} onClick={this.props.onClick}></img>)
-                  break;
+                return(<img className= "indAskImg Red" src={image.filepath} onClick={this.props.onClick}></img>)
+                break;
             }
           }, this)}
         </div>
@@ -56,7 +53,7 @@ module.exports = class ImgGallery extends React.Component {
         <button className='red'></button>
         <button className='green'></button>
       </div>
-      )
-    }
+    )
   }
+}
 

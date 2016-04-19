@@ -5,8 +5,9 @@ import ReactDOM from 'react-dom'
 
 module.exports = class HeaderBtn extends React.Component {
   constructor(props){
-   super(props)
+    super(props)
   }
+
   render (){
     return  (
       <div>
