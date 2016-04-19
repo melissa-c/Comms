@@ -27,7 +27,7 @@ module.exports = class Header extends React.Component {
     return (
       <div className="header">
         <HeaderBtn className={"homeBtn"} txt={"home"} onClick={back} img={"icon/home.png"} />
-        <HeaderBtn className={"parentAdmin"} txt={"admin"} onClick={back} img={"icon/lock.png"} />
+        <HeaderBtn className={"parentAdmin"} txt={"admin"} onClick={goToAdmin} img={"icon/lock.png"} />
 
         <h1><span>Comms</span><br /> Companion</h1>
 

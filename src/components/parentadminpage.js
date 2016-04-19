@@ -6,6 +6,10 @@ import ReactDOM from 'react-dom'
 import Header from './header'
 var recentArray = []
 
+function goToSchedAdmin(){
+window.location = '/#/scheduleAdmin';
+}
+
 module.exports = class AskPage extends React.Component {
   constructor(props){
     super(props)
@@ -23,7 +27,7 @@ module.exports = class AskPage extends React.Component {
         <input name="fileInput" type="file" />
         <h3>change password</h3>
         <input name="passwordInput" type="text" />
-        <h3>change schedule</h3>
+        <div><button onClick={goToSchedAdmin}>change schedule</button></div>
       </div>
     )      
   }
