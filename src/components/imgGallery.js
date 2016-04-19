@@ -10,6 +10,11 @@ module.exports = class ImgGallery extends React.Component {
    this.state = {images: []}
   }
 
+  componentWillMount(){
+    console.log("mounting")
+
+  }
+
   componentDidMount(){
     Request
     .get('/database')
@@ -18,6 +23,10 @@ module.exports = class ImgGallery extends React.Component {
         {images: JSON.parse(res.text)}
         )
     }.bind(this))
+  }
+
+  componentWillUnmount(){
+    console.log("unmount")
   }
 
   render (){
