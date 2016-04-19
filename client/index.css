@@ -22,7 +22,7 @@ footer {
   letter-spacing: .2em;
   margin: 0 0 40px;
   top: 0;
-  justify-content: space-between;
+  position: relative;
 }
 
 .hidden {
@@ -76,6 +76,17 @@ button {
   margin: 20px;
   padding: 2px;
   width: 80px;
+}
+
+.homeBtn,
+.timerBtn,
+h1 {
+  flex: 1;
+}
+
+.parentAdmin {
+  position: absolute;
+  left: 0; top: 0; right: 0; bottom: 0;
 }
 
 .headerBtn img{
