@@ -22,7 +22,19 @@ module.exports = class AskPage extends React.Component {
   }
  
   update(e){
-    if(recentArray.length>=5){
+    if(!recentArray.indexOf([e.target.src, e.target.className])){
+      return recentArray
+    } else if (!recentArray.indexOf([e.target.src, e.target.className]) && recentArray.length < 5){
+      recentArray.push([e.target.src, e.target.className])
+    } else {
+      recentArray.shift()
+      recentArray.push([e.target.src, e.target.className])
+    }
+    this.setState(
+      {imageURL: e.target.src, recentURL: recentArray}
+    )
+  }
+/*    if(recentArray.length>=5){
       recentArray.shift()
       recentArray.push([e.target.src, e.target.className])
     } else {
@@ -32,7 +44,7 @@ module.exports = class AskPage extends React.Component {
       {imageURL: e.target.src, recentURL: recentArray}
     )
   }
-
+*/
   render (){
     return (
       <div>
