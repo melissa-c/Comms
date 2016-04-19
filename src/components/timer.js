@@ -58,14 +58,3 @@ module.exports = class HomePageBtn extends React.Component {
     )
   }
 }
-
-
-
-
-
-
-
-
-
-
-

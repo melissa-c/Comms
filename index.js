@@ -6,6 +6,10 @@ import HomePage from './src/components/homepage'
 import AskPage from './src/components/askpage'
 import Timer from './src/components/timer'
 
+import Schedule from './src/components/schedulepage'
+import ParentAdmin from './src/components/parentadminpage'
+
+
 
 ReactDOM.render(
   
@@ -14,7 +18,9 @@ ReactDOM.render(
       <Route path='/' component={HomePage}/>
       <Route path='askpage' component={AskPage}/>
       <Route path='timer' component={Timer}/>
-  
+
+      <Route path='schedule' component={Schedule} />
+      <Route path='parentAdmin' component={ParentAdmin} />
   </Router>,
   document.getElementById('content')
 )

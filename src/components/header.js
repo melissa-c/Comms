@@ -11,10 +11,16 @@ function back(){
   window.location = '/#/';
 }
 
+function goToAdmin(){
+  window.location = '/#/parentadmin';
+}
+
 module.exports = class Header extends React.Component {
   constructor(props){
    super(props)
   }
+ 
+ 
   render (){
 
 
@@ -26,7 +32,7 @@ module.exports = class Header extends React.Component {
         <p className="labels">home</p>
       </button>
 
-      <button className="parentAdmin">
+      <button ref='admin' className="parentAdmin" onClick={goToAdmin}>
         <img src="icon/lock.png" />
         <p className="labels">admin</p>        
       </button>

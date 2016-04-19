@@ -2,6 +2,7 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
+
 import AskBoard from './askBoard'
 import ImgGallery from './imgGallery'
 import RecentImgs from './recentImgs'
@@ -14,6 +15,14 @@ module.exports = class AskPage extends React.Component {
    this.state = {imageURL:'', recentURL: []}
   }
 
+  componentDidMount(){
+    
+      this.setState(
+        {recentURL: recentArray}
+        )
+  }
+
+ 
   update(e){
     if(recentArray.length>=5){
       recentArray.shift()
@@ -26,6 +35,8 @@ module.exports = class AskPage extends React.Component {
         {imageURL: e.target.src, recentURL: recentArray}
         )
     }
+
+ 
 
   render (){
    return (
