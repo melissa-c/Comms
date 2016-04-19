@@ -8,26 +8,25 @@ import Items from './scheduleItems'
 
 module.exports = class AskPage extends React.Component {
   constructor(props){
-   super(props)
+    super(props)
   }
 
   update(e){
     
-    }
+  }
 
   render (){
     return (
-        <div>
-        <Header />
-          <Items txt="Breakfast"/>
-          <Items txt="Get Ready"/>
-          <Items txt="School"/>
-          <Items txt="Choice" img="img/choice.png"/>
-          <Items txt="Homework"/>
-          <Items txt="Dinner"/>
-          <Items txt="Bed Time" img="img/bedTime.png"/>
-
-        </div>
-      )      
+      <div>
+      <Header />
+        <Items txt="Breakfast"/>
+        <Items txt="Get Ready"/>
+        <Items txt="School"/>
+        <Items txt="Choice" img="img/choice.png"/>
+        <Items txt="Homework"/>
+        <Items txt="Dinner"/>
+        <Items txt="Bed Time" img="img/bedTime.png"/>
+      </div>
+    )      
   }
 }
