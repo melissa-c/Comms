@@ -28,8 +28,9 @@ module.exports = class Header extends React.Component {
       <div className="header">
         <HeaderBtn className={"homeBtn"} txt={"home"} onClick={back} img={"icon/home.png"} />
         <HeaderBtn className={"parentAdmin"} txt={"admin"} onClick={back} img={"icon/lock.png"} />
-
+      <div>    
         <h1><span>Comms</span><br /> Companion</h1>
+      </div>
 
         <HeaderBtn className={"timerBtn"} txt={"timer"} onClick={goToTimer} img={"icon/FPO_timer.png"} />
      	</div>
