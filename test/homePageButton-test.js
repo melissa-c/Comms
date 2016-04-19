@@ -1,0 +1,33 @@
+import test from 'ava'
+import React from 'react'
+
+import {shallow, render, mount} from 'enzyme'
+
+import HomePageBtn from '../src/components/homePageBtn'
+
+test ('<HomePageBtn > will return button click', t => {
+
+
+const expected ='Schedule'
+  
+
+  const wrapper1 =shallow(<HomePageBtn />)
+  var div = wrapper1.find({prop: 'value'}).length
+  console.log('here is <div>', div)
+
+
+ // t.deepEqual(h1.length, 1)
+ // t.deepEqual(h1.text(), expected)
+
+
+
+function clickHandler () {
+	t.truthy(true)
+
+}
+const wrapper2 = mount(<HomePageBtn onClick={clickHandler} /> )
+wrapper2.find('button').simulate('click');
+
+
+
+})
