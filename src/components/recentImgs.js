@@ -11,7 +11,17 @@ module.exports = class recentImgs extends React.Component {
    this.state = {recentImg: []}
   }
 
-  render (){
+componentWillMount(){
+    console.log("mounting")
+
+  }
+
+componentWillUnmount(){
+    console.log("unmount")
+  }
+
+
+render (){
         var recentchoice = this.props.text
     
    
@@ -25,3 +35,6 @@ module.exports = class recentImgs extends React.Component {
    		)
   }
 }
+ 
+
+  
