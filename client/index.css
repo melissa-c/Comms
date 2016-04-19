@@ -40,7 +40,7 @@ h1 {
   display: inline-block;
   font-size: 45px;
   line-height: 1em;
-  margin: 15px;
+  margin: 15px 0;
 }
 
 h1 span {
@@ -58,10 +58,9 @@ button {
   cursor: pointer;
 }
 
-.homeBtn,
-.backBtn,
-.parentAdmin {
+.headerBtn {
   border-radius: 5px;
+  display: inline-block;
   float: left;
   height: 80px;
   margin: 20px;
@@ -69,30 +68,9 @@ button {
   width: 80px;
 }
 
-.homeBtn img,
-.parentAdmin img {
+.headerBtn img{
   height: 75%;
-}
-
-.navBtn img {
-  height: 90%;
-  margin-right: 20px;
-}
-
-.timerBtn img {
-  display: inline-block;
-  height: 100%;
-  margin-right: 20px; 
-}
-
-.timerBtn {
-  background-color: #fff;
-  border-radius: 5px;
-  float: right;
-  height: 80px;
-  margin: 20px;
-  padding: 2px;
-  width: 80px;
+  text-align: center;
 }
 
 .homeBtn:active,
@@ -114,6 +92,11 @@ button {
   padding: 20px;
   text-align: left;
   width: 500px;
+}
+
+.navBtn img {
+  height: 90%;
+  margin-right: 20px;
 }
 
 .navBtn:active {
