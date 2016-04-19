@@ -6,8 +6,8 @@ import Request from 'superagent'
 
 module.exports = class ImgGallery extends React.Component {
   constructor(props){
-    super(props)
-    this.state = {images: []}
+   super(props)
+   this.state = {images: []}
   }
 
   componentDidMount(){
@@ -84,8 +84,9 @@ module.exports = class ImgGallery extends React.Component {
           </div>
           )
 
-    
-
+    }
   }
 }
+
+
 
