@@ -7,7 +7,7 @@ Schematics, learning objectives, technology, roles, schedules.
 ##Project Description
 A communication tool to assist children with alternative abilities in speech and language to communicate on a day to day basis.
 
-This app works best on tablet devices to more easily view the pictures, and to optimise convenience and mobility. 
+This app works best on tablet devices to more easily view the pictures, and to optimise convenience and mobility.
 
 ##App link:
 [CommsCompanion](https://commscompanion.herokuapp.com)
