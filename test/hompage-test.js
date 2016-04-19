@@ -11,7 +11,7 @@ test ('HomepageBtn commponents adds to <Homepage> ', t =>{
 
 const wrapper = mount(<HomePage />)
 var homepgbtn = wrapper.find('div')
-
+//console.log(homepgbtn.root.nodes[0].length)
 
 t.deepEqual(homepgbtn.length, 8)
 })

@@ -19,7 +19,7 @@ test('<Header /> returs page header ', t => {
 
   const wrapper =shallow(<Header />)
   var h1 = wrapper.find('h1')
-  console.log('here is h1', h1.text())
+ // console.log('here is h1', h1.text())
 
 
   t.deepEqual(h1.length, 1)

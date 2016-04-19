@@ -11,11 +11,11 @@ test ('<HomePageBtn > will return button click', t => {
 	const expected ='Schedule'
   
 
- 	const wrapper1 =mount(<HomePageBtn />)
+ 	const wrapper1 =mount(<HomePageBtn /> )
 
- 	var div = wrapper1.find('img').text()
-	console.log('here is <div>', div)
-  
+ 	var div = wrapper1.html()
+	
+	t.deepEqual(div, '<div><button class="navBtn"><img></button></div>')
 
 
 	function clickHandler () {
@@ -24,7 +24,6 @@ test ('<HomePageBtn > will return button click', t => {
 	}
 	const wrapper2 = mount(<HomePageBtn onClick={clickHandler} /> )
 	wrapper2.find('button').simulate('click');
-
-
+	
 
 })
