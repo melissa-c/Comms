@@ -13,8 +13,7 @@ module.exports = class recentImgs extends React.Component {
 
   render (){
     var recentchoice = this.props.text
-    
-   
+       
    return (
       <div className="recentImgs">
         {recentchoice.map(function(image){
