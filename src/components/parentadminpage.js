@@ -12,11 +12,10 @@ window.location = '/#/scheduleAdmin';
 }
 
 function uploadFile() {
-  var fileInput = document.getElementById("filename").value
-  console.log(value)
-  console.log(fileInput)
+  var fileInput = document.getElementById("fileName").value
+  console.log(fileName)
   var nameInput = document.getElementById("nameInput").value
-  console.log(nameInput)
+  console.log(fileInput)
   Request.post("/database")
   .query({fileInput:fileInput,nameInput:nameInput})
   .end(function(err,res){

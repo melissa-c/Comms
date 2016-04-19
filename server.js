@@ -16,10 +16,13 @@ app.get('/database', function(req,res){
   })
 })
 app.post('/database', function(req,res) {
-  // knex.raw('INSERT INTO GALLERY values')
-  console.log(req, "ththth")
-})
+  var writeData = res.req.query
+  var writeData1 = writeData.fileInput
+  var writeName1 = writeData.nameInput
 
+  knex.raw('INSERT INTO GALLERY(name, category, filepath) VALUES("'+ writeName1 +'", "personal", "' + writeData1 + '")')
+  .then(function(res){
+    callback(null, res)
   })
 })
 
