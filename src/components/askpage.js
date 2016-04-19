@@ -11,19 +11,17 @@ var recentArray = []
 
 module.exports = class AskPage extends React.Component {
   constructor(props){
-   super(props)
-   this.state = {imageURL:'', recentURL: []}
+    super(props)
+    this.state = {imageURL:'', recentURL: []}
   }
 
   
 
   componentDidMount(){
-    
-      this.setState(
-        {recentURL: recentArray}
-        )
+    this.setState(
+      {recentURL: recentArray}
+    )
   }
-
  
   update(e){
     if(recentArray.length>=5){
@@ -31,7 +29,6 @@ module.exports = class AskPage extends React.Component {
       recentArray.push([e.target.src, e.target.className])
     } else {
       recentArray.push([e.target.src, e.target.className])
-
     }
       this.setState(
         {imageURL: e.target.src, recentURL: recentArray}
@@ -48,6 +45,7 @@ module.exports = class AskPage extends React.Component {
 
     </div>
     </div>
+
     )      
   }
 }

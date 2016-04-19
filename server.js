@@ -31,6 +31,7 @@ app.set('port', process.env.PORT || 3000)
 
 var server = app.listen(app.get('port'), function() {
 	var port = server.address().port
+	console.log('server running on port: ', port)
 })
 
 
