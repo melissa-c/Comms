@@ -8,17 +8,13 @@ import HomePageBtn from '../src/components/homePageBtn'
 test ('<HomePageBtn > will return button click', t => {
 
 
-const expected ='Schedule'
+	const expected ='Schedule'
   
 
-  const wrapper1 =shallow(<HomePageBtn />)
-  var div = wrapper1.find({prop: 'value'}).length
-  console.log('here is <div>', div)
-
-
- // t.deepEqual(h1.length, 1)
- // t.deepEqual(h1.text(), expected)
-
+  // const wrapper1 =shallow(<HomePageBtn />)
+  // var div = wrapper1.find({prop: 'value'}).length
+  // console.log('here is <div>', div)
+  
 
 
 function clickHandler () {

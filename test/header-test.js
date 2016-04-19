@@ -7,13 +7,12 @@ import TestUtils from 'react-addons-test-utils';
 
 //components
 
-// import HomePage from '../src/components/homepage'
-// import AskPage from '../src/components/askpage'
 import Header from '../src/components/header'
+import HeaderBtn from '../src/components/headerBtn'
  
 
 
-test('<Header /> render its elements ', t => {
+test('<Header /> returs page header ', t => {
 
   const expected ='Comms Companion'
   
@@ -27,14 +26,14 @@ test('<Header /> render its elements ', t => {
   t.deepEqual(h1.text(), expected)
 })
 
-test('<Header /> returns bottons', t=> {
+test('<HeaderBtn /> returns bottons', t=> {
 
 function clickHandler () {
 	t.truthy(true)
 
 }
 
-const wrapper = mount(<Header onClick={clickHandler} /> )
+const wrapper = mount(<HeaderBtn onClick={clickHandler} /> )
 wrapper.find('button').simulate('click');
 
 })
