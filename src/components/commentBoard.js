@@ -2,7 +2,8 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import imgname from './imgGallery'
+import ImgGallery from './imgGallery'
+import VerbGallery from './verbGallery'
 
 module.exports = class CommentBoard extends React.Component {
   constructor(props){
@@ -23,3 +24,4 @@ module.exports = class CommentBoard extends React.Component {
     )
   }
 }
+
