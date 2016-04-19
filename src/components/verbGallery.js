@@ -2,6 +2,7 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
+import Request from 'superagent'
 
 module.exports = class VerbGallery extends React.Component {
   constructor(props){
