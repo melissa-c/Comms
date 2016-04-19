@@ -310,6 +310,42 @@ svg {
   width: 50px;
 }
 
+.btnJumpOrange{
+  margin-left:10px;
+  border-radius: 5px;
+  border: none;
+  background-color: orange;
+  height:40px;
+  width:80px;
+}
+
+.btnJumpGreen{
+  margin-left:10px;
+  border-radius: 5px;
+  border: none;
+  background-color: blue;
+  height:40px;
+  width:80px;
+}
+
+.btnJumpRed{
+  margin-left:10px;
+  border-radius: 5px;
+  border: none;
+  background-color: red;
+  height:40px;
+  width:80px;
+}
+
+.btnJumpYellow{
+  margin-left:10px;
+  border-radius: 5px;
+  border: none;
+  background-color: yellow;
+  height:40px;
+  width:80px;
+}
+
 /* @media
   (min-device-width: 800px)
   and (max-device-width: 1280px) {
