@@ -11,7 +11,6 @@ import Schedule from './src/components/schedulepage'
 import ParentAdmin from './src/components/parentadminpage'
 import ScheduleAdmin from './src/components/scheduleAdmin'
 
-
 ReactDOM.render(
   
   <Router history={hashHistory}>

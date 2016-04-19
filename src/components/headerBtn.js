@@ -8,10 +8,8 @@ module.exports = class HeaderBtn extends React.Component {
     super(props)
   }
 
-  
-
   render (){
-    return  (
+    return (
       <div>
         <button id ={this.props.id} className='headerBtn' onClick={this.props.onClick}>
           <img src={this.props.img} />

@@ -2,6 +2,7 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
+
 import CommentBoard from './commentBoard'
 import ImgGallery from './imgGallery'
 import VerbGallery from './verbGallery'

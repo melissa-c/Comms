@@ -8,7 +8,7 @@ import Header from './header'
 
 module.exports = class HomePageBtn extends React.Component {
   constructor(props){
-   super(props)
+    super(props)
   }
 
   render (){

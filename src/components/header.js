@@ -32,12 +32,9 @@ module.exports = class Header extends React.Component {
     }
     else {
       document.getElementById('admin').className = "hidden"     
-
     }
-
   }
   
- 
   render (){
     return (
       <div className="header">

@@ -8,6 +8,7 @@ module.exports = class CommentBoard extends React.Component {
   constructor(props){
     super(props)
   }
+  
   render (){
     return (
       <div className="commentBoard">
