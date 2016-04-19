@@ -9,10 +9,7 @@ function change(e){
     var elements = []
     elements = document.getElementsByClassName('Red')
     console.log(elements)
-    
   }
-  
-
 }
 
 module.exports = class ImgGallery extends React.Component {

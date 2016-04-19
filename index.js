@@ -19,7 +19,6 @@ ReactDOM.render(
     <Route path='parentAdmin' component={ParentAdmin} />
     <Route path='scheduleAdmin' component={ScheduleAdmin}/>
     <Route path='timer' component={Timer}/>
-
     <Route path='schedule' component={Schedule} />
     <Route path='askpage' component={AskPage}/>
     <Route path='commentPage' component={CommentPage}/>

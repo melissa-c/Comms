@@ -15,7 +15,13 @@ function back(){
 }
 
 function goToAdmin(){
-  window.location = '/#/parentadmin';
+  var password = window.prompt('password')
+  if(password==='11'){
+    window.location = '/#/parentadmin'
+  }
+  else {
+    window.alert("incorrect password")
+  }
 }
 
 module.exports = class Header extends React.Component {
@@ -40,9 +46,7 @@ module.exports = class Header extends React.Component {
       <div className="header">
         <HeaderBtn id={"home"} className={"homeBtn"} txt={"home"} onClick={back} img={"icon/home.png"} />
         <HeaderBtn id={"admin"} className={"parentAdmin"} txt={"admin"} onClick={goToAdmin} img={"icon/lock.png"} />
-
         <h1><span>Comms</span><br /> Companion</h1>
-
         <HeaderBtn id={"timer"} className={"timerBtn"} txt={"timer"} onClick={goToTimer} img={"icon/FPO_timer.png"} />
      	</div>
    	) 
