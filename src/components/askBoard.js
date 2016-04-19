@@ -2,7 +2,7 @@
 
 import React from 'react'
 import ReactDOM from 'react-dom'
-import imgname from './imgGallery'
+import ImgGallery from './imgGallery'
 
 module.exports = class AskBoard extends React.Component {
   constructor(props){
@@ -10,7 +10,7 @@ module.exports = class AskBoard extends React.Component {
   }
 
   render (){
-    return  (
+    return (
      	<div className="askBoard">
      		<div>I would like</div>
      		<div>

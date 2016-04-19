@@ -11,12 +11,12 @@ import Header from './header'
 module.exports = class CommentPage extends React.Component {
   constructor(props){
     super(props)
-    this.state = {imageURL:'', recentURL: []}
+    this.state = {imageURL:''}
   }
 
   update(e){
     this.setState(
-      {imageURL: e.target.src, recentURL: recentArray}
+      {imageURL: e.target.src}
     )
   }
 
@@ -25,7 +25,7 @@ module.exports = class CommentPage extends React.Component {
       <div>
         <Header />
         <CommentBoard text= {this.state.imageURL}/>
-        <VerbGallery text= {this.state.recentURL} onClick={this.update.bind(this)} />
+        <VerbGallery onClick={this.update.bind(this)} />
         <ImgGallery onClick={this.update.bind(this)}/>
       </div>
     )      

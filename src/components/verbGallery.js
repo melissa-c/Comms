@@ -25,9 +25,12 @@ module.exports = class VerbGallery extends React.Component {
     
     return (
       <div className="verbGallery">
-        {verbPics.map(function(image){
-          return (
-            <img className= "indAskImg Black" src={image.filepath} onClick={this.props.onClick} />)
+        {this.state.images.map(function(image){
+          switch(image.category) {
+            case "verbs":
+            return (<img className= "indAskImg Black" src={image.filepath} onClick={this.props.onClick} />)
+            break;
+          }
         }, this)}
       </div>
     )
