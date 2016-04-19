@@ -7,7 +7,7 @@ import Request from 'superagent'
 function change(e){
   if(e.target.name==="red"){
     var elements = []
-    elements = document.getElementsByClassName('Red')
+    elements = document.getElementsByClassName('Red').className = "hidden"
     console.log(elements)
   }
 }
@@ -57,7 +57,7 @@ module.exports = class ImgGallery extends React.Component {
             }, this)}
           
           </div>
-          <button name='yellow' className='btnJumpYellow' onClick={change}></button>
+          <button name='yellow' className='btnJumpYellow' onClick="yello.id = 'hidden'; return false"></button>
           <button name='green' className='btnJumpGreen' onClick={change}></button>
           <button name='red' className='btnJumpRed' onClick={change}></button>
           <button name='orange' className='btnJumpOrange' onClick={change}></button>

@@ -15,7 +15,7 @@ ReactDOM.render(
   
   <Router history={hashHistory}>
 
-    <Route path='/' component={HomePage}/>
+    <Route path='/' component={HomePage} testProp="rabit" />
     <Route path='parentAdmin' component={ParentAdmin} />
     <Route path='scheduleAdmin' component={ScheduleAdmin}/>
     <Route path='timer' component={Timer}/>

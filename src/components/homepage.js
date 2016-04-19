@@ -23,6 +23,7 @@ function goToCommentPage(){
 module.exports = class HomePage extends React.Component {
   constructor(props){
    super(props)
+   console.log(this.props, "test")
   }
 
   render (){
