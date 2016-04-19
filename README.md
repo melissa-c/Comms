@@ -10,7 +10,7 @@ A communication tool to assist children with alternative abilities in speech and
 This app works best on tablet devices to more easily view the pictures, and to optimise convenience and mobility. 
 
 ##App link:
-<a href="https://commscompanion.herokuapp.com/" target="_blank">CommsCompanion</a>
+[CommsCompanion](https://commscompanion.herokuapp.com)
 
 ##Github workflow
 * Master always has passing tests.
