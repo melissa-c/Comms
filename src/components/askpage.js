@@ -15,6 +15,8 @@ module.exports = class AskPage extends React.Component {
    this.state = {imageURL:'', recentURL: []}
   }
 
+  
+
   componentDidMount(){
     
       this.setState(
@@ -35,9 +37,6 @@ module.exports = class AskPage extends React.Component {
         {imageURL: e.target.src, recentURL: recentArray}
         )
     }
-
- 
-
   render (){
    return (
     <div>
@@ -45,7 +44,7 @@ module.exports = class AskPage extends React.Component {
     <div>
     <AskBoard text= {this.state.imageURL}/>
     <RecentImgs text= {this.state.recentURL} onClick={this.update.bind(this)} />
-    <ImgGallery onClick={this.update.bind(this)}/>
+    <ImgGallery sender="askpage" onClick={this.update.bind(this)}/>
 
     </div>
     </div>
