@@ -67,22 +67,6 @@ button {
   cursor: pointer;
 }
 
-.headerBtn {
-  border-radius: 5px;
-  display: inline-block;
-  float: left;
-  height: 80px;
-  margin: 20px;
-  padding: 2px;
-  width: 80px;
-}
-
-.homeBtn,
-.timerBtn,
-h1 {
-  flex: 1;
-}
-
 button .labels {
   border-radius: 5px;
   display: none;
@@ -110,13 +94,38 @@ button:active .labels {
   padding: 36px 0 0;
 }
 
+.headerBtn {
+  border-radius: 5px;
+  display: inline-block;
+  float: left;
+  height: 80px;
+  margin: 20px;
+  padding: 2px;
+  width: 80px;
+}
+
+.homeBtn,
+.timerBtn,
+h1 {
+  flex: 1;
+}
+
 .parentAdmin {
-  position: absolute 0 0 0 0;
+  position: absolute;
 }
 
 .headerBtn img{
-  height: 80%;
   text-align: center;
+}
+
+#home img {
+  height: 55px;
+}
+
+
+#admin img,
+#timer img {
+  height: 70px;
 }
 
 .homeBtn:active,
@@ -145,7 +154,7 @@ button:active .labels {
 }
 
 #schedule img {
-  margin: -30px 40px 0 20px;
+  margin: -30px 45px 0 25px;
 }
 
 #ask img,
@@ -237,10 +246,12 @@ button:active .labels {
   border: 4px solid black;
 }
 
-button.yellow,
-button.blue,
-button.red,
-button.green {
+button.btnJumpPurple,
+button.btnJumpOrange,
+button.btnJumpYellow,
+button.btnJumpBlue,
+button.btnJumpRed,
+button.btnJumpGreen {
   border-radius: 5px;
   box-shadow: 3px 3px #666;
   -webkit-user-select: none;
@@ -291,6 +302,10 @@ svg {
   width: 460px;
 }
 
+.stopwatchBg {
+  height: 500px;
+}
+
 .enterTime {
   border-radius: 5px;
   font-size: 20px;
@@ -313,10 +328,6 @@ svg {
   height: 50px;
   margin: 20px 30px 20px 20px;
   width: 50px;
-}
-
-.stopwatchBg {
-  height: 500px;
 }
 
 /* @media

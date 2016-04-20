@@ -35,7 +35,7 @@ module.exports = class HomePage extends React.Component {
         <Header />
         <HomePageBtn id={"schedule"} txt={"Schedule"} onClick={goToSchedulePage} img={"icon/clipboard.png"} />
         <HomePageBtn id={"ask"} txt={"I would like..."} onClick={goToAskPage} img={"icon/question.png"} />
-        <HomePageBtn id={"ican"} txt={"I can..."} onClick={goToCommentPage} img={"icon/user.png"} />
+        <HomePageBtn id={"ican"} txt={"I can..."} onClick={goToCommentPage} img={"icon/ican.png"} />
       </div>
     )
   }
