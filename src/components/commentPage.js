@@ -26,7 +26,7 @@ module.exports = class CommentPage extends React.Component {
         <Header />
         <CommentBoard text= {this.state.imageURL}/>
         <VerbGallery onClick={this.update.bind(this)} />
-        <ImgGallery onClick={this.update.bind(this)}/>
+        <ImgGallery sender="commentspage" onClick={this.update.bind(this)}/>
       </div>
     )      
   }
