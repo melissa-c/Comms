@@ -5,37 +5,42 @@ import ReactDOM from 'react-dom'
 
 import Header from './header'
 import Items from './scheduleItems'
-var test =""
+
+
 
 module.exports = class HomePageBtn extends React.Component {
   constructor(props){
     super(props)
+    this.state = {items: [{txt: "Breakfast", selected: false }, {txt: "Get Ready", selected: false }, {txt: "School", selected: false }]}
   }
-  mount(e){
-    test = e.target.children[1];
-    console.log(test)
-    ReactDOM.render(<Items class="scheduleSmall" txt={'test'}/>, document.getElementById('setUpRight') )
+
+
+  itemClickHandler(index){
+    return function(){
+      var newState = Object.assign({}, this.state)
+      newState.items[index].selected = true;
+      this.setState(newState)
+    }.bind(this)
+
   }
 
   render (){
     return (
       <div>
         <Header />
-        <div className="setUpLeft" onClick={this.mount} >
-          
-          <Items class="scheduleSmall" txt="Breakfast" onClick={this.mount} />
-          <Items class="scheduleSmall" txt="Get Ready" onClick={this.mount} />
-          <Items class="scheduleSmall" txt="School" onClick={this.mount} />
-          <Items class="scheduleSmall" txt="Choice" />
-          <Items class="scheduleSmall" txt="Homework"/>
-          <Items class="scheduleSmall" txt="Dinner"/>
-          <Items class="scheduleSmall" txt="Visit"/>
-          <Items class="scheduleSmall" txt="Gardening"/>
-          <Items class="scheduleSmall" txt="Doctor"/>
-          <Items class="scheduleSmall" txt="Chores"/>
-        
+        <div className="setUpLeft">
+          {this.state.items.map(function(item, index){
+            return <Items key={index} class="scheduleSmall" txt={item.txt} onClick={this.itemClickHandler(index)} />
+          }, this)
+          }
         </div>
         <div id="setUpRight">
+        {this.state.items.filter(function(item){
+          return item.selected
+        }).map(function(item){
+            return <Items class="scheduleSmall" txt={item.txt}  />
+          })
+          }
 
         </div>
       </div>
