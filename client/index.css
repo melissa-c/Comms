@@ -25,9 +25,6 @@ footer {
   position: relative;
 }
 
-.hidden {
-  display: none;
-}
 
 main {
   background: #ffffcc; 
@@ -70,7 +67,7 @@ button {
 
 .headerBtn {
   border-radius: 5px;
-  display: inline-block;
+  display: block;
   float: left;
   height: 80px;
   margin: 20px;
@@ -347,6 +344,9 @@ svg {
   width:80px;
 }
 
+.hidden {
+  display: none;
+}
 /* @media
   (min-device-width: 800px)
   and (max-device-width: 1280px) {

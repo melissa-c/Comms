@@ -23,7 +23,6 @@ module.exports = class CommentPage extends React.Component {
   render(){
     return (
       <div>
-        <Header />
         <CommentBoard text= {this.state.imageURL}/>
         <VerbGallery onClick={this.update.bind(this)} />
         <ImgGallery onClick={this.update.bind(this)}/>

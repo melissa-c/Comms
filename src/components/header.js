@@ -27,28 +27,23 @@ function goToAdmin(){
 module.exports = class Header extends React.Component {
   constructor(props){
     super(props)
+    console.log(this.props);
     this.state={home: 0}
   }
 
-  componentDidMount(){
-    var routeID = window.location.hash
-    if(routeID.substr(1,3)==="/?_"){
-      //unmount home button
-      document.getElementById('home').className = "hidden"  
-    }
-    else {
-      document.getElementById('admin').className = "hidden"     
-    }
-  }
   
   render (){
     return (
-      <div className="header">
-        <HeaderBtn id={"home"} className={"homeBtn"} txt={"home"} onClick={back} img={"icon/home.png"} />
-        <HeaderBtn id={"admin"} className={"parentAdmin"} txt={"admin"} onClick={goToAdmin} img={"icon/lock.png"} />
-        <h1><span>Comms</span><br /> Companion</h1>
-        <HeaderBtn id={"timer"} className={"timerBtn"} txt={"timer"} onClick={goToTimer} img={"icon/FPO_timer.png"} />
-     	</div>
+      <div>
+        <div className="header">
+          <HeaderBtn id={"home"} to="/" className={"homeBtn"} txt={"home"} onClick={back} img={"icon/home.png"} />
+          <HeaderBtn id={"admin"} to="/parentadmin" className={"parentAdmin"} txt={"admin"} onClick={goToAdmin} img={"icon/lock.png"} />
+          <h1><span>Comms</span><br /> Companion</h1>
+          <HeaderBtn id={"timer"} to="/timer" className={"timerBtn"} txt={"timer"} onClick={goToTimer} img={"icon/FPO_timer.png"} />
+        
+        </div>
+        {this.props.children}
+      </div>
    	) 
   }
 }

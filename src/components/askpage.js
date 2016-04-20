@@ -13,6 +13,7 @@ module.exports = class AskPage extends React.Component {
   constructor(props){
     super(props)
     this.state = {imageURL:'', recentURL: []}
+    this.name = "askpage"
   }
 
   componentDidMount(){
@@ -36,10 +37,9 @@ module.exports = class AskPage extends React.Component {
   render (){
     return (
       <div>
-        <Header />
         <AskBoard text= {this.state.imageURL}/>
-        <RecentImgs text= {this.state.recentURL} onClick={this.update.bind(this)} />
-        <ImgGallery sender={'askpage'} onClick={this.update.bind(this)}/>
+        <RecentImgs text={this.state.recentURL} onClick={this.update.bind(this)} />
+        <ImgGallery onClick={this.update.bind(this)} parentName={this.name} />
       </div>
     )      
   }
