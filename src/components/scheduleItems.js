@@ -12,8 +12,8 @@ module.exports = class recentImgs extends React.Component {
   render (){
     return (
       <div className={this.props.class} >
-        <img  src={this.props.img} />
-        <p>{this.props.txt}</p>
+        <img className="scheduleImg" src={this.props.img} />
+        <h3>{this.props.txt}</h3>
       </div>
    	)
   }
