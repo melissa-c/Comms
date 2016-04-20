@@ -13,18 +13,16 @@ app.get('/database', function(req,res){
   	res.send(data)
   })
   .catch(function(error){
-  	console.log("Error: ", error)
+
   })
 })
 app.post('/database', function(req,res) {
-  console.log(req.body)
   var writeData = req.body
   var writeData1 = writeData.fileInput
   var writeName1 = writeData.nameInput
 
   knex.raw('INSERT INTO GALLERY(name, category, filepath) VALUES("'+ writeName1 +'", "personal", "' + writeData1 + '")')
   .then(function(record){
-    // console.log(record, 'record')
     res.send(record)
   })
 })
