@@ -22,7 +22,7 @@ app.post('/database', function(req,res) {
 
   knex.raw('INSERT INTO GALLERY(name, category, filepath) VALUES("'+ writeName1 +'", "personal", "' + writeData1 + '")')
   .then(function(record){
-    console.log(record, 'record')
+    // console.log(record, 'record')
     res.send(record)
   })
 })

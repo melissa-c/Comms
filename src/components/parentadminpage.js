@@ -13,16 +13,15 @@ window.location = '/#/scheduleAdmin';
 
 function uploadFile() {
   var fileInput = document.getElementById("fileName").value
-  console.log(fileName)
+  // console.log(fileName)
   var nameInput = document.getElementById("nameInput").value
-  console.log(fileInput)
+  // console.log(fileInput)
   Request.post("/database")
-  .query({fileInput:fileInput,nameInput:nameInput})
+  .send({fileInput:fileInput,nameInput:nameInput})
   .end(function(err,res){
-   console.log(res)
+    alert("successfully uploaded")
 
   })
-
 }
 
 module.exports = class AskPage extends React.Component {
