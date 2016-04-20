@@ -122,7 +122,6 @@ h1 {
   height: 55px;
 }
 
-
 #admin img,
 #timer img {
   height: 70px;
@@ -328,6 +327,11 @@ h3 {
   font-size: 25px;
   letter-spacing: .2em;
   line-height: 1em;
+  margin: 50px 0 10px 0;
+}
+
+.scheduleItems h3 {
+  margin-top: 30px;
 }
 
 .scheduleImg {
