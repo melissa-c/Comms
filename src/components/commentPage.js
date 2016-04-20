@@ -11,20 +11,26 @@ import Header from './header'
 module.exports = class CommentPage extends React.Component {
   constructor(props){
     super(props)
-    this.state = {imageURL:''}
+    this.state = {verbURL:'', imageURL:''}
   }
 
   update(e){
-    this.setState(
-      {imageURL: e.target.src}
-    )
+    if(e.target.parentElement.className === 'verbGallery'){
+      this.setState(
+        {verbURL: e.target.src}
+      )
+    } else {
+      this.setState(
+        {imageURL: e.target.src}
+      )
+    }
   }
 
   render(){
     return (
       <div>
         <Header />
-        <CommentBoard text= {this.state.imageURL}/>
+        <CommentBoard verb= {this.state.verbURL} image= {this.state.imageURL}/>
         <VerbGallery onClick={this.update.bind(this)} />
         <ImgGallery onClick={this.update.bind(this)}/>
       </div>
