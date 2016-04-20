@@ -319,27 +319,18 @@ svg {
   border: 2px solid #000;
   border-radius: 5px;
   display: flex;
-  height: 80px;
+  height: 90px;
   margin: 10px auto;
   width: 400px;
 }
 
+h3 {
+  font-size: 25px;
+  letter-spacing: .2em;
+  line-height: 1em;
+}
+
 .scheduleImg {
   height: 60px;
-  width: 60px;
-  margin: 20px 30px 20px 20px;
-
+  margin: 10px 30px 10px 20px;
 }
-
-/* @media
-  (min-device-width: 800px)
-  and (max-device-width: 1280px) {
-}
-@media
-  (max-device-width: 800px)
-  and (orientation: portrait) {
-}
-@media
-  (max-device-width: 1280px)
-  and (orientation: landscape) {
-} */
