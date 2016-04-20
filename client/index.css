@@ -4,31 +4,6 @@ body {
   max-width: 1000px;
 }
 
-.header,
-main, 
-footer {
-  min-width: 700px;
-  text-align: center;
-}
-
-.header {
-  background: #1f3d7a; 
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  height: 120px;
-  letter-spacing: .2em;
-  margin: 0 0 40px;
-  top: 0;
-  position: relative;
-}
-
-.hidden {
-  display: none;
-}
-
 main {
   background: #ffffcc; 
   background-color: #ffffe6;
@@ -37,7 +12,7 @@ main {
       #ffffe6, #ffffcc
     );
   height: 100%;
-  min-height: 700px;
+  min-height: 900px;
   padding: 0 0 20px;
 }
 
@@ -55,6 +30,31 @@ h1 span {
 
 h2 {
   font-size: 35px;
+}
+
+.hidden {
+  display: none;
+}
+
+.header,
+main, 
+footer {
+  min-width: 730px;
+  text-align: center;
+}
+
+.header {
+  background: #1f3d7a; 
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  height: 120px;
+  letter-spacing: .2em;
+  margin: 0 0 40px;
+  top: 0;
+  position: relative;
 }
 
 button {
@@ -82,6 +82,33 @@ button {
 .timerBtn,
 h1 {
   flex: 1;
+}
+
+button .labels {
+  border-radius: 5px;
+  display: none;
+  font-size: 20px;
+  font-weight: bold;
+  height: 50px;
+  margin: 4px -2px;
+  padding: 30px 0 0;
+  text-align: center;
+  width: 80px;
+}
+
+button:hover .labels,
+button:active .labels {
+  background: #f2f2f2;
+  color: #000;
+  display: block;
+  opacity: .7;
+  position: absolute;
+  top: 15px;
+}
+
+button:active .labels {
+  height: 44px;
+  padding: 36px 0 0;
 }
 
 .parentAdmin {
@@ -123,33 +150,6 @@ h1 {
 .navBtn:active {
   background-color: #f2f2f2;
   padding: 8px 20px 0;
-}
-
-button .labels {
-  border-radius: 5px;
-  display: none;
-  font-size: 20px;
-  font-weight: bold;
-  height: 50px;
-  margin: 4px -2px;
-  padding: 30px 0 0;
-  text-align: center;
-  width: 80px;
-}
-
-button:hover .labels,
-button:active .labels {
-  background: #f2f2f2;
-  color: #000;
-  display: block;
-  opacity: .7;
-  position: absolute;
-  top: 15px;
-}
-
-button:active .labels {
-  height: 44px;
-  padding: 36px 0 0;
 }
 
 .askBoard,
