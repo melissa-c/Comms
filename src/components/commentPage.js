@@ -32,7 +32,7 @@ module.exports = class CommentPage extends React.Component {
         <Header />
         <CommentBoard verb= {this.state.verbURL} image= {this.state.imageURL}/>
         <VerbGallery onClick={this.update.bind(this)} />
-        <ImgGallery onClick={this.update.bind(this)}/>
+        <ImgGallery sender="commentspage" onClick={this.update.bind(this)}/>
       </div>
     )      
   }
