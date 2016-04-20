@@ -43,7 +43,7 @@ module.exports = class Header extends React.Component {
 
         <h1><span>Comms</span><br /> Companion</h1>
 
-        <HeaderBtn id={"timer"} className={"timerBtn"} txt={"timer"} onClick={goToTimer} img={"icon/FPO_timer.png"} />
+        <HeaderBtn id={"timer"} className={"timerBtn"} txt={"timer"} onClick={goToTimer} img={"icon/stopwatchgreen.png"} />
      	</div>
    	) 
   }
