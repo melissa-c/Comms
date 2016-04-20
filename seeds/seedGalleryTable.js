@@ -46,7 +46,7 @@ exports.seed = function(knex, Promise) {
     knex('gallery').insert({id: 39, name: 'sick', category: 'verbs', filepath: 'img/sick.png'}),
     knex('gallery').insert({id: 40, name: 'smell', category: 'verbs', filepath: 'img/smell.png'}),
     knex('gallery').insert({id: 41, name: 'touch', category: 'verbs', filepath: 'img/touch.png'}),
-    knex('gallery').insert({id: 42, name: 'breakfast', category: 'verbs', filepath: 'img/breakfast.png'}),
+    knex('gallery').insert({id: 42, name: 'breakfast', category: 'food', filepath: 'img/breakfast.png'}),
     knex('gallery').insert({id: 43, name: 'cauliflower', category: 'food', filepath: 'img/cauliflower.png'}),
     knex('gallery').insert({id: 44, name: 'cereal', category: 'food', filepath: 'img/cereal.png'}),
     knex('gallery').insert({id: 45, name: 'doctor', category: 'body', filepath: 'img/doctor.png'}),
