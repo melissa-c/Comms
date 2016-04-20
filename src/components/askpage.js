@@ -22,51 +22,24 @@ module.exports = class AskPage extends React.Component {
   }
  
   update(e){
-    recentArray.forEach(function(item){
-      if(recentArray.indexOf([e.target.src, e.target.className])){
-            // console.log('array', [e.target.src, e.target.className])
-            // console.log('array', recentArray)
-        return recentArray
-      } else if (!recentArray.indexOf([e.target.src, e.target.className]) && recentArray.length < 5){
-        recentArray.push([e.target.src, e.target.className])
-            // console.log('push', [e.target.src, e.target.className])
-            // console.log('push', recentArray)
-      } else if (!recentArray.indexOf([e.target.src, e.target.className]) && recentArray.length >= 5){
-        recentArray.shift()
-        recentArray.push([e.target.src, e.target.className])
-            // console.log('shift', [e.target.src, e.target.className])
-            // console.log('shift', recentArray)
-      }
-    })
-    this.setState(
-      {imageURL: e.target.src, recentURL: recentArray}
-    )
-  }
+    var item = [e.target.src, e.target.className]
+    var duplicate = recentArray.find(function(recent){
+      return recent[0] === item[0]
+    }) !== undefined
     
-/*  if(recentArray.indexOf([e.target.src, e.target.className])){
-      return recentArray
-    } else if(recentArray.length < 5){
-      recentArray.push([e.target.src, e.target.className])
-    } else {
+    if(duplicate) return
+
+    if(recentArray.length>=5){
       recentArray.shift()
-      recentArray.push([e.target.src, e.target.className])
+      recentArray.push(item)
+    } else {
+      recentArray.push(item)
     }
     this.setState(
       {imageURL: e.target.src, recentURL: recentArray}
     )
   }
-*/
-/*    if(recentArray.length>=5){
-      recentArray.shift()
-      recentArray.push([e.target.src, e.target.className])
-    } else {
-      recentArray.push([e.target.src, e.target.className])
-    }
-    this.setState(
-      {imageURL: e.target.src, recentURL: recentArray}
-    )
-  }
-*/
+
   render (){
     return (
       <div>
