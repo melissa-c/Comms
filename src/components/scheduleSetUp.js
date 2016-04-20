@@ -6,9 +6,7 @@ import ReactDOM from 'react-dom'
 import Header from './header'
 import Items from './scheduleItems'
 
-
-
-module.exports = class HomePageBtn extends React.Component {
+module.exports = class ScheduleSetUp extends React.Component {
   constructor(props){
     super(props)
     this.state = {items: [
@@ -56,8 +54,7 @@ module.exports = class HomePageBtn extends React.Component {
 
       </div>
      </div>
-  )
+    )
+  }
 }
-}
-
 
