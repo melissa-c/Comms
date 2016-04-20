@@ -12,9 +12,6 @@ app.get('/database', function(req,res){
   .then(function(data){
   	res.send(data)
   })
-  .catch(function(error){
-
-  })
 })
 app.post('/database', function(req,res) {
   var writeData = req.body
