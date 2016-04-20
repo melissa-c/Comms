@@ -20,7 +20,10 @@ function uploadFile(e) {
   Request.post("/database")
   .send({fileInput:fileInput,nameInput:nameInput})
   .end(function(err,res){
-    alert("successfully uploaded")
+    if (err) alert("something went wrong")
+    else {
+      alert("successfully uploaded")
+    }
     // location.reload()
   })
   console.log("request sent")
