@@ -47,9 +47,9 @@ module.exports = class HomePageBtn extends React.Component {
     return (
     	<div>
     		<Header />
-    		<h2>Please wait ...</h2>
-    		<button className={"enterTime"} onClick={counter}>enter time</button>
-    		<div id='timerDiv' className='timerDiv'>
+        <button className={"enterTime"} onClick={counter}>enter time</button>
+        <div id='timerDiv' className='timerDiv'>
+    		<h2 className="wait" >Please wait ...</h2>
 	        <svg width="400" height="400" viewbox="0 0 200 200">
             <path id="border" transform="translate(200, 200)"/>
             <path id="loader" transform="translate(200, 200) scale(.8)"/>
