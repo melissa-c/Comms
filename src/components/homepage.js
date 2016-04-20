@@ -8,6 +8,10 @@ import HomePageBtn from './homePageBtn'
 import Header from './header'
 import CommentPage from './commentPage'
 
+function parentAccess () {
+  console.log ('grant parent access')
+}
+
 function goToAskPage(){
   window.location = "/#/askpage"
 }
@@ -23,18 +27,17 @@ function goToCommentPage(){
 module.exports = class HomePage extends React.Component {
   constructor(props){
    super(props)
-   console.log(this.props, "test")
+
   }
 
   render (){
     return (
       <div>
         <Header />
-        <HomePageBtn txt={"Schedule"} onClick={goToSchedulePage} img={"icon/clipboard.png"} />
-        <HomePageBtn txt={"I would like..."} onClick={goToAskPage} img={"icon/question.png"} />
-        <HomePageBtn txt={"I can..."} onClick={goToCommentPage} img={"icon/user.png"} />
+        <HomePageBtn id={"schedule"} txt={"Schedule"} onClick={goToSchedulePage} img={"icon/clipboard.png"} />
+        <HomePageBtn id={"ask"} txt={"I would like..."} onClick={goToAskPage} img={"icon/question.png"} />
+        <HomePageBtn id={"ican"} txt={"I can..."} onClick={goToCommentPage} img={"icon/ican.png"} />
       </div>
     )
   }
 }
-

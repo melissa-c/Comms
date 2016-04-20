@@ -28,7 +28,6 @@ module.exports = class HomePageBtn extends React.Component {
 
 
    itemClickHandler(index){
-    console.log(index)
     return function(){
       var newState = Object.assign({}, this.state)
       newState.items[index].selected = true;

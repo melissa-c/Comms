@@ -23,21 +23,23 @@ module.exports = class ImgGallery extends React.Component {
     .get('/database')
     .end(function(err, res){
       this.setState(
-        {images: JSON.parse(res.text)}
+        {images: JSON.parse(res.text), filter: "ALL"}
         )
     }.bind(this))
   }
 
-  update(e){
-
-  }
-
   render (){
     if(this.props.sender==="askpage"){
-      return  (
+
+      return (
         <div>
           <div className="imgGallery">
-            {this.state.images.map(function(image){
+            {this.state.images.filter(function(image){
+              if(this.state.filter == "ALL"){
+                return true
+              } else {
+              return image.category == this.state.filter}
+            }, this).map(function(image){
                     
               switch(image.category) {
                 
@@ -53,6 +55,7 @@ module.exports = class ImgGallery extends React.Component {
                 case "school":
                     return(<img className= "indAskImg Red" src={image.filepath} onClick={this.props.onClick}></img>)
                     break;
+
               }
             }, this)}
           
@@ -94,6 +97,7 @@ module.exports = class ImgGallery extends React.Component {
           <button name='red' className='btnJumpRed' onClick={change}></button>
           <button name='orange' className='btnJumpOrange' onClick={change}></button>
           </div>
+
       )
     }
   }

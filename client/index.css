@@ -246,10 +246,12 @@ h1 {
   border: 4px solid black;
 }
 
-button.yellow,
-button.blue,
-button.red,
-button.green {
+button.btnJumpPurple,
+button.btnJumpOrange,
+button.btnJumpYellow,
+button.btnJumpBlue,
+button.btnJumpRed,
+button.btnJumpGreen {
   border-radius: 5px;
   box-shadow: 3px 3px #666;
   -webkit-user-select: none;
@@ -326,15 +328,14 @@ svg {
   width: 400px;
 }
 
-.scheduleImg {
-  height: 50px;
-  margin: 20px 30px 20px 20px;
-  width: 50px;
+
+h3 {
+  font-size: 25px;
+  letter-spacing: .2em;
+  line-height: 1em;
 }
 
 .scheduleImg {
-  height: 60px;
-  width: 60px;
   margin: 20px 30px 20px 20px;
 }
 
@@ -355,16 +356,3 @@ svg {
 .setUpRight{
   float: right;
 }
-
-/* @media
-  (min-device-width: 800px)
-  and (max-device-width: 1280px) {
-}
-@media
-  (max-device-width: 800px)
-  and (orientation: portrait) {
-}
-@media
-  (max-device-width: 1280px)
-  and (orientation: landscape) {
-} */
