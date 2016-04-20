@@ -212,10 +212,11 @@ button:active .labels {
   border: 4px solid black;
 }
 
-button.yellow,
-button.blue,
-button.red,
-button.green {
+button.btnJumpOrange,
+button.btnJumpYellow,
+button.btnJumpBlue,
+button.btnJumpRed,
+button.btnJumpGreen {
   border-radius: 5px;
   box-shadow: 3px 3px #666;
   -webkit-user-select: none;
