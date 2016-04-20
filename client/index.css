@@ -312,10 +312,15 @@ svg {
 
 .setUpLeft{
   float:left;
+  margin-left: 20px;
+  height: 550px;
+  overflow-y: scroll; 
 }
 
 .setUpRight{
   float:right;
+  margin-right: 50px;
+  height: 550px;
 }
 
 .scheduleSmall{
