@@ -1,39 +1,35 @@
 module.exports = function (knex){
   return {
 
-    //----show all imgs
-    //raw sql: SELECT filepath FROM gallery
-    getAll: function (table, callback){
-      knex.select('filepath')
-        .table('gallery')
-        .then(function(resp){
-          callback(null, resp)
-        })
-    },
-
-    //----show imgs by chosen category
-    //raw sql: SELECT filepath FROM gallery WHERE category = 'food'
-    getCategory: function (table, params, callback){
+      getCategory: function (table, params, callback){
       var key = Object.keys(params)[0]
-      knex.select('filepath')
+      knex.select('category')
         .table('gallery')
         .where('category', params[key])
         .then(function (resp){
-          callback(null, resp)
+          callback(resp)
         })
     },
 
-    //----show img chosen
-    //raw sql: SELECT filepath FROM gallery WHERE id = 10 
-    getOne: function (table, params, callback){
+    
+    getName: function (table, params, callback){
+      var key = Object.keys(params)[0]
+      knex.select('name')
+        .table('gallery')
+        .where('name', params[key])
+        .then(function (resp){
+          callback()
+        })
+    },
+
+    getFilepath: function (table, params, callback){
       var key = Object.keys(params)[0]
       knex.select('filepath')
         .table('gallery')
-        .where(key, params[key])
+        .where('filepath', params[key])
         .then(function (resp){
-          callback(null, resp[0])
+          callback()
         })
     }
-
   }
 }
