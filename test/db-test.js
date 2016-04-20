@@ -22,30 +22,32 @@ var test = redtape({
 	},
 
 	afterEach: function (cb) {
-		knex.migrate.rollback(dbConfig.config)
+		knex.migrate.latest(dbConfig.config)
 			.then(function() {
 				cb ()
 			})
 	}
 })
 
-test ('simple test', function (t) {
-	console.log('test reached here')
-	db.getAll('gallery', function(err, resp) {
-		console.log(resp)
-		Object.keys('gallery').forEach (function (key) {
-			
-			console.log(key)
-
-		})
-		t.end()
-	})
-})
 
 test('it gets a particular body name ', function (t) {
-  db.getOne('gallery', { id: 1 }, function (err, resp) {
-  	console.log(resp)
-    //t.equal(resp.name, 'ankle', 'it got the body name ')
-    t.end()
+  db.getName('gallery', { name: 'ankle' }, function (err, resp) {
+  	t.equal(resp[0].name, 'ankle', 'it got the correct body name ')
   })
+  t.end()
+})
+
+
+test('it gets a particular category ', function (t) {
+  db.getCategory('gallery', { category: 'school' }, function (err, resp) {
+  	t.equal(resp[0].category, 'school', 'it got the correct category')
+  })
+  t.end()
+})
+
+test('it gets a particular filepath ', function (t) {
+  db.getFilepath('gallery', { filepath: 'img/pear.png' }, function (err, resp) {
+  	t.equal(resp[0].filepath, 'img/pear.png', 'it got the correct filepath')
+   })
+ t.end()
 })

@@ -14,7 +14,7 @@ module.exports = function (knex){
     //raw sql: SELECT filepath FROM gallery WHERE category = 'food'
     getCategory: function (table, params, callback){
       var key = Object.keys(params)[0]
-      knex.select('filepath')
+      knex.select('category')
         .table('gallery')
         .where('category', params[key])
         .then(function (resp){
@@ -24,15 +24,26 @@ module.exports = function (knex){
 
     //----show img chosen
     //raw sql: SELECT filepath FROM gallery WHERE id = 10 
-    getOne: function (table, params, callback){
-      // var key = Object.keys(params)[0]
-      // knex.select('filepath')
-      //   .table('gallery')
-      //   .where(key, params[key])
-      //   .then(function (resp){
-          callback()
-        
+    getName: function (table, params, callback){
+      var key = Object.keys(params)[0]
+        knex.select('name')
+        .table('gallery')
+        .where('name', params[key])
+        .then(function (resp){
+          callback(null,resp)
+        })
+    },
+
+    getFilepath: function (table, params, callback){
+      var key = Object.keys(params)[0]
+        knex.select('filepath')
+        .table('gallery')
+        .where('filepath', params[key])
+        .then(function (resp){
+          callback(null,resp)
+        })
     }
+
 
   }
 }
