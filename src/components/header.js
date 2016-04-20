@@ -27,14 +27,17 @@ module.exports = class Header extends React.Component {
   componentDidMount(){
     var routeID = window.location.hash
     if(routeID.substr(1,3)==="/?_"){
-      //unmount home button
-      document.getElementById('home').className = "hidden"  
+     //unmount home button
+     document.getElementById('home').className = "hidden"  
     }
     else {
       document.getElementById('admin').className = "hidden"     
+
     }
+
   }
   
+ 
   render (){
     return (
       <div className="header">

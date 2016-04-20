@@ -22,7 +22,7 @@ footer {
   letter-spacing: .2em;
   margin: 0 0 40px;
   top: 0;
-  position: relative;
+  justify-content: space-between;
 }
 
 .hidden {
@@ -76,17 +76,6 @@ button {
   margin: 20px;
   padding: 2px;
   width: 80px;
-}
-
-.homeBtn,
-.timerBtn,
-h1 {
-  flex: 1;
-}
-
-.parentAdmin {
-  position: absolute;
-  left: 0; top: 0; right: 0; bottom: 0;
 }
 
 .headerBtn img{
@@ -164,7 +153,8 @@ button:active .labels {
   padding: 20px;
 }
 
-.recentImgs {
+.recentImgs,
+.verbGallery {
   background-color: #fff;
   border: 1px solid #000;
   border-radius: 5px;
@@ -180,17 +170,6 @@ button:active .labels {
   border-radius: 5px;
   font-size: 20px;
   height: 300px;
-  margin: 20px;
-  overflow-y: scroll; 
-  padding: 10px;
-}
-
-.verbGallery {
-  background-color: #fff;
-  border: 1px solid #000;
-  border-radius: 5px;
-  font-size: 20px;
-  height: 120px;
   margin: 20px;
   overflow-y: scroll; 
   padding: 10px;
@@ -259,7 +238,6 @@ button.green {
   padding: 3px 2px 1px;
 }
 
-.chosenVerb,
 .chosenPic {
   height: 100px;
   margin-left: 30px;
@@ -308,42 +286,6 @@ svg {
 .scheduleImg {
   height: 50px;
   width: 50px;
-}
-
-.btnJumpOrange{
-  margin-left:10px;
-  border-radius: 5px;
-  border: none;
-  background-color: orange;
-  height:40px;
-  width:80px;
-}
-
-.btnJumpGreen{
-  margin-left:10px;
-  border-radius: 5px;
-  border: none;
-  background-color: blue;
-  height:40px;
-  width:80px;
-}
-
-.btnJumpRed{
-  margin-left:10px;
-  border-radius: 5px;
-  border: none;
-  background-color: red;
-  height:40px;
-  width:80px;
-}
-
-.btnJumpYellow{
-  margin-left:10px;
-  border-radius: 5px;
-  border: none;
-  background-color: yellow;
-  height:40px;
-  width:80px;
 }
 
 /* @media
