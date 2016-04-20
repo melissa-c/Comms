@@ -22,9 +22,9 @@ module.exports = class AskPage extends React.Component {
   }
  
   update(e){
-    var item = [e.target.src, e.target.className]
+    var chosenImg = [e.target.src, e.target.className]
     var duplicate = recentArray.find(function(recent){
-      return recent[0] === item[0]
+      return recent[0] === chosenImg[0]
     }) !== undefined
     
     if(duplicate) {
@@ -34,9 +34,9 @@ module.exports = class AskPage extends React.Component {
 
     if(recentArray.length>=5){
       recentArray.shift()
-      recentArray.push(item)
+      recentArray.push(chosenImg)
     } else {
-      recentArray.push(item)
+      recentArray.push(chosenImg)
     }
     this.setState(
       {imageURL: e.target.src, recentURL: recentArray}
