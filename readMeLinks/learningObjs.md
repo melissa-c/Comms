@@ -4,3 +4,4 @@
 * Postgres database
 * Webpack
 * Heroku
+* SVG
