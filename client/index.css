@@ -319,15 +319,16 @@ svg {
   border: 2px solid #000;
   border-radius: 5px;
   display: flex;
-  height: 90px;
+  height: 80px;
   margin: 10px auto;
   width: 400px;
 }
 
 .scheduleImg {
-  height: 50px;
+  height: 60px;
+  width: 60px;
   margin: 20px 30px 20px 20px;
-  width: 50px;
+
 }
 
 /* @media
