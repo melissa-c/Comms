@@ -332,6 +332,30 @@ svg {
   width: 50px;
 }
 
+.scheduleImg {
+  height: 60px;
+  width: 60px;
+  margin: 20px 30px 20px 20px;
+}
+
+.scheduleSmall{
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 5px;
+  display: flex;
+  height: 50px;
+  width: 300px;
+  margin: 10px auto;
+}
+
+.setUpLeft{
+  float: left;
+}
+
+.setUpRight{
+  float: right;
+}
+
 /* @media
   (min-device-width: 800px)
   and (max-device-width: 1280px) {
