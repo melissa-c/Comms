@@ -19,13 +19,14 @@ module.exports = class AskPage extends React.Component {
     return (
       <div>
       <Header />
-      <Items txt="Breakfast" img="img/breakfast.png"/>
-      <Items txt="Get Ready" img="img/getDressed.png"/>
-      <Items txt="School" img="img/school.png"/>
-      <Items txt="Choice" img="img/choice.png"/>
-      <Items txt="Homework" img="img/homework.png"/>
-      <Items txt="Dinner" img="img/dinner.png"/>
-      <Items txt="Bed Time" img="img/bedTime.png"/>
+      <h2>What am I doing today?</h2>
+      <Items class="scheduleItems" txt="Breakfast" img="img/breakfast.png"/>
+      <Items class="scheduleItems" txt="Get Ready" img="img/getDressed.png"/>
+      <Items class="scheduleItems" txt="School" img="img/school.png"/>
+      <Items class="scheduleItems" txt="Choice" img="img/choice.png"/>
+      <Items class="scheduleItems" txt="Homework" img="img/homework.png"/>
+      <Items class="scheduleItems" txt="Dinner" img="img/dinner.png"/>
+      <Items class="scheduleItems" txt="Bed Time" img="img/bedTime.png"/>
       </div>
     )
   }

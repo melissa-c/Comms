@@ -246,10 +246,12 @@ h1 {
   border: 4px solid black;
 }
 
-button.yellow,
-button.blue,
-button.red,
-button.green {
+button.btnJumpPurple,
+button.btnJumpOrange,
+button.btnJumpYellow,
+button.btnJumpBlue,
+button.btnJumpRed,
+button.btnJumpGreen {
   border-radius: 5px;
   box-shadow: 3px 3px #666;
   -webkit-user-select: none;
@@ -300,10 +302,6 @@ svg {
   width: 460px;
 }
 
-.wait {
-  position: absolute 200px 0 0 0;
-}
-
 .stopwatchBg {
   height: 500px;
 }
@@ -321,15 +319,16 @@ svg {
   border: 2px solid #000;
   border-radius: 5px;
   display: flex;
-  height: 90px;
+  height: 80px;
   margin: 10px auto;
   width: 400px;
 }
 
 .scheduleImg {
-  height: 50px;
+  height: 60px;
+  width: 60px;
   margin: 20px 30px 20px 20px;
-  width: 50px;
+
 }
 
 /* @media

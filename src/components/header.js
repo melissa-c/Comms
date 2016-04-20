@@ -15,7 +15,13 @@ function back(){
 }
 
 function goToAdmin(){
-  window.location = '/#/parentadmin';
+  var password = prompt('Please enter password')
+    if(password =="11"){
+    window.location = '/#/parentadmin';
+  }
+  else{
+    alert("Incorrect Password!")
+  }
 }
 
 module.exports = class Header extends React.Component {
