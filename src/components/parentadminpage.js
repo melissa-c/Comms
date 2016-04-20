@@ -14,9 +14,9 @@ window.location = '/#/scheduleAdmin';
 function uploadFile(e) {
   e.preventDefault()
   var fileInput = document.getElementById("fileName").value
-  // console.log(fileName)
+  console.log(fileName)
   var nameInput = document.getElementById("nameInput").value
-  // console.log(fileInput)
+  console.log(fileInput)
   Request.post("/database")
   .send({fileInput:fileInput,nameInput:nameInput})
   .end(function(err,res){
