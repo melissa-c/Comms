@@ -7,7 +7,7 @@ import Header from './header'
 var recentArray = []
 
 function goToSchedAdmin(){
-window.location = '/#/scheduleAdmin';
+window.location = '/#/scheduleSetUp';
 }
 
 module.exports = class AskPage extends React.Component {

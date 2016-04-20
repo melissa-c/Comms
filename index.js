@@ -9,7 +9,7 @@ import CommentPage from './src/components/commentPage'
 
 import Schedule from './src/components/schedulepage'
 import ParentAdmin from './src/components/parentadminpage'
-import ScheduleAdmin from './src/components/scheduleSetUp'
+import scheduleSetUp from './src/components/scheduleSetUp'
 
 ReactDOM.render(
   
@@ -17,7 +17,7 @@ ReactDOM.render(
 
     <Route path='/' component={HomePage} testProp="rabbit" />
     <Route path='parentAdmin' component={ParentAdmin} />
-    <Route path='scheduleAdmin' component={ScheduleAdmin}/>
+    <Route path='scheduleSetUp' component={scheduleSetUp}/>
     <Route path='timer' component={Timer}/>
     <Route path='schedule' component={Schedule} />
     <Route path='askpage' component={AskPage}/>
