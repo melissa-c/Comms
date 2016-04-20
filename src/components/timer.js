@@ -12,6 +12,11 @@ function counter(){
   var     pi = Math.PI
   var   time = prompt('Time');
 
+  if(!time || isNaN(time)){
+    alert("Please enter the seconds to set the timer")
+    return time
+  }
+
   (function draw() {
     alpha++;
     var radian = ( alpha * pi / 180 )
