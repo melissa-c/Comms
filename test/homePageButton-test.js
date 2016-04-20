@@ -1,6 +1,5 @@
 import test from 'ava'
 import React from 'react'
-
 import {shallow, render, mount} from 'enzyme'
 
 import HomePageBtn from '../src/components/homePageBtn'
@@ -21,6 +20,4 @@ test ('2/2 <HomePageBtn> button click  works', t=> {
 	}
 	const wrapper2 = mount(<HomePageBtn onClick={clickHandler} /> )
 	wrapper2.find('button').simulate('click');
-	
-
 })

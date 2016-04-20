@@ -8,21 +8,16 @@ import HomePageBtn from './homePageBtn'
 import Header from './header'
 import CommentPage from './commentPage'
 
-
 function clickfun(){
 	console.log('yea')
 }
 
 function parentAccess () {
-
   console.log ('grant parent access')
 }
 
-
-
 function goToAskPage(){
   window.location = "/#/askpage"
-
 }
 
 function goToSchedulePage(){
@@ -35,7 +30,7 @@ function goToCommentPage(){
 
 module.exports = class HomePage extends React.Component {
   constructor(props){
-   super(props)
+    super(props)
   }
 
   render (){
@@ -49,5 +44,3 @@ module.exports = class HomePage extends React.Component {
     )
   }
 }
-
-
