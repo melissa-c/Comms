@@ -18,7 +18,6 @@ module.exports = class AskPage extends React.Component {
   render (){
     return (
       <div>
-      <Header />
         <Items txt="Breakfast"/>
         <Items txt="Get Ready"/>
         <Items txt="School"/>

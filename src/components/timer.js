@@ -46,7 +46,6 @@ module.exports = class HomePageBtn extends React.Component {
   render (){
     return (
     	<div>
-    		<Header />
     		<h2>Please wait ...</h2>
     		<button className={"enterTime"} onClick={counter}>enter time</button>
     		<div id='timerDiv' className='timerDiv'>

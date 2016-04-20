@@ -22,7 +22,6 @@ module.exports = class AskPage extends React.Component {
   render (){
     return (
       <div>
-        <Header />
         <h3>Upload photo</h3>
         <input name="fileInput" type="file" />
         <h3>change password</h3>

@@ -15,6 +15,7 @@ function change(e){
 module.exports = class ImgGallery extends React.Component {
   constructor(props){
    super(props)
+    console.log(this.props.onClick);
    this.state = {images: []}
   }
 
@@ -33,7 +34,7 @@ module.exports = class ImgGallery extends React.Component {
   }
 
   render (){
-    if(this.props.sender==="askpage"){
+    if(this.props.parentName==="askpage"){
       return  (
         <div>
           <div className="imgGallery">
@@ -57,7 +58,6 @@ module.exports = class ImgGallery extends React.Component {
             }, this)}
           
           </div>
-          <button name='yellow' className='btnJumpYellow' onClick="yello.id = 'hidden'; return false"></button>
           <button name='green' className='btnJumpGreen' onClick={change}></button>
           <button name='red' className='btnJumpRed' onClick={change}></button>
           <button name='orange' className='btnJumpOrange' onClick={change}></button>
@@ -68,7 +68,7 @@ module.exports = class ImgGallery extends React.Component {
       return  (
           <div>
             <div className="imgGallery">
-              {this.state.images.map(function(image){
+              {this.state.images.map(function(image, index){
                       
                 switch(image.category) {
                   case "body":
