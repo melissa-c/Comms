@@ -27,7 +27,10 @@ module.exports = class AskPage extends React.Component {
       return recent[0] === item[0]
     }) !== undefined
     
-    if(duplicate) return
+    if(duplicate) {
+      return this.setState(
+      {imageURL: e.target.src, recentURL: recentArray}
+    )}
 
     if(recentArray.length>=5){
       recentArray.shift()
