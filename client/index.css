@@ -1,0 +1,370 @@
+body {
+  font-family: 'Short Stack', helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+main {
+  background: #ffffcc; 
+  background-color: #ffffe6;
+  background-image:
+    linear-gradient(
+      #ffffe6, #ffffcc
+    );
+  height: 100%;
+  min-height: 900px;
+}
+
+h1 {
+  color: #fff;
+  display: inline-block;
+  font-size: 45px;
+  line-height: 1em;
+  margin: 15px 0;
+}
+
+h1 span {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+.hidden {
+  display: none;
+}
+
+.header,
+main, 
+footer {
+  min-width: 730px;
+  text-align: center;
+}
+
+.header {
+  background: #1f3d7a; 
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  height: 120px;
+  letter-spacing: .2em;
+  margin: 0 0 40px;
+  top: 0;
+  position: relative;
+}
+
+button {
+  box-shadow: 3px 3px #666;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  font-family: 'Short Stack', cursive;
+  outline: none;
+  cursor: pointer;
+}
+
+button .labels {
+  border-radius: 5px;
+  display: none;
+  font-size: 20px;
+  font-weight: bold;
+  height: 50px;
+  margin: 4px -2px;
+  padding: 30px 0 0;
+  text-align: center;
+  width: 80px;
+}
+
+button:hover .labels,
+button:active .labels {
+  background: #f2f2f2;
+  color: #000;
+  display: block;
+  opacity: .7;
+  position: absolute;
+  top: 15px;
+}
+
+button:active .labels {
+  height: 44px;
+  padding: 36px 0 0;
+}
+
+.headerBtn {
+  border-radius: 5px;
+  display: inline-block;
+  float: left;
+  height: 80px;
+  margin: 20px;
+  padding: 2px;
+  width: 80px;
+}
+
+.homeBtn,
+.timerBtn,
+h1 {
+  flex: 1;
+}
+
+.parentAdmin {
+  position: absolute;
+}
+
+.headerBtn img{
+  text-align: center;
+}
+
+#home img {
+  height: 55px;
+}
+
+
+#admin img,
+#timer img {
+  height: 70px;
+}
+
+.homeBtn:active,
+.parentAdmin:active,
+.timerBtn:active {
+  background-color: #f2f2f2;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 6px 2px 0;
+}
+
+.navBtn {
+  border-radius: 10px;
+  font-size: 40px;
+  height: 120px;
+  letter-spacing: .2em;
+  margin: 20px;
+  padding: 40px 10px;
+  text-align: left;
+  width: 600px;
+}
+
+.navBtn img {
+  float: left;
+  height: 95px;
+}
+
+#schedule img {
+  margin: -30px 45px 0 25px;
+}
+
+#ask img,
+#ican img {
+  margin: -30px 40px 0 10px;
+}
+
+.navBtn:active {
+  background-color: #f2f2f2;
+  padding: 42px 12px 0;
+}
+
+.askBoard,
+.commentBoard {
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  display: flex;
+  font-size: 70px;
+  height: 120px;
+  margin: 20px 20px 40px;
+  padding: 20px 20px 0;
+}
+
+.recentImgs {
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 20px;
+  height: 120px;
+  margin: 20px;
+  padding: 10px;
+}
+
+.imgGallery,
+.verbGallery {
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 5px;
+  font-size: 20px;
+  margin: 20px;
+  overflow-y: scroll; 
+  padding: 10px;
+}
+
+.imgGallery {
+  height: 300px;
+}
+
+.verbGallery {
+  height: 120px;
+}
+
+.indAskImg{
+  border: 4px solid #000;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 100px;
+  margin: 5px;
+  padding: 2px;
+  width: 100px;
+}
+
+.Purple {
+  border: 4px solid purple;
+}
+
+.Orange {
+  border: 4px solid orange;
+}
+
+.Blue {
+  border: 4px solid blue;
+}
+
+.Yellow {
+  border: 4px solid yellow;
+}
+
+.Green {
+  border: 4px solid green;
+}
+
+.Red {
+  border: 4px solid red;
+}
+
+.Black {
+  border: 4px solid black;
+}
+
+button.yellow,
+button.blue,
+button.red,
+button.green {
+  border-radius: 5px;
+  box-shadow: 3px 3px #666;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  font-family: 'Short Stack', cursive;
+  height: 60px;
+  margin: 20px;
+  outline: none;
+  padding: 2px;
+  cursor: pointer;
+  width: 100px;
+}
+
+.indAskImg:hover,
+.indAskImg:active {
+  background: #f2f2f2;
+  opacity: .7;
+  padding: 3px 2px 1px;
+}
+
+.chosenVerb,
+.chosenPic {
+  height: 120px;
+  margin: -10px 0 0 50px;
+  width: 120px;
+}
+
+#loader { 
+  fill: #99ff99; 
+}
+
+#border { 
+  fill: #00663d; 
+}
+
+svg {
+  margin-top: 140px;
+}
+
+.timerDiv {
+  background-image: url(./icon/stopwatch.png);
+  background-repeat: no-repeat;
+  background-size: 460px;
+  height: 570px;
+  margin: 25px auto;
+  width: 460px;
+}
+
+.wait {
+  position: absolute 200px 0 0 0;
+}
+
+.stopwatchBg {
+  height: 500px;
+}
+
+.enterTime {
+  border-radius: 5px;
+  font-size: 20px;
+  height: 50px;
+  width: 200px;
+
+}
+
+.scheduleItems {
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 5px;
+  display: flex;
+  height: 90px;
+  margin: 10px auto;
+  width: 400px;
+}
+
+.scheduleImg {
+  height: 50px;
+  margin: 20px 30px 20px 20px;
+  width: 50px;
+}
+
+.scheduleImg {
+  height: 60px;
+  width: 60px;
+  margin: 20px 30px 20px 20px;
+}
+
+.scheduleSmall{
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 5px;
+  display: flex;
+  height: 50px;
+  width: 300px;
+  margin: 10px auto;
+}
+
+.setUpLeft{
+  float: left;
+}
+
+.setUpRight{
+  float: right;
+}
+
+/* @media
+  (min-device-width: 800px)
+  and (max-device-width: 1280px) {
+}
+@media
+  (max-device-width: 800px)
+  and (orientation: portrait) {
+}
+@media
+  (max-device-width: 1280px)
+  and (orientation: landscape) {
+} */

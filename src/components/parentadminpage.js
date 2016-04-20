@@ -8,8 +8,7 @@ var recentArray = []
 
 function goToSchedAdmin(){
 window.location = '/#/scheduleSetUp';
-<<<<<<< Updated upstream
-=======
+
 }
 
 function uploadFile(e) {
@@ -22,7 +21,6 @@ function uploadFile(e) {
   .end(function(err,res){
     }
   )
->>>>>>> Stashed changes
 }
 
 module.exports = class AskPage extends React.Component {
