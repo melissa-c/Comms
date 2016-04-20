@@ -22,6 +22,10 @@ module.exports = class ImgGallery extends React.Component {
     }.bind(this))
   }
 
+  update(e){
+
+  }
+
   render (){
     if(this.props.sender==="askpage"){
       return  (
@@ -33,8 +37,6 @@ module.exports = class ImgGallery extends React.Component {
               } else{
               return image.category == this.state.filter}
             }, this).map(function(image){
-            {this.state.images.map(function(image){
-
                     
               switch(image.category) {
                 
@@ -49,72 +51,16 @@ module.exports = class ImgGallery extends React.Component {
                     break;
                 case "school":
                     return(<img  id='red' className= "indAskImg Red" src={image.filepath} onClick={this.props.onClick}></img>)
-                    return(<img className= "indAskImg Orange" src={image.filepath} onClick={this.props.onClick}></img>)
-                    break;
-                case "home":
-                    return(<img className= "indAskImg Yellow" src={image.filepath} onClick={this.props.onClick}></img>)
-                    break;
-                case "outside":
-                    return(<img className= "indAskImg Green" src={image.filepath} onClick={this.props.onClick}></img>)
-                    break;
-                case "school":
-                    return(<img className= "indAskImg Red" src={image.filepath} onClick={this.props.onClick}></img>)
                     break;
               }
             }, this)}
           
           </div>
           
-          <button name='orange' className='btnJumpOrange' onClick={function(){this.setState({filter: "food"})}.bind(this)}></button>
-          <button name='green' className='btnJumpGreen' onClick={function(){this.setState({filter: "outside"})}.bind(this)}></button>
-          <button name='red' className='btnJumpRed' onClick={function(){this.setState({filter: "school"})}.bind(this)}></button>
-          <button name='yellow' className='btnJumpYellow' onClick={function(){this.setState({filter: "home"})}.bind(this)}></button>
-        </div>
-      )
-      }
-      else{
-        return  (
-            <div>
-              <div className="imgGallery">
-                {this.state.images.filter(function(image){
-                  if(this.state.filter == "ALL"){
-                    return true
-                  } else{
-                    return image.category == this.state.filter}
-                }, this).map(function(image){
-                  switch(image.category) {
-                    case "body":
-                      return(<img className= "indAskImg Purple" src={image.filepath} onClick={this.props.onClick}></img>)
-                      break;
-                    case "emotions":
-                      return(<img className= "indAskImg Blue" src={image.filepath} onClick={this.props.onClick}></img>)
-                      break;
-                    case "home":
-                        return(<img className= "indAskImg Yellow" src={image.filepath} onClick={this.props.onClick}></img>)
-                        break;
-                    case "outside":
-                        return(<img className= "indAskImg Green" src={image.filepath} onClick={this.props.onClick}></img>)
-                        break;
-                    case "school":
-                        return(<img className= "indAskImg Red" src={image.filepath} onClick={this.props.onClick}></img>)
-                        break;
-                  }
-                }, this)}
-              </div>
-            <button name='blue' className='btnJumpBlue' onClick={function(){this.setState({filter: "body"})}.bind(this)}></button>
-            <button name='purple' className='btnJumpPurple' onClick={function(){this.setState({filter: "emotions"})}.bind(this)}></button>
-            <button name='green' className='btnJumpGreen' onClick={function(){this.setState({filter: "outside"})}.bind(this)}></button>
-            <button name='red' className='btnJumpRed' onClick={function(){this.setState({filter: "school"})}.bind(this)}></button>
-            <button name='yellow' className='btnJumpYellow' onClick={function(){this.setState({filter: "home"})}.bind(this)}></button>
-            </div>
-        )
-      }
-    }
-  }
-          <button className='yellow'></button>
-          <button className='blue'></button>
-          <button className='red'></button>
-          <button className='green'></button>
+          <button name='yellow' className='btnJumpYellow' onClick={function(){this.setState({filter: "food"})}.bind(this)}></button>
+          <button name='green' className='btnJumpGreen' ></button>
+          <button name='red' className='btnJumpRed' ></button>
+          <button name='' className='btnJumpOrange' ></button>
         </div>
       )
     }
@@ -143,13 +89,12 @@ module.exports = class ImgGallery extends React.Component {
                 }
               }, this)}
             </div>
-            <button className='yellow'></button>
-            <button className='blue'></button>
-            <button className='red'></button>
-            <button className='green'></button>
+          <button name='yellow' className='btnJumpYellow' ></button>
+          <button name='green' className='btnJumpGreen' ></button>
+          <button name='red' className='btnJumpRed' ></button>
+          <button name='orange' className='btnJumpOrange' ></button>
           </div>
-          )
-
+      )
     }
   }
 }
