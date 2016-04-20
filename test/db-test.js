@@ -2,11 +2,8 @@ var redtape = require('redtape')
 var request = require('supertest')
 
 var dbConfig = require('../dbconfig')
-var knex = dbConfig.knex
-//console.log(dbConfig)
-
 var db = require('../data/data')(knex)
-//var app = App(db)
+var knex = dbConfig.knex
 
 var testData = {id: 2, name: 'back', category: 'body', filepath: 'img/back.png'}
 
@@ -30,7 +27,7 @@ var test = redtape({
 })
 
 
-test('it gets a particular body name ', function (t) {
+test('Test 1/3 ', function (t) {
   db.getName('gallery', { name: 'ankle' }, function (err, resp) {
   	t.equal(resp[0].name, 'ankle', 'it got the correct body name ')
   })
@@ -38,14 +35,14 @@ test('it gets a particular body name ', function (t) {
 })
 
 
-test('it gets a particular category ', function (t) {
+test('Test 2/3 ', function (t) {
   db.getCategory('gallery', { category: 'school' }, function (err, resp) {
   	t.equal(resp[0].category, 'school', 'it got the correct category')
   })
   t.end()
 })
 
-test('it gets a particular filepath ', function (t) {
+test('Test 3/3 ', function (t) {
   db.getFilepath('gallery', { filepath: 'img/pear.png' }, function (err, resp) {
   	t.equal(resp[0].filepath, 'img/pear.png', 'it got the correct filepath')
    })
