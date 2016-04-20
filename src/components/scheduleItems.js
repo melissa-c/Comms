@@ -6,13 +6,14 @@ import ReactDOM from 'react-dom'
 module.exports = class recentImgs extends React.Component {
   constructor(props){
     super(props)
+   
   }
 
   render (){
     return (
-      <div className="scheduleItems">
-        <img className="scheduleImg" src={this.props.img} />
-        <h2>{this.props.txt}</h2>
+      <div className={this.props.class} >
+        <img  src={this.props.img} />
+        <p>{this.props.txt}</p>
       </div>
    	)
   }

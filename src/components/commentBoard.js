@@ -15,10 +15,10 @@ module.exports = class CommentBoard extends React.Component {
       <div className="commentBoard">
         <div>I can</div>
         <div>
-          <img className='chosenVerb' src={this.props.text}></img>
+          <img className='chosenVerb' src={this.props.verb}></img>
         </div>
         <div>
-          <img className='chosenPic' src={this.props.text}></img>
+          <img className='chosenPic' src={this.props.image}></img>
         </div>
       </div>
     )
