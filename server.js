@@ -3,8 +3,9 @@ var app = express()
 var Knex = require('knex')
 var knexConfig = require('./knexfile')
 var knex = Knex(knexConfig[process.env.NODE_ENV || 'development'])
-
+var bodyparser = require('body-parser')
 app.use(express.static('client'))
+app.use(bodyparser.json())
 
 app.get('/database', function(req,res){
   knex.select().table('gallery')
@@ -16,7 +17,8 @@ app.get('/database', function(req,res){
   })
 })
 app.post('/database', function(req,res) {
-  var writeData = res.req.query
+  console.log(req.body)
+  var writeData = req.body
   var writeData1 = writeData.fileInput
   var writeName1 = writeData.nameInput
 
