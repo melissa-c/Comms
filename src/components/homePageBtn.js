@@ -5,7 +5,7 @@ import ReactDOM from 'react-dom'
 
 module.exports = class HomePageBtn extends React.Component {
   constructor(props){
-   super(props)
+    super(props)
   }
 
   render (){

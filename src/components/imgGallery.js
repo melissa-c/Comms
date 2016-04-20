@@ -33,6 +33,8 @@ module.exports = class ImgGallery extends React.Component {
               } else{
               return image.category == this.state.filter}
             }, this).map(function(image){
+            {this.state.images.map(function(image){
+
                     
               switch(image.category) {
                 
@@ -47,6 +49,16 @@ module.exports = class ImgGallery extends React.Component {
                     break;
                 case "school":
                     return(<img  id='red' className= "indAskImg Red" src={image.filepath} onClick={this.props.onClick}></img>)
+                    return(<img className= "indAskImg Orange" src={image.filepath} onClick={this.props.onClick}></img>)
+                    break;
+                case "home":
+                    return(<img className= "indAskImg Yellow" src={image.filepath} onClick={this.props.onClick}></img>)
+                    break;
+                case "outside":
+                    return(<img className= "indAskImg Green" src={image.filepath} onClick={this.props.onClick}></img>)
+                    break;
+                case "school":
+                    return(<img className= "indAskImg Red" src={image.filepath} onClick={this.props.onClick}></img>)
                     break;
               }
             }, this)}
@@ -99,3 +111,45 @@ module.exports = class ImgGallery extends React.Component {
       }
     }
   }
+          <button className='yellow'></button>
+          <button className='blue'></button>
+          <button className='red'></button>
+          <button className='green'></button>
+        </div>
+      )
+    }
+    else{
+      return  (
+          <div>
+            <div className="imgGallery">
+              {this.state.images.map(function(image){
+                      
+                switch(image.category) {
+                  case "body":
+                    return(<img className= "indAskImg Purple" src={image.filepath} onClick={this.props.onClick}></img>)
+                    break;
+                  case "emotions":
+                    return(<img className= "indAskImg Blue" src={image.filepath} onClick={this.props.onClick}></img>)
+                    break;
+                  case "home":
+                      return(<img className= "indAskImg Yellow" src={image.filepath} onClick={this.props.onClick}></img>)
+                      break;
+                  case "outside":
+                      return(<img className= "indAskImg Green" src={image.filepath} onClick={this.props.onClick}></img>)
+                      break;
+                  case "school":
+                      return(<img className= "indAskImg Red" src={image.filepath} onClick={this.props.onClick}></img>)
+                      break;
+                }
+              }, this)}
+            </div>
+            <button className='yellow'></button>
+            <button className='blue'></button>
+            <button className='red'></button>
+            <button className='green'></button>
+          </div>
+          )
+
+    }
+  }
+}
