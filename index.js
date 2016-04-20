@@ -9,13 +9,13 @@ import CommentPage from './src/components/commentPage'
 
 import Schedule from './src/components/schedulepage'
 import ParentAdmin from './src/components/parentadminpage'
-import ScheduleAdmin from './src/components/scheduleAdmin'
+import ScheduleAdmin from './src/components/scheduleSetUp'
 
 ReactDOM.render(
   
   <Router history={hashHistory}>
 
-    <Route path='/' component={HomePage} testProp="rabit" />
+    <Route path='/' component={HomePage} testProp="rabbit" />
     <Route path='parentAdmin' component={ParentAdmin} />
     <Route path='scheduleAdmin' component={ScheduleAdmin}/>
     <Route path='timer' component={Timer}/>

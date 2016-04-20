@@ -29,6 +29,7 @@ footer {
   display: none;
 }
 
+
 main {
   background: #ffffcc; 
   background-color: #ffffe6;
@@ -295,20 +296,36 @@ svg {
 
 }
 
+.allScheduleItems{
+  border: 1px solid black;
+  overflow-y: scroll;
+  width: 400px;
+}
+
 .scheduleItems {
-  background-color: #fff;
-  border: 2px solid #000;
-  display: flex;
-  margin: 0 auto;
-  margin-bottom: 5px;
-  padding: 5px;
-  width: 300px;
 }
 
 .scheduleImg {
   height: 50px;
   width: 50px;
+}
 
+.setUpLeft{
+  float:left;
+}
+
+.setUpRight{
+  float:right;
+}
+
+.scheduleSmall{
+  background-color: #fff;
+  border: 2px solid #000;
+  display: flex;
+  margin-bottom: 5px;
+  padding-left: 20px;
+  width: 300px;
+  height:50px;
 }
 
 .btnJumpOrange{
@@ -345,6 +362,10 @@ svg {
   background-color: yellow;
   height:40px;
   width:80px;
+}
+
+#add{
+  float:right;
 }
 
 /* @media

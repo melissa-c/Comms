@@ -7,8 +7,8 @@ import Request from 'superagent'
 function change(e){
   if(e.target.name==="red"){
     var elements = []
-    elements = document.getElementsByClassName('Red').className = "hidden"
-    console.log(elements)
+    elements = document.getElementsByClassName('Red');
+    //map doesnt work
   }
 }
 
@@ -42,7 +42,7 @@ module.exports = class ImgGallery extends React.Component {
               switch(image.category) {
                 
                 case "food":
-                    return(<img id='yellow' className= "indAskImg Orange" src={image.filepath} onClick={this.props.onClick}></img>)
+                    return(<img className= "indAskImg Orange" src={image.filepath} onClick={this.props.onClick}></img>)
                     break;
                 case "home":
                     return(<img className= "indAskImg Yellow" src={image.filepath} onClick={this.props.onClick}></img>)
@@ -57,7 +57,7 @@ module.exports = class ImgGallery extends React.Component {
             }, this)}
           
           </div>
-          <button name='yellow' className='btnJumpYellow' onClick="yello.id = 'hidden'; return false"></button>
+          <button name='yellow' className='btnJumpYellow' onClick={change}></button>
           <button name='green' className='btnJumpGreen' onClick={change}></button>
           <button name='red' className='btnJumpRed' onClick={change}></button>
           <button name='orange' className='btnJumpOrange' onClick={change}></button>
