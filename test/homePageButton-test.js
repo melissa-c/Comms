@@ -5,18 +5,15 @@ import {shallow, render, mount} from 'enzyme'
 
 import HomePageBtn from '../src/components/homePageBtn'
 
-test ('<HomePageBtn > will return button click', t => {
-
+test ('1/2<HomePageBtn >  returns button element', t => {
 
 	const expected ='Schedule'
-  
-
- 	const wrapper1 =mount(<HomePageBtn /> )
-
+   	const wrapper1 =mount(<HomePageBtn /> )
  	var div = wrapper1.html()
-	
 	t.deepEqual(div, '<div><button class="navBtn"><img></button></div>')
+})
 
+test ('2/2 <HomePageBtn> button click  works', t=> {
 
 	function clickHandler () {
 	t.truthy(true)

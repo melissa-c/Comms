@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "dev-start": "nodemon server.js ",
-    "watch": "watchify ./index.js -o client/bundle.js -dv -t babelify",
+    "watch": "watchify index.js -o client/bundle.js -dv -t babelify",
     "build": "browserify . -o client/bundle.js -g uglifyify",
     "test": "ava --watch | tap-spec"
 
