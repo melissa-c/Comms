@@ -19,7 +19,8 @@ function uploadFile() {
   Request.post("/database")
   .query({fileInput:fileInput,nameInput:nameInput})
   .end(function(err,res){
-  console.log(err)
+   console.log(res)
+
   })
 
 }
