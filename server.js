@@ -15,6 +15,17 @@ app.get('/database', function(req,res){
   	console.log("Error: ", error)
   })
 })
+app.post('/database', function(req,res) {
+  var writeData = res.req.query
+  var writeData1 = writeData.fileInput
+  var writeName1 = writeData.nameInput
+
+  knex.raw('INSERT INTO GALLERY(name, category, filepath) VALUES("'+ writeName1 +'", "personal", "' + writeData1 + '")')
+  .then(function(record){
+    // console.log(record, 'record')
+    res.send(record)
+  })
+})
 
 app.set('port', process.env.PORT || 3000)
 
