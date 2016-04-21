@@ -37,12 +37,15 @@ module.exports = class AskPage extends React.Component {
       <div>
         <Header />
         <h3>Upload photo</h3>
-        <input name="fileInput" type="file" id="fileName" />
+        <input name="fileInput" type="file" id="fileName" className="inputFile" />
+
         <input type="text" placeholder="name" id="nameInput" />
         <button type="submit" onClick={uploadFile}>Submit</button>
+
         <h3>change password</h3>
+        
         <input name="passwordInput" type="text" />
-        <div><button onClick={goToSchedAdmin}>change schedule</button></div>
+
       </div>
     )
   }
