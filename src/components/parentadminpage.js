@@ -11,17 +11,16 @@ function goToSchedAdmin(){
 window.location = '/#/scheduleAdmin';
 }
 
-function uploadFile() {
+function uploadFile(e) {
+  e.preventDefault()
   var fileInput = document.getElementById("fileName").value
-  // console.log(fileName)
   var nameInput = document.getElementById("nameInput").value
-  // console.log(fileInput)
+
   Request.post("/database")
   .send({fileInput:fileInput,nameInput:nameInput})
   .end(function(err,res){
-    alert("successfully uploaded")
-
-  })
+    }
+  )
 }
 
 module.exports = class AskPage extends React.Component {

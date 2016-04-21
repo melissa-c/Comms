@@ -15,7 +15,13 @@ function back(){
 }
 
 function goToAdmin(){
-  window.location = '/#/parentadmin';
+  var password = prompt('Please enter password')
+    if(password =="11"){
+    window.location = '/#/parentadmin';
+  }
+  else{
+    alert("Incorrect Password!")
+  }
 }
 
 module.exports = class Header extends React.Component {
@@ -43,7 +49,7 @@ module.exports = class Header extends React.Component {
 
         <h1><span>Comms</span><br /> Companion</h1>
 
-        <HeaderBtn id={"timer"} className={"timerBtn"} txt={"timer"} onClick={goToTimer} img={"icon/FPO_timer.png"} />
+        <HeaderBtn id={"timer"} className={"timerBtn"} txt={"timer"} onClick={goToTimer} img={"icon/stopwatchgreen.png"} />
      	</div>
    	) 
   }

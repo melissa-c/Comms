@@ -2,8 +2,8 @@ var redtape = require('redtape')
 var request = require('supertest')
 
 var dbConfig = require('../dbconfig')
-var knex = dbConfig.knex
 
+var knex = dbConfig.knex
 var db = require('../data/data')(knex)
 
 
@@ -27,6 +27,7 @@ var test = redtape({
 			})
 	}
 })
+
 
 
 test('DB Test ' , function (t) {
