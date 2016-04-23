@@ -6,6 +6,7 @@ import HomePage from './src/components/homepage'
 import AskPage from './src/components/askpage'
 import Timer from './src/components/timer'
 import CommentPage from './src/components/commentPage'
+import Schedule from './src/components/schedulepage'
 import ParentAdmin from './src/components/parentadminpage'
 
 
