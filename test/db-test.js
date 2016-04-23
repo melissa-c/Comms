@@ -1,5 +1,8 @@
 var redtape = require('redtape')
 var request = require('supertest')
+var level = require('level')
+var rimraf = require('rimraf')
+
 
 var dbConfig = require('../dbconfig')
 
@@ -11,26 +14,29 @@ var testData = {id: 2, name: 'back', category: 'body', filepath: 'img/back.png'}
 
 var test = redtape({
 	beforeEach: function (cb) {
-		return knex.migrate.latest(dbConfig.config)
-		.then(function (){
-			return knex.select('*').from('gallery')
-		})
-		.then(function () {
-			cb()
-		})
+		rimraf.sync('db')
+		level ('db', cb)
+		// return knex.migrate.latest(dbConfig.config)
+		// .then(function (){
+		// 	return knex.select('*').from('gallery')
+		// })
+		// .then(function () {
+		 //	cb()
+		// })
 	},
 
-	afterEach: function (cb) {
-		knex.migrate.latest(dbConfig.config)
-			.then(function() {
-				cb ()
-			})
+	afterEach: function (db, cb) {
+		db.close(cb)
+		// knex.migrate.latest(dbConfig.config)
+		// 	.then(function() {
+				
+			// })
 	}
 })
 
 
 
-test('DB Test ' , function (t) {
+test('DB Test ' , function (t, err) {
  	db.getSearch('gallery', { name: 'ankle' }, function (err, resp) {
   		t.equal(resp[0].name, 'ankle', '1/3 It got the correct body name ')
   }),
@@ -40,10 +46,10 @@ test('DB Test ' , function (t) {
   }), 
 	
 	db.getSearch('gallery', { filepath: 'img/pear.png' }, function (err, resp) {
-  		t.equal(resp[0].filepath, 'img/pear.png', '3/3 It got the correct filepath for the imatge')
+  		t.equal(resp[0].filepath, 'img/pear.png', '3/3 It got the correct filepath for the image')
    })
 
-  t.end()
+  t.end(err)
 })
 
 
