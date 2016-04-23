@@ -2,8 +2,10 @@ var redtape = require('redtape')
 var request = require('supertest')
 
 var dbConfig = require('../dbconfig')
-var db = require('../data/data')(knex)
+
 var knex = dbConfig.knex
+var db = require('../data/data')(knex)
+
 
 var testData = {id: 2, name: 'back', category: 'body', filepath: 'img/back.png'}
 
@@ -27,24 +29,21 @@ var test = redtape({
 })
 
 
-test('Test 1/3 ', function (t) {
-  db.getName('gallery', { name: 'ankle' }, function (err, resp) {
-  	t.equal(resp[0].name, 'ankle', 'it got the correct body name ')
-  })
-  t.end()
-})
 
+test('DB Test ' , function (t) {
+ 	db.getSearch('gallery', { name: 'ankle' }, function (err, resp) {
+  		t.equal(resp[0].name, 'ankle', '1/3 It got the correct body name ')
+  }),
 
-test('Test 2/3 ', function (t) {
-  db.getCategory('gallery', { category: 'school' }, function (err, resp) {
-  	t.equal(resp[0].category, 'school', 'it got the correct category')
-  })
-  t.end()
-})
-
-test('Test 3/3 ', function (t) {
-  db.getFilepath('gallery', { filepath: 'img/pear.png' }, function (err, resp) {
-  	t.equal(resp[0].filepath, 'img/pear.png', 'it got the correct filepath')
+ 	db.getSearch('gallery', { category: 'school' }, function (err, resp) {
+  		t.equal(resp[0].category, 'school', '2/3 It got the correct category')
+  }), 
+	
+	db.getSearch('gallery', { filepath: 'img/pear.png' }, function (err, resp) {
+  		t.equal(resp[0].filepath, 'img/pear.png', '3/3 It got the correct filepath for the imatge')
    })
- t.end()
+
+  t.end()
 })
+
+
