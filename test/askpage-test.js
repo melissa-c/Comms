@@ -12,9 +12,9 @@ test('<AskPage /> returns 4 buttons and clicks yellow and red buttons', t=> {
 		t.truthy(true)
 	}
 
-	const wrapper = shallow(<ImgGallery onClick={clickHandler} /> )
-	wrapper.find('button.yellow').simulate('click');
-	wrapper.find('button.red').simulate('click')
+	const wrapper = mount(<ImgGallery onClick={clickHandler} /> )
+	wrapper.find('button.btnJumpYellow').simulate('click');
+	wrapper.find('button.btnJumpRed').simulate('click')
 	t.deepEqual(wrapper.find('button').length, 4)
 })
 
