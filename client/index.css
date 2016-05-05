@@ -79,20 +79,10 @@ button .labels {
   width: 80px;
 }
 
-button:hover .labels,
-button:active .labels {
-  background: #f2f2f2;
-  color: #000;
-  display: block;
-  opacity: .7;
-  position: absolute;
-  top: 15px;
-}
 
-button:active .labels {
-  height: 44px;
-  padding: 36px 0 0;
-}
+
+
+
 
 .headerBtn {
   border-radius: 5px;
