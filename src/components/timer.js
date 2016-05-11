@@ -27,6 +27,7 @@ function counter(){
                + mid + ' 1 ' 
                +  x  + ' ' 
                +  y  + ' z';
+    //console.log('here is alpha', alpha)
          
     if(alpha < 360) {
       setTimeout(draw, time)
@@ -35,6 +36,7 @@ function counter(){
     }
       loader.setAttribute( 'd', anim );
       border.setAttribute( 'd', anim );
+      text.textContent=Math.round((time/360)*alpha)
   })()
 }
 
@@ -53,6 +55,7 @@ module.exports = class HomePageBtn extends React.Component {
 	        <svg width="400" height="400" viewbox="0 0 200 200">
             <path id="border" transform="translate(200, 200)"/>
             <path id="loader" transform="translate(200, 200) scale(.8)"/>
+            <text id="text" x="200" y="200" text-anchor="middle" dominant-baseline="middle"></text>
 	        </svg>
         </div>
       </div>
